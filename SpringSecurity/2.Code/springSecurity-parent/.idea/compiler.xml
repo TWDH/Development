@@ -8,13 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springSecurity-core" />
-        <module name="springSecurity-base" />
+        <module name="springSecurity--web" />
         <module name="springSecurity-web" />
+        <module name="springSecurity-base" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springSecurity--web" options="-parameters" />
       <module name="springSecurity-base" options="-parameters" />
       <module name="springSecurity-core" options="-parameters" />
       <module name="springSecurity-web" options="-parameters" />
