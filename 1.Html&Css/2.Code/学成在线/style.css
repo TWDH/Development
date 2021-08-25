@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.w {
+  width: 1200px;
+  margin: auto;
+}
+.header {
+  height: 42px;
+  background-color: pink;
+  /* 这里会层叠 w 的margin */
+  margin: 30px auto;
+}
+
+.logo {
+  height: 42px;
+  width: 192px;
+}
