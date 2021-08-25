@@ -22,6 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="83fbf57f-45fe-4dfc-9dbe-7e05bca1ebe3" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/springSecurity-core/src/main/java/com/hezhu/security/Controller/CustomLoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../1.Note/03.身份认证.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.Note/03.身份认证.md" afterDir="false" />
@@ -39,6 +40,9 @@
       <change beforePath="$PROJECT_DIR$/springSecurity-web/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-web/target/classes/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springSecurity-web/target/springSecurity--web-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-web/target/springSecurity--web-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
+=======
+    <list default="true" id="83fbf57f-45fe-4dfc-9dbe-7e05bca1ebe3" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,10 +175,14 @@
       <updated>1627065630837</updated>
       <workItem from="1627065632180" duration="1482000" />
       <workItem from="1627067708332" duration="8960000" />
+<<<<<<< Updated upstream
       <workItem from="1629651962964" duration="727000" />
       <workItem from="1629653330344" duration="8505000" />
       <workItem from="1629678889139" duration="157000" />
       <workItem from="1629679061020" duration="499000" />
+=======
+      <workItem from="1629651962964" duration="1071000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -199,6 +207,7 @@
     </state>
     <state x="-1233" y="124" width="1092" height="789" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629678710557" />
     <state x="381" y="234" width="1092" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629652289987" />
+<<<<<<< Updated upstream
     <state x="-833" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1629676868558">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -270,6 +279,41 @@
     </state>
     <state x="520" y="199" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679544567" />
     <state x="-975" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1629674787775">
+=======
+    <state width="1332" height="268" key="GridCell.Tab.0.bottom" timestamp="1629652787271">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1332" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629652787271" />
+    <state width="1332" height="268" key="GridCell.Tab.0.center" timestamp="1629652787270">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1332" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629652787270" />
+    <state width="1332" height="268" key="GridCell.Tab.0.left" timestamp="1629652787270">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1332" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629652787270" />
+    <state width="1332" height="268" key="GridCell.Tab.0.right" timestamp="1629652787270">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1332" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629652787270" />
+    <state width="1332" height="268" key="GridCell.Tab.1.bottom" timestamp="1629652763559">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1332" height="268" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629652763559" />
+    <state width="1332" height="268" key="GridCell.Tab.1.center" timestamp="1629652763559">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1332" height="268" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629652763559" />
+    <state width="1332" height="268" key="GridCell.Tab.1.left" timestamp="1629652763559">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1332" height="268" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629652763559" />
+    <state width="1332" height="268" key="GridCell.Tab.1.right" timestamp="1629652763559">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1332" height="268" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629652763559" />
+    <state x="-1565" y="107" key="SettingsEditor" timestamp="1629652682459">
+>>>>>>> Stashed changes
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-975" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629674787775" />
