@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+  <th:block th:replace="fragments/head :: public-css"/>
+  <th:block th:replace="fragments/head :: ztree-css"/>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+<!-- Site wrapper  -->
+<div class="wrapper">
+
+  <!-- 头部区域 Navbar -->
+  <th:block th:replace="fragments/main-header"/>
+  <!-- /.navbar -->
+
+  <!-- 左侧区域 Main Sidebar Container -->
+  <th:block th:replace="fragments/main-sidebar(activeUrl='/role')"/>
+
+  <!-- 右侧主区域 Content Wrapper. Contains page content -->
+  <div class="content-wrapper  text-sm">
+    <!-- 右侧导航区域 Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>编辑角色</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a th:href="@{/role}" href="#">角色列表</a></li>
+              <li class="breadcrumb-item active">编辑角色</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+              <!-- general form elements -->
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">基本信息</h3>
+                </div>
+                <!-- /.card-header -->
+                <form id="form" th:action="@{/role}" th:method="post" >
+                  <input id="id" name="id" type="hidden" >
+                  <input id="perIds" name="perIds" type="hidden" >
+                  <input name="_method" value="put" type="hidden" >
+
+                  <div class="card-body ml-5">
+                      <div class="form-group row">
+                        <label class="col-form-label"><span style="color: red;">*</span>角色名称：</label>
+                        <div class="col-5">
+                          <input  type="text" name="name" maxlength="20" class="form-control" placeholder="请输入角色名称" required>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-form-label">&nbsp;&nbsp;角色描述：</label>
+                        <div class="col-8">
+                          <textarea id="remark" name="remark" maxlength="200" class="form-control " rows="3"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-form-label">&nbsp;&nbsp;分配权限：</label>
+                        <div class="col-sm-8" style="background: #fafafa">
+                          <div class="mt-2">
+                            <ul class="ztree" style="overflow: auto;" id="permissionTree"></ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="card-footer text-center">
+                    <button type="submit" class="btn btn-primary">
+                      <i class="fa fa-check"></i>&nbsp;提交
+                    </button>
+                    <button type="button" th:onclick="location.href=[[@{/role}]]" class="btn btn-default">
+                      <i class="fa fa-reply-all"></i>&nbsp;返回
+                    </button>
+                  </div>
+                </form>
+
+          </div>
+          </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+  <!--右底部区域-->
+  <th:block th:replace="fragments/main-footer"/>
+
+  <!-- 右上角工具栏 Control Sidebar -->
+  <th:block th:replace="fragments/control-sidebar"/>
+
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<th:block th:replace="fragments/script :: public-js"/>
+<th:block th:replace="fragments/script :: inputmask-js"/>
+<th:block th:replace="fragments/script :: ztree-js"/>
+
+</body>
+</html>

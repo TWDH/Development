@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>梦学谷-统一权限管理系统</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome  -->
+  <link th:href="@{/plugins/fontawesome-free/css/all.min.css}" rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <!-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <!-- overlayScrollbars -->
+  <link th:href="@{/plugins/overlayScrollbars/css/OverlayScrollbars.min.css}" rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link th:href="@{/dist/css/adminlte.min.css}" rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="#">梦学谷统一权限管理</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">请登录</p>
+      
+      <a th:href="@{/login/page}" href="login.html" style="float:right;font-size: 13px;">
+        <i class="fa fa-lock mr-1"></i>使用密码验证登录
+      </a>
+      <form th:action="@{/mobile/form}" action="index.html" method="post">
+        <div class="input-group mb-3">
+          <input id="mobile" name="mobile" type="text" class="form-control" placeholder="手机号码">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fa fa-user"></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-3 row">
+            <div class="col-7">
+          <input type="text" name="code" class="form-control" placeholder="验证码">
+          </div>
+          <div class="col-5">
+              <a id="sendCode" th:attr="code_url=@{/code/mobile?mobile=}" class="btn  btn-outline-primary btn-large" href="#"> 获取验证码 </a>
+          </div>
+        </div>
+
+        <!-- 提示信息, 表达式红线没关系，忽略它 -->
+        <div th:if="${param.error}">
+          <span th:text="${session.SPRING_SECURITY_LAST_EXCEPTION?.message}" style="color:red"></span>
+        </div>
+
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input name="remember-me" type="checkbox" id="remember">
+              <label for="remember">
+                记住我
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">登录</button>
+          </div>
+          <!-- /.col -->
+        </div>
+
+      </form>
+
+<!--       
+      <div class="social-auth-links text-center mb-3">
+        <p>- 或 -</p>
+        <a href="#" class="btn btn-block btn-success">
+          <i class="fab fa-wechat mr-2"></i> 微信登录
+        </a>
+        <a href="#" class="btn btn-block btn-primary">
+          <i class="fab fa-qq mr-2"></i> QQ登录
+        </a>
+      </div> -->
+      <!-- /.social-auth-links -->
+
+      <p class="mb-1">
+        <a href="forgot-password.html">忘记密码</a>
+      </p>
+      <p class="mb-0">
+        <a href="register.html" class="text-center">注册帐号</a>
+      </p>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+<!-- jQuery -->
+<script th:src="@{/plugins/jquery/jquery.min.js}" src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script th:src="@{/plugins/bootstrap/js/bootstrap.bundle.min.js}" src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script th:src="@{/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js}" src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/dist/js/adminlte.min.js}" src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script th:src="@{/dist/js/demo.js}" src="../dist/js/demo.js"></script>
+<script>
+    // 发送验证码
+    $("#sendCode").click(function () {
+        var mobile = $('#mobile').val().trim();
+        if(mobile == '') {
+            alert("手机号不能为空");
+            return;
+        }
+        var url = $(this).attr("code_url") + mobile;
+        $.get(url, function(data){
+            alert(data.code === 200 ? "发送成功": "发送失败");
+        });
+    });
+
+</script>
+</body>
+</html>

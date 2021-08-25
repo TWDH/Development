@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+  <th:block th:replace="fragments/head :: public-css"/>
+  <th:block th:replace="fragments/head :: bootstrap-table-css"/>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+<!-- Site wrapper  -->
+<div class="wrapper">
+
+  <!-- 头部区域 Navbar -->
+  <th:block th:replace="fragments/main-header"/>
+
+  <!-- 左侧区域 Main Sidebar Container -->
+  <th:block th:replace="fragments/main-sidebar(activeUrl='/role')"/>
+
+  <!-- 右侧主区域 Content Wrapper. Contains page content -->
+  <div class="content-wrapper  text-sm">
+    <!-- 右侧导航区域 Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>角色管理</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">系统管理</a></li>
+              <li class="breadcrumb-item active">角色管理</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- 右侧内容区域 -->
+    <section class="content">
+      <!-- card -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">角色列表</h3>
+          <!-- 工具栏 -->
+          <div class="card-tools">
+            <button type="button" class="btn btn-primary btn-xs" th:onclick="location.href=[[@{/role/form}]]" data-toggle="tooltip" title="新增">
+              <i class="fa fa-plus"></i>&nbsp;新增
+            </button>
+          </div>
+          <!-- /工具栏 -->
+        </div>
+
+        <div class="card-body">
+          <!-- 搜索栏 -->
+          <form class="form-inline search  text-sm" id="search-form">
+            <div class="form-group input-group-sm">
+              <span>角色名称：</span>
+              <input id="name" name="name" type="text" class="form-control" autocomplete="off">
+            </div>
+            <div class="form-group  ml-3">
+              <a class="btn btn-outline-primary btn-sm" onclick="searchForm()" href="#">
+                <i class="fa fa-search"></i>&nbsp;搜索
+              </a>
+              <a class="btn btn-outline-primary btn-sm ml-1" onclick="$('#search-form')[0].reset()" href="#">
+                <i class="fa fa-refresh"></i>&nbsp;重置
+              </a>
+            </div>
+          </form>
+          <hr>
+          <!-- 列表 -->
+          <table id="table" class="table table-bordered">
+          </table>
+        </div>
+      <!-- /.card -->
+      </div>
+    </section>
+    <!-- / 右侧内容区域 -->
+
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!--右底部区域-->
+  <th:block th:replace="fragments/main-footer"/>
+
+  <!-- 右上角工具栏 Control Sidebar -->
+  <th:block th:replace="fragments/control-sidebar"/>
+
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<th:block th:replace="fragments/script :: public-js"/>
+<th:block th:replace="fragments/script :: bootstrap-table-js"/>
+<th:block th:replace="fragments/script :: layer-js"/>
+
+</body>
+</html>

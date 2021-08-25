@@ -4,18 +4,24 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@Configuration
-@EnableWebSecurity
+/**
+ * ctrl + o 覆盖方法
+ */
+
+@Configuration // 配置类
+@EnableWebSecurity // spring security 配置类
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
     // 指定加密方式
     @Bean
     public PasswordEncoder passwordEncoder() {
+        // 随机加盐
         return new BCryptPasswordEncoder();
     }
 
@@ -38,16 +44,76 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        // 采用 httpBasic 认证方式
+        // 1. 采用 httpBasic 认证方式
         /*http.httpBasic() // 采用 httpBasic 认证方式
                 .and()
                 .authorizeRequests() // 认证请求
                 .anyRequest().authenticated(); //所有访问该应用的 http 请求，都需要身份认证才可以访问*/
-        // 采用 formLogin 认证方式
+        // 2. 采用 formLogin 认证方式
         http.formLogin()
+                .loginPage("/login/page") // 指定登录页
+                .loginProcessingUrl("/login/form") // 登录表单提交处理url，默认是 "/login"
+                .usernameParameter("name") // 表单提交的用户名name，默认是username
+                .passwordParameter("pwd")  // 表单提交的密码name，默认是password
                 .and()
                 .authorizeRequests() // 认证请求
+                .antMatchers("/login/page").permitAll() // 放行该请求, 不需要认证
                 .anyRequest().authenticated(); //所有访问该应用的 http 请求，都需要身份认证才可以访问
 
     }
+
+    /**
+     * 针对静态资源放行
+     * @param web
+     * @throws Exception
+     */
+    @Override
+    public void configure(WebSecurity web) {
+        super.configure(web);
+        web.ignoring().antMatchers("/dist/**", "/modules/**", "/plugins/**");
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

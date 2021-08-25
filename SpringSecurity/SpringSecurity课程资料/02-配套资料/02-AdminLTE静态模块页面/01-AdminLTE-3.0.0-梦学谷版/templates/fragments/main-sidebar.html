@@ -1,0 +1,74 @@
+<!--suppress ALL-->
+<!--左侧区域-->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- 左侧企业Logo Brand Logo -->
+    <a href="index.html" class="brand-link">
+        <img th:src="@{/modules/img/logo.png}" src="../modules/img/logo.png"
+             alt="梦学谷"
+             class="brand-image img-circle elevation-3"
+             style="opacity: .8">
+        <span class="brand-text font-weight-light">梦学谷统一权限管理</span>
+    </a>
+    <!--  Sidebar -->
+    <div class="sidebar">
+        <!-- 左侧头像与名字 Sidebar user (optional)-->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                <img th:src="@{/dist/img/user2-160x160.jpg}" src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+                <a href="#" class="d-block">梦老师</a>
+            </div>
+        </div>
+
+        <!-- 菜单列表 Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                     with font-awesome or any other icon font library -->
+                <li class="nav-item">
+                    <a th:href="@{/}" href="index.html" class="nav-link active">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            首页
+                            <!-- <span class="right badge badge-danger">New</span> -->
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link ">
+                        <i class="nav-icon fa fa-cogs"></i>
+                        <p>
+                            系统管理
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a th:href="@{/user}" href="system/user/user-list.html" class="nav-link ">
+                                <i class="fa fa-users"></i>
+                                <p>用户管理</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-user-secret"></i>
+                                <p>角色管理</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-cog"></i>
+                                <p>菜单管理</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>

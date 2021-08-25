@@ -23,21 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83fbf57f-45fe-4dfc-9dbe-7e05bca1ebe3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Development" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/springSecurity-core/src/main/java/com/hezhu/security/Controller/CustomLoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../1.Note/03.身份认证.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.Note/03.身份认证.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springSecurity-core/target/classes/com/hezhu/security/config/SpringSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springSecurity-web/target/classes/com/hezhu/WebApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springSecurity-web/target/classes/com/hezhu/controller/mainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-base/target/springSecurity-base-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-base/target/springSecurity-base-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-core/src/main/java/com/hezhu/security/config/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-core/src/main/java/com/hezhu/security/config/SpringSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-core/target/classes/com/hezhu/security/config/SpringSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-core/target/classes/com/hezhu/security/config/SpringSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-core/target/springSecurity-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-core/target/springSecurity-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-web/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-web/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-web/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-web/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-web/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springSecurity-web/target/springSecurity--web-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/springSecurity-web/target/springSecurity--web-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,12 +68,18 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="E:\Software\Intellij\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
   <component name="ProjectId" id="1vjBU8AlCs0pxUahf29zjRl6CAP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -81,7 +95,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springSecurity-web/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -96,19 +110,21 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springSecurity-web" />
+      <module name="springSecurity--web" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hezhu.*" />
@@ -116,6 +132,10 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hezhu.WebApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,6 +172,9 @@
       <workItem from="1627065632180" duration="1482000" />
       <workItem from="1627067708332" duration="8960000" />
       <workItem from="1629651962964" duration="727000" />
+      <workItem from="1629653330344" duration="8505000" />
+      <workItem from="1629678889139" duration="157000" />
+      <workItem from="1629679061020" duration="499000" />
     </task>
     <servers />
   </component>
@@ -168,16 +191,87 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="381" y="234" width="1092" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629652289987">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="381" y="234" width="1092" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629652289987" />
-    <state x="-1565" y="107" key="SettingsEditor" timestamp="1629652682459">
+    <state x="-1233" y="124" width="1092" height="789" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629678710557">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1565" y="107" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629652682459" />
-    <state x="355" y="107" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629652314067" />
+    <state x="-1233" y="124" width="1092" height="789" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629678710557" />
+    <state x="381" y="234" width="1092" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629652289987" />
+    <state x="-833" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1629676868558">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-833" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629676868558" />
+    <state x="-821" y="346" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1629653369071">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-821" y="346" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629653369071" />
+    <state x="881" y="235" key="FileChooserDialogImpl" timestamp="1629679552398">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1039" y="235" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679302008" />
+    <state x="881" y="235" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679552398" />
+    <state width="1496" height="358" key="GridCell.Tab.0.bottom" timestamp="1629679564044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1584" height="358" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679278294" />
+    <state width="1496" height="358" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679564044" />
+    <state width="1496" height="358" key="GridCell.Tab.0.center" timestamp="1629679564044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1584" height="358" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679278294" />
+    <state width="1496" height="358" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679564044" />
+    <state width="1496" height="358" key="GridCell.Tab.0.left" timestamp="1629679564044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1584" height="358" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679278294" />
+    <state width="1496" height="358" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679564044" />
+    <state width="1496" height="358" key="GridCell.Tab.0.right" timestamp="1629679564044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1584" height="358" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679278294" />
+    <state width="1496" height="358" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679564044" />
+    <state width="1496" height="358" key="GridCell.Tab.1.bottom" timestamp="1629679564030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1584" height="358" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679278294" />
+    <state width="1496" height="358" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679564030" />
+    <state width="1496" height="358" key="GridCell.Tab.1.center" timestamp="1629679564030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1584" height="358" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679278294" />
+    <state width="1496" height="358" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679564030" />
+    <state width="1496" height="358" key="GridCell.Tab.1.left" timestamp="1629679564030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1584" height="358" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679278294" />
+    <state width="1496" height="358" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679564030" />
+    <state width="1496" height="358" key="GridCell.Tab.1.right" timestamp="1629679564030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1584" height="358" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679278294" />
+    <state width="1496" height="358" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679564030" />
+    <state x="-1149" y="164" width="858" height="544" key="Registry" timestamp="1629677435498">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1149" y="164" width="858" height="544" key="Registry/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629677435498" />
+    <state x="355" y="107" key="SettingsEditor" timestamp="1629679429579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1139" y="90" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629679191962" />
+    <state x="355" y="107" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679429579" />
+    <state x="-775" y="367" key="cloudConfig.SelfSettingsDialog" timestamp="1629678316174">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-775" y="367" key="cloudConfig.SelfSettingsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629678316174" />
+    <state x="520" y="199" key="new project wizard" timestamp="1629679544567">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="520" y="199" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1629679544567" />
+    <state x="-975" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1629674787775">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-975" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1629674787775" />
   </component>
 </project>

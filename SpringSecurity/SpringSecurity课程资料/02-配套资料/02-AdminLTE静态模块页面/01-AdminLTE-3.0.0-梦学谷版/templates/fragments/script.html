@@ -1,0 +1,57 @@
+<!--suppress ALL-->
+<!--公共js-->
+<th:block th:fragment="public-js">
+    <!-- jQuery  -->
+    <script th:src="@{/plugins/jquery/jquery.min.js}" src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script th:src="@{/plugins/bootstrap/js/bootstrap.bundle.min.js}" src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script th:src="@{/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js}" src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script th:src="@{/dist/js/adminlte.min.js}" src="../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script th:src="@{/dist/js/demo.js}" src="../dist/js/demo.js"></script>
+
+    <!--
+    <script type="text/javascript" th:inline="javascript">
+        // 获取项目应用名, 在其他js中可以引用它
+        /*<![CDATA[*/
+        contextPath = /*[[@{/}]]*/ '';
+        /*]]>*/
+    </script>
+    -->
+</th:block>
+
+<!-- inputmask 如 邮箱地址
+<th:block th:fragment="inputmask-js">
+    <script th:src="@{/plugins/moment/moment.min.js}" src="../../plugins/moment/moment.min.js"></script>
+    <script th:src="@{/plugins/inputmask/min/jquery.inputmask.bundle.min.js}" src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //数据格式提示
+            $('[data-mask]').inputmask()
+
+        });
+    </script>
+</th:block>
+-->
+
+<!-- 树形表格 js
+<th:block th:fragment="bootstrap-table-js">
+    <script th:src="@{/webjars/bootstrap-table/1.14.1/dist/bootstrap-table.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap-table/1.14.1/dist/locale/bootstrap-table-zh-CN.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap-table/1.14.1/dist/extensions/treegrid/bootstrap-table-treegrid.js}"></script>
+    <script th:src="@{/webjars/bootstrap-table/1.14.1/dist/extensions/mobile/bootstrap-table-mobile.min.js}"></script>
+    <script th:src="@{/webjars/jquery-treegrid/0.3.0/js/jquery.treegrid.min.js}"></script>
+</th:block>
+-->
+<!-- layer库
+<th:block th:fragment="layer-js">
+    <script th:src="@{/webjars/layer/dist/layer.js}"></script>
+</th:block>
+-->
+<!--ztree-js
+<th:block th:fragment="ztree-js">
+    <script th:src="@{/plugins/jquery-zTree/3.5.37/js/jquery.ztree.all.min.js}"></script>
+</th:block>
+-->
