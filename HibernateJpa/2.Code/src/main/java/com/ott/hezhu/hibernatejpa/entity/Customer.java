@@ -23,6 +23,8 @@ public class Customer {
 
     private String lastName;
 
+    private Publisher publisher;
+
     public Customer(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
