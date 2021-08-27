@@ -3,10 +3,25 @@
   padding: 0;
 }
 
+body {
+  background-color: #f3f5f7;
+}
+
+li {
+  /* 清除li前方的小点 */
+  list-style: none;
+}
+
+a {
+  /* 链接取消下划线 */
+  text-decoration: none;
+}
+
 .w {
   width: 1200px;
   margin: auto;
 }
+
 .header {
   height: 42px;
   background-color: pink;
@@ -15,6 +30,73 @@
 }
 
 .logo {
+  float: left;
   height: 42px;
   width: 192px;
+}
+
+.nav {
+  float: left;
+  margin-left: 60px;
+}
+
+.nav ul li {
+  /* li是块级元素 */
+  float: left;
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  /* a 是行内元素，没有宽高；转为块级元素 */
+  display: block;
+  height: 42px;
+  /* 上下0，左右10px */
+  padding: 0 10px;
+  /* 上下垂直居中 */
+  line-height: 42px;
+  font-size: 18px;
+  color: #050505;
+}
+
+.nav ul li a:hover {
+  /* 鼠标经过，加入下边框 */
+  border-bottom: 2px solid #00a4ff;
+  color: #00a4ff;
+}
+
+.search {
+  float: left;
+  width: 411px;
+  height: 42px;
+  margin-left: 50px;
+}
+
+.search input {
+  float: left;
+  /* 360 -> 345 */
+  width: 345px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  border-right: 0;
+  color: #bfbfbf;
+  font-size: 16px;
+  /* padding 会撑大盒子；width需要相应减去 */
+  padding-left: 15px;
+}
+
+.search button {
+  float: left;
+  width: 50px;
+  height: 42px;
+  /* 取消 button 默认边框 */
+  border: 0;
+  /* 背景图片 */
+  background: url(images/btn.png);
+}
+
+.user {
+  float: right;
+  height: 42px;
+  line-height: 42px;
+  margin-right: 15px;
 }
