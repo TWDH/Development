@@ -1,0 +1,19 @@
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+    contentnegotiation:
+      favor-parameter: true
+  #  mvc:
+#    static-path-pattern: /res/**
+
+  resources:
+    static-locations: [classpath:/haha/]
+    add-mappings: true
+    cache:
+      period: 11000
+server:
+  servlet:
+    context-path: /world
+

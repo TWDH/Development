@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/acl_parent/acl_parent.iml" filepath="$PROJECT_DIR$/acl_parent/acl_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acl_parent/infrastructure/api_gateway/api_gateway.iml" filepath="$PROJECT_DIR$/acl_parent/infrastructure/api_gateway/api_gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acl_parent/common/common.iml" filepath="$PROJECT_DIR$/acl_parent/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acl_parent/infrastructure/infrastructure.iml" filepath="$PROJECT_DIR$/acl_parent/infrastructure/infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acl_parent/service/service.iml" filepath="$PROJECT_DIR$/acl_parent/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acl_parent/service/service_acl/service_acl.iml" filepath="$PROJECT_DIR$/acl_parent/service/service_acl/service_acl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acl_parent/common/service_base/service_base.iml" filepath="$PROJECT_DIR$/acl_parent/common/service_base/service_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acl_parent/common/spring_security/spring_security.iml" filepath="$PROJECT_DIR$/acl_parent/common/spring_security/spring_security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/微服务方案案例.iml" filepath="$PROJECT_DIR$/.idea/微服务方案案例.iml" />
+    </modules>
+  </component>
+</project>

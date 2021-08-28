@@ -1,0 +1,107 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_account
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+    druid:
+      aop-patterns: com.atguigu.admin.*  #springbean监控
+      filters: stat,wall,slf4j  #所有开启的功能
+
+      stat-view-servlet:  #监控页配置
+        enabled: true
+        login-username: admin
+        login-password: admin
+        resetEnable: false
+
+      web-stat-filter:  #web监控
+        enabled: true
+        urlPattern: /*
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+
+
+      filter:
+        stat: #sql监控
+          slow-sql-millis: 1000
+          logSlowSql: true
+          enabled: true
+        wall: #防火墙
+          enabled: true
+          config:
+            drop-table-allow: false
+
+
+
+  redis:
+    host: r-bp1nc7reqesxisgxpipd.redis.rds.aliyuncs.com
+    port: 6379
+    password: lfy:Lfy123456
+    client-type: jedis
+    jedis:
+      pool:
+        max-active: 10
+  #    url: redis://lfy:Lfy123456@r-bp1nc7reqesxisgxpipd.redis.rds.aliyuncs.com:6379
+#    lettuce:
+#      pool:
+#        max-active: 10
+#        min-idle: 5
+
+
+
+  #    type: com.zaxxer.hikari.HikariDataSource
+  jdbc:
+    template:
+      query-timeout: 3
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888
+        instance:
+          prefer-ip: true  #使用ip注册进来
+  application:
+    name: boot-05-web-admin
+
+
+
+
+# 配置mybatis规则、使用MyBatisPlus则此项配置无效
+#mybatis:
+##  config-location: classpath:mybatis/mybatis-config.xml
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+#  configuration:  # 指定mybatis全局配置文件中的相关配置项
+#    map-underscore-to-camel-case: true
+
+
+# management 是所有actuator的配置
+# management.endpoint.端点名.xxxx  对某个端点的具体配置
+management:
+  endpoints:
+    enabled-by-default: true  #默认开启所有监控端点  true
+    web:
+      exposure:
+        include: '*' # 以web方式暴露所有端点
+
+  endpoint:   #对某个端点的具体配置
+    health:
+      show-details: always
+      enabled: true
+
+    info:
+      enabled: true
+
+    beans:
+      enabled: true
+
+    metrics:
+      enabled: true
+
+info:
+  appName: boot-admin
+  appVersion: 1.0.0
+  mavenProjectName: @project.artifactId@
+  mavenProjectVersion: @project.version@
+
+
+

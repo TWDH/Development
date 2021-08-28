@@ -1,0 +1,32 @@
+person:
+  user-name: HeZhu
+  boss: true
+  birth: 2019/12/9
+  age: 18
+  pet:
+    name: 阿狗
+    weight: 99.99
+#  interests: [basketable, football]
+  interests:
+    - 篮球
+    - 足球
+    - 18
+  animal: [猫, 狗]
+#  score:
+#    english: 80
+#    math: 90
+  score: {english:80, math:90}
+  salarys:
+    - 9999.98
+    - 9999.99
+  allPets:
+    sick:
+      - {name: 阿狗,weight: 99.99}
+      - name: 阿猫
+        weight: 88.88
+      - name: 虫子
+        weight: 77.77
+    health:
+      - {name: 啊花,weight: 199.99}
+
+

@@ -1,0 +1,5 @@
+person:
+  name: test-张三
+
+server:
+  port: 7000

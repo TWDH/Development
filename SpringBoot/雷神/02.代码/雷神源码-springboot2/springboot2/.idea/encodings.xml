@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/boot-01-helloworld-2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-01-helloworld/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-01-helloworld/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-05-adminserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-05-web-01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-05-web-01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-05-web-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-09-customer-starter/atguigu-hello-spring-boot-starter-autoconfigure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-09-features-profile/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-09-hello-test/src/main/java" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/boot-09-customer-starter/atguigu-hello-spring-boot-starter/atguigu-hello-spring-boot-starter.iml" filepath="$PROJECT_DIR$/boot-09-customer-starter/atguigu-hello-spring-boot-starter/atguigu-hello-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-09-customer-starter/atguigu-hello-spring-boot-starter-autoconfigure/atguigu-hello-spring-boot-starter-autoconfigure.iml" filepath="$PROJECT_DIR$/boot-09-customer-starter/atguigu-hello-spring-boot-starter-autoconfigure/atguigu-hello-spring-boot-starter-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-01-helloworld/boot-01-helloworld.iml" filepath="$PROJECT_DIR$/boot-01-helloworld/boot-01-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-01-helloworld-2/boot-01-helloworld-2.iml" filepath="$PROJECT_DIR$/boot-01-helloworld-2/boot-01-helloworld-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-05-adminserver/boot-05-adminserver.iml" filepath="$PROJECT_DIR$/boot-05-adminserver/boot-05-adminserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-05-web-01/boot-05-web-01.iml" filepath="$PROJECT_DIR$/boot-05-web-01/boot-05-web-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-05-web-admin/boot-05-web-admin.iml" filepath="$PROJECT_DIR$/boot-05-web-admin/boot-05-web-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-09-features-profile/boot-09-features-profile.iml" filepath="$PROJECT_DIR$/boot-09-features-profile/boot-09-features-profile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-09-hello-test/boot-09-hello-test.iml" filepath="$PROJECT_DIR$/boot-09-hello-test/boot-09-hello-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springboot2.iml" filepath="$PROJECT_DIR$/.idea/springboot2.iml" />
+    </modules>
+  </component>
+</project>
