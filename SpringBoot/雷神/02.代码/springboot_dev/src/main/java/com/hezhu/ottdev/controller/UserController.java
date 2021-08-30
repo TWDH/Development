@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/user")
 public class UserController {
 
-    @GetMapping("/user/index")
+    @GetMapping("/index")
     public String userIndex() {
         return "This is userIndex";
     }

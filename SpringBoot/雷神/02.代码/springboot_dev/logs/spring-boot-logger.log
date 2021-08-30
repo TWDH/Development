@@ -1,0 +1,169 @@
+2021-08-29 20:47:52,666 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting OttdevApplication using Java 15.0.1 on DESKTOP-RVPIET4 with PID 2368 (E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev\target\classes started by HeZhu in E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev)
+2021-08-29 20:47:52,669 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-29 20:47:52,704 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-29 20:47:52,704 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-29 20:47:53,327 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-29 20:47:53,337 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-29 20:47:53,337 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-29 20:47:53,338 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-29 20:47:53,386 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-29 20:47:53,386 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 681 ms
+2021-08-29 20:47:53,612 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-29 20:47:53,621 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-29 20:47:53,639 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-29 20:47:53,646 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OttdevApplication in 1.389 seconds (JVM running for 2.0)
+2021-08-29 21:25:16,966 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting OttdevApplication using Java 15.0.1 on DESKTOP-RVPIET4 with PID 24144 (E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev\target\classes started by HeZhu in E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev)
+2021-08-29 21:25:16,968 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-29 21:25:17,002 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-29 21:25:17,002 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-29 21:25:17,365 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting OttdevApplication using Java 15.0.1 on DESKTOP-RVPIET4 with PID 28308 (E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev\target\classes started by HeZhu in E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev)
+2021-08-29 21:25:17,367 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-29 21:25:17,399 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-29 21:25:17,399 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-29 21:25:17,761 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-29 21:25:17,775 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:25:17,775 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-29 21:25:17,775 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-29 21:25:17,838 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-29 21:25:17,838 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 835 ms
+2021-08-29 21:25:18,050 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-29 21:25:18,056 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:25:18,056 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-29 21:25:18,056 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-29 21:25:18,075 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-29 21:25:18,086 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:25:18,103 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-29 21:25:18,103 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 703 ms
+2021-08-29 21:25:18,105 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-29 21:25:18,113 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OttdevApplication in 1.53 seconds (JVM running for 2.533)
+2021-08-29 21:25:18,292 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2021-08-29 21:25:18,301 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:25:18,304 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-08-29 21:25:18,306 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Pausing ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:25:18,306 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-08-29 21:25:18,310 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:25:18,311 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Destroying ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:25:18,315 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-29 21:25:18,324 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-08-29 21:25:54,562 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting OttdevApplication using Java 15.0.1 on DESKTOP-RVPIET4 with PID 9784 (E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev\target\classes started by HeZhu in E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev)
+2021-08-29 21:25:54,564 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-29 21:25:54,590 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-29 21:25:54,591 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-29 21:25:55,150 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-29 21:25:55,156 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:25:55,157 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-29 21:25:55,157 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-29 21:25:55,205 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-29 21:25:55,206 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 615 ms
+2021-08-29 21:25:55,459 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-29 21:25:55,472 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:25:55,494 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-29 21:25:55,505 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OttdevApplication in 1.269 seconds (JVM running for 1.755)
+2021-08-29 21:26:09,923 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-29 21:26:09,924 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-29 21:26:09,925 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-29 21:28:20,302 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting OttdevApplication using Java 15.0.1 on DESKTOP-RVPIET4 with PID 33956 (E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev\target\classes started by HeZhu in E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev)
+2021-08-29 21:28:20,307 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-29 21:28:20,351 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-29 21:28:20,352 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-29 21:28:20,919 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-29 21:28:20,925 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:28:20,925 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-29 21:28:20,925 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-29 21:28:20,974 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-29 21:28:20,974 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 621 ms
+2021-08-29 21:28:21,196 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-29 21:28:21,209 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:28:21,229 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-29 21:28:21,236 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OttdevApplication in 1.226 seconds (JVM running for 1.692)
+2021-08-29 21:28:36,796 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-29 21:28:36,796 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-29 21:28:36,796 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-08-29 21:28:36,847 TRACE org.zalando.logbook.DefaultHttpLogWriter [http-nio-8080-exec-1] {"origin":"remote","type":"request","correlation":"dee64388eb52e9c3","protocol":"HTTP/1.1","remote":"0:0:0:0:0:0:0:1","method":"GET","uri":"http://localhost:8080/user/login","host":"localhost","path":"/user/login","scheme":"http","port":"8080","headers":{"accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"],"accept-encoding":["gzip, deflate, br"],"accept-language":["zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"],"cache-control":["max-age=0"],"connection":["keep-alive"],"cookie":["JSESSIONID=F8C91485B3C0769F28A1D44C5C013FE9"],"host":["localhost:8080"],"sec-ch-ua":["\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\""],"sec-ch-ua-mobile":["?0"],"sec-fetch-dest":["document"],"sec-fetch-mode":["navigate"],"sec-fetch-site":["none"],"sec-fetch-user":["?1"],"upgrade-insecure-requests":["1"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"]}}
+2021-08-29 21:28:36,921 TRACE org.zalando.logbook.DefaultHttpLogWriter [http-nio-8080-exec-1] {"origin":"local","type":"response","correlation":"dee64388eb52e9c3","duration":117,"protocol":"HTTP/1.1","status":200,"headers":{"Connection":["keep-alive"],"Content-Length":["13"],"Content-Type":["text/html;charset=UTF-8"],"Date":["Mon, 30 Aug 2021 01:28:36 GMT"],"Keep-Alive":["timeout=60"],"Set-Cookie":["JSESSIONID=1401D21EDEDE04E51D4EE29D6FDC0CEF; Path=/; HttpOnly"]},"body":"Login Success"}
+2021-08-29 21:59:48,790 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting OttdevApplication using Java 15.0.1 on DESKTOP-RVPIET4 with PID 32412 (E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev\target\classes started by HeZhu in E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev)
+2021-08-29 21:59:48,793 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-29 21:59:48,826 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-29 21:59:48,827 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-29 21:59:49,418 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-29 21:59:49,425 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:59:49,426 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-29 21:59:49,426 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-29 21:59:49,480 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-29 21:59:49,480 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 653 ms
+2021-08-29 21:59:49,719 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-29 21:59:49,731 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-29 21:59:49,749 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-29 21:59:49,757 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OttdevApplication in 1.241 seconds (JVM running for 1.671)
+2021-08-29 22:00:08,801 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-29 22:00:08,802 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-29 22:00:08,803 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-29 22:00:08,852 TRACE org.zalando.logbook.DefaultHttpLogWriter [http-nio-8080-exec-1] {"origin":"remote","type":"request","correlation":"e72ff89aa5a636f8","protocol":"HTTP/1.1","remote":"0:0:0:0:0:0:0:1","method":"GET","uri":"http://localhost:8080/user/login","host":"localhost","path":"/user/login","scheme":"http","port":"8080","headers":{"accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"],"accept-encoding":["gzip, deflate, br"],"accept-language":["zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"],"cache-control":["max-age=0"],"connection":["keep-alive"],"cookie":["JSESSIONID=1401D21EDEDE04E51D4EE29D6FDC0CEF"],"host":["localhost:8080"],"sec-ch-ua":["\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\""],"sec-ch-ua-mobile":["?0"],"sec-fetch-dest":["document"],"sec-fetch-mode":["navigate"],"sec-fetch-site":["none"],"sec-fetch-user":["?1"],"upgrade-insecure-requests":["1"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"]}}
+2021-08-29 22:00:08,919 TRACE org.zalando.logbook.DefaultHttpLogWriter [http-nio-8080-exec-1] {"origin":"local","type":"response","correlation":"e72ff89aa5a636f8","duration":109,"protocol":"HTTP/1.1","status":200,"headers":{"Connection":["keep-alive"],"Content-Length":["13"],"Content-Type":["text/html;charset=UTF-8"],"Date":["Mon, 30 Aug 2021 02:00:08 GMT"],"Keep-Alive":["timeout=60"],"Set-Cookie":["JSESSIONID=EA873D4548BE8C7C95802BB7D7C87269; Path=/; HttpOnly"]},"body":"Login Success"}
+2021-08-29 22:12:20,838 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting OttdevApplication using Java 15.0.1 on DESKTOP-RVPIET4 with PID 17932 (E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev\target\classes started by HeZhu in E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev)
+2021-08-29 22:12:20,840 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-29 22:12:20,872 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-29 22:12:20,873 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-29 22:12:21,419 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-29 22:12:21,425 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-29 22:12:21,425 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-29 22:12:21,425 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-29 22:12:21,476 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-29 22:12:21,476 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 603 ms
+2021-08-29 22:12:21,701 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-29 22:12:21,712 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-29 22:12:21,729 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-29 22:12:21,737 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OttdevApplication in 1.203 seconds (JVM running for 1.747)
+2021-08-29 22:12:34,161 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting OttdevApplication using Java 15.0.1 on DESKTOP-RVPIET4 with PID 22380 (E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev\target\classes started by HeZhu in E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev)
+2021-08-29 22:12:34,163 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-29 22:12:34,192 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-29 22:12:34,193 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-29 22:12:34,879 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-29 22:12:34,885 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-29 22:12:34,886 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-29 22:12:34,886 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-29 22:12:34,945 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-29 22:12:34,945 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 752 ms
+2021-08-29 22:12:47,347 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-29 22:12:47,362 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-29 22:12:47,381 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-29 22:12:47,389 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OttdevApplication in 13.544 seconds (JVM running for 14.274)
+2021-08-29 22:13:02,779 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-29 22:13:02,779 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-29 22:13:02,781 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-29 22:13:02,839 TRACE org.zalando.logbook.DefaultHttpLogWriter [http-nio-8080-exec-1] {"origin":"remote","type":"request","correlation":"93bddaff8a06218f","protocol":"HTTP/1.1","remote":"0:0:0:0:0:0:0:1","method":"GET","uri":"http://localhost:8080/user/login","host":"localhost","path":"/user/login","scheme":"http","port":"8080","headers":{"accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"],"accept-encoding":["gzip, deflate, br"],"accept-language":["zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"],"cache-control":["max-age=0"],"connection":["keep-alive"],"cookie":["JSESSIONID=EA873D4548BE8C7C95802BB7D7C87269"],"host":["localhost:8080"],"sec-ch-ua":["\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\""],"sec-ch-ua-mobile":["?0"],"sec-fetch-dest":["document"],"sec-fetch-mode":["navigate"],"sec-fetch-site":["none"],"sec-fetch-user":["?1"],"upgrade-insecure-requests":["1"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"]}}
+2021-08-29 22:13:02,910 TRACE org.zalando.logbook.DefaultHttpLogWriter [http-nio-8080-exec-1] {"origin":"local","type":"response","correlation":"93bddaff8a06218f","duration":120,"protocol":"HTTP/1.1","status":200,"headers":{"Connection":["keep-alive"],"Content-Length":["13"],"Content-Type":["text/html;charset=UTF-8"],"Date":["Mon, 30 Aug 2021 02:13:02 GMT"],"Keep-Alive":["timeout=60"],"Set-Cookie":["JSESSIONID=A8AAF9B0C8D6A2FB337552FAA561E457; Path=/; HttpOnly"]},"body":"Login Success"}
+2021-08-29 22:13:36,909 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting OttdevApplication using Java 15.0.1 on DESKTOP-RVPIET4 with PID 35396 (E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev\target\classes started by HeZhu in E:\3.Java\Development\SpringBoot\雷神\02.代码\springboot_dev)
+2021-08-29 22:13:36,912 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-29 22:13:36,941 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-29 22:13:36,941 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-29 22:13:37,547 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-29 22:13:37,553 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-29 22:13:37,554 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-29 22:13:37,554 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-29 22:13:37,611 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-29 22:13:37,612 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 670 ms
+2021-08-29 22:13:37,876 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-29 22:13:37,894 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-29 22:13:37,913 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-29 22:13:37,920 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OttdevApplication in 1.328 seconds (JVM running for 1.951)
+2021-08-29 22:13:48,122 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-29 22:13:48,122 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-29 22:13:48,123 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-29 22:15:03,090 TRACE org.zalando.logbook.DefaultHttpLogWriter [http-nio-8080-exec-1] {"origin":"remote","type":"request","correlation":"89480359eca112c3","protocol":"HTTP/1.1","remote":"0:0:0:0:0:0:0:1","method":"GET","uri":"http://localhost:8080/user/login","host":"localhost","path":"/user/login","scheme":"http","port":"8080","headers":{"accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"],"accept-encoding":["gzip, deflate, br"],"accept-language":["zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"],"cache-control":["max-age=0"],"connection":["keep-alive"],"cookie":["JSESSIONID=A8AAF9B0C8D6A2FB337552FAA561E457"],"host":["localhost:8080"],"sec-ch-ua":["\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\""],"sec-ch-ua-mobile":["?0"],"sec-fetch-dest":["document"],"sec-fetch-mode":["navigate"],"sec-fetch-site":["none"],"sec-fetch-user":["?1"],"upgrade-insecure-requests":["1"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"]},"body":"This is Replace"}
+2021-08-29 22:15:03,117 TRACE org.zalando.logbook.DefaultHttpLogWriter [http-nio-8080-exec-1] {"origin":"local","type":"response","correlation":"89480359eca112c3","duration":74985,"protocol":"HTTP/1.1","status":200,"headers":{"Connection":["keep-alive"],"Content-Length":["13"],"Content-Type":["text/html;charset=UTF-8"],"Date":["Mon, 30 Aug 2021 02:15:03 GMT"],"Keep-Alive":["timeout=60"]},"body":"Login Success"}
