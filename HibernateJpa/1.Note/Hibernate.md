@@ -93,3 +93,39 @@ public static class Book {
 }
 ```
 
+## 简单查询
+
+- **find+全局修饰+By+实体属性名称+限定词+连接词+（其他实体属性）+OrderBy+排序属性+排序方向**
+
+- ```sql
+  findDistinctByFirstNameIgnoreCaseAndLastNameOrderByAgeDesc(String firstName,String lastName)
+  ```
+
+- 全局修饰符：distinct,top,first
+
+- 关键词（限定词+连接词）：IsNull,IsNotNull,Like,NotLike,Containing,In,NotIn,IgnoreCase,Between,Equals,
+
+- LessThan,GreaterThan,After,Before
+
+- 排序方向：Asc,Desc
+
+### 嵌套实体方法命名规则：
+
+- ```java
+  List<Person> findByAddress_ZipCode(ZipCode zipCode)
+  ```
+
+- 构词法：主实体中的子实体名称 + _ + 子实体属性名称
+
+### 通过关键词构造方法如下：
+
+- ```
+  // 对应sql：  select * from user where phone like '136%' and address like '%路%'
+  findByPhoneStartingWithAndAdressContaining(String phone, String address);
+  ```
+
+![img](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/20180309101755260)
+
+![img](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/20180309101805277)
+
+![在这里插入图片描述](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/20200204134146367.png)

@@ -1,0 +1,80 @@
+# Hibernate CRUD
+
+- HibernateTemplate 方法
+
+## 1. HQL
+
+- 语法：将原来 sql 中的**表与字段**，换成**对象与属性**
+- ![image-20210831163617026](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831163617026.png)
+
+## 2. SQL-Hibernate
+
+- ![image-20210831164400244](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831164400244.png)
+
+## 3. QBC (Query By Criteria)
+
+- 去掉 sql 语句影子
+- ![image-20210831164730640](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831164730640.png)
+
+# Hibernate-JPA CRUD
+
+- HibernateJpa方法
+  - EntityManager
+
+## 1. CRUD
+
+- 查询 `find()`
+  - ![image-20210831165250963](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831165250963.png)
+- 增加 `persist()`
+  - ![image-20210831165401470](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831165401470.png)
+- 修改 `merge()`
+  - ![image-20210831165422455](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831165422455.png)
+- 删除 `remove()`
+  - ![image-20210831165437487](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831165437487.png)
+
+## 2. HQL
+
+- ![image-20210831170449441](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831170449441.png)
+
+## 3. SQL
+
+- ![image-20210831170659849](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831170659849.png)
+
+## 4. QBC
+
+- ![image-20210831171116129](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20210831171116129.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
