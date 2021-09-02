@@ -18,7 +18,7 @@ public class HibernateJpaApplication {
         SpringApplication.run(HibernateJpaApplication.class, args);
     }
 
-    @Bean
+    /*@Bean
     public CommandLineRunner demo(CustomerRepository repository) {
         return (args) -> {
 
@@ -58,5 +58,5 @@ public class HibernateJpaApplication {
             log.info("");
         };
     }
-
+*/
 }
