@@ -20,13 +20,16 @@ class HibernateJpaApplicationTests {
 
     @Test
     void contextLoads() {
+
         Specification<Customer> specification = new Specification<Customer>() {
             @Override
-            public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
-                Predicate predicate = criteriaBuilder.equal(root.get("firstName"), "王");
-                return predicate;
+            public Predicate toPredicate(Root<Customer> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                return null;
             }
         };
+
+        Specification<Customer> tSpecification = Specification.where(specification);
+
     }
 
 }
