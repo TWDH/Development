@@ -1,2 +1,3 @@
+com\hezhu\security\config\ReloadMessageConfig.class
 com\hezhu\security\config\SpringSecurityConfig.class
 com\hezhu\security\Controller\CustomLoginController.class
