@@ -1,0 +1,99 @@
+<!-- 引入图片 -->
+<img src="assets/images/mh.png" alt="">
+
+<!-- 引入网络图片 -->
+<img [src]="picUrl" alt="">
+
+<!-- 循环数据，显示数据索引 -->
+<ul>
+    <li *ngFor="let item of list; let key = index">
+        {{key}} -- {{item.title}}
+    </li>
+</ul>
+
+
+<!-- 条件判断语句 *ngIf -->
+<div *ngIf="flag">
+    <img src="assets/images/g.jpg" alt="">
+</div>
+
+<div *ngIf="!flag">
+    <img src="assets/images/s.jpg" alt="">
+</div>
+
+<!-- if 和 for 结合 -->
+<ul>
+    <li *ngFor="let item of list; let key = index">
+        <span *ngIf="key==1" class="red">
+            {{key}} -- {{item.title}}
+        </span>
+
+        <span *ngIf="key!=1" class="blue">
+            {{key}} -- {{item.title}}
+        </span>
+    </li>
+</ul>
+
+<!-- *ngSwitch -->
+<div [ngSwitch]="orderStatus">
+    <div *ngSwitchCase="1">已支付</div>
+    <div *ngSwitchCase="2">确认订单</div>
+    <div *ngSwitchCase="3">已发货</div>
+    <div *ngSwitchCase="4">已收货</div>
+
+    <div *ngSwitchDefault>无效订单-Default</div>
+</div>
+
+<!-- [ngClass], [ngStyle] -->
+<!-- 尽量不用 dom 来改变 class -->
+<div [ngClass]="{'red': flag, 'blue':!flag}">
+    <!-- flag=false, 不显示red，显示blue；flag=true，显示red,不显示blue -->
+    动态绑定class
+</div>
+
+<ul>
+    <li *ngFor="let item of list; let key = index" [ngClass]="{'red': key==0, 'orange' : key==1}">
+            {{key}} -- {{item.title}}
+    </li>
+</ul>
+
+
+<!-- [ngStyle] -->
+<p [ngStyle]="{'color': 'purple'}">This is a P</p>
+
+
+<p [ngStyle]="{'color': attr}">This is a P2</p>
+
+<!-- 管道符 -->
+<h1>管道符</h1>
+{{today | date:'yyyy-MM-dd HH:mm:ss'}}
+
+<br>
+
+<!-- 执行事件 -->
+<button (click)="run()">执行事件</button>
+
+<br>
+<button (click)="updateData()">执行方法，获取数据</button>
+<br>
+<strong>{{title}}</strong>
+<br>
+
+
+<!-- 表单事件；事件对象 -->
+<!-- 监听键盘事件 -->
+<input type="text" (keydown)="keyDown($event)">
+
+<button (click)="dom($event)">dom换颜色</button>
+<br>
+
+<!-- 双向数据绑定 --- MVVM只针对表单 -->
+<h1>双向数据绑定</h1>
+<input type="text" [(ngModel)]='keywords'>
+<br>
+{{keywords}}
+<br>
+<button (click)="changeKeywords()">改变 keywords</button>
+
+
+

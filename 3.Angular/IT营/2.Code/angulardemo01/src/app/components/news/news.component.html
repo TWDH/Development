@@ -1,0 +1,67 @@
+<!-- <app-header></app-header>
+
+<h1>I am news</h1> -->
+
+<!-- 模板中绑定数据 -->
+<h2>{{title}}</h2>
+
+<!-- 模板中绑定属性 -->
+<!-- title: 鼠标移动到上面得到的信息 -->
+<div title="I am a div">
+    Mouse
+</div>
+
+<!-- 动态绑定ts中的student属性 -->
+<div [title] = "student">
+    张三
+</div>
+
+<!-- 模板中绑定 html: 解析html -->
+<div [innerHTML]='content' class="red">
+    模板中绑定 html: 解析html
+</div>
+
+<!-- 简单运算 -->
+<div>
+    1 + 2 = {{1 + 2}}
+</div>
+
+<!-- 数据循环 -->
+<ul>
+    <li *ngFor="let item of arr">  
+        {{item}}
+    </li>   
+</ul>
+
+<ul>
+    <li *ngFor="let item of list">
+        {{item}}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let item of items">
+        {{item}}
+    </li>
+</ul>
+
+<!-- 循环对象 -->
+<ul>
+    <li *ngFor="let item of userlist">
+        {{item.username}} --- {{item.age}}
+        
+    </li>
+</ul>
+
+<!-- 复杂循环 -->
+<ul>
+    <li *ngFor="let car of cars">
+        <h2>{{car.category}}</h2>
+        <ol>
+            <li *ngFor="let detail of car.details">
+                {{detail.type}} --- {{detail.price}}
+            </li>
+        </ol>
+
+    </li>
+</ul>
