@@ -2,7 +2,48 @@
 
 <div class="people_list">
     <ul>
-        <li>姓名：<input type="text" id="username" [(ngModel)]="peopleInfo.username"></li>
+        <!-- input -->
+        <li>姓名：
+            <input type="text" id="username" [(ngModel)]="peopleInfo.username">
+        </li>
+
+        <!-- radio -->
+        <li>性别：
+            <!-- ngModel = value 中的值，则选中; 双向数据绑定 -->
+            <!-- id 和 label 对应，这样选中文字就选中按钮 -->
+            <input type="radio" value="1" name="gender" id="gender1" [(ngModel)]="peopleInfo.gender"> <label for="gender1">男</label> 
+            <input type="radio" value="2" name="gender" id="gender2" [(ngModel)]="peopleInfo.gender"><label for="gender2">女</label> 
+        </li>
+
+        <!-- select -->
+        <li>
+            城市：
+            <!-- 选中的城市与 peopleInfo.city 双向绑定 -->
+            <select name="city" id="city" [(ngModel)]="peopleInfo.city">
+                <!-- value显示的是动态值 -->
+                <option [value]="city" *ngFor="let city of peopleInfo.cityList"> {{city}} </option>
+            </select>
+        </li>
+
+        <!-- checkbox 多选 -->
+        <li>
+            爱好：
+            <!-- 循环 span；每个span里面有 input -->
+            <span *ngFor="let hobby of peopleInfo.hobby; let key = index">
+                <!-- [id] 动态绑定，与 label 中的 for 对应 -->
+                <!-- `input` 的东西跟 `[(ngModel)]` 中的东西绑定；选中那个，那个变成 true -->
+                <input type="checkbox" [id]="'check'+key" [(ngModel)]="hobby.checked"><label [for]="'check'+key">hobby.title</label>
+                <!-- 空格 -->
+                &nbsp;
+            </span>
+        </li>
+
+        <!-- textarea -->
+        <li>
+            备注：
+            <textarea name="mark" id="mark" cols="30" rows="10" [(ngModel)]="peopleInfo.mark"></textarea>
+        </li>
+
     </ul>
 
     <button (click)="doSubmit()">获取表单内容</button>

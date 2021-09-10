@@ -1,0 +1,21 @@
+<div class="search">
+    <!-- 搜索 -->
+    <div class="mainSearch">
+        <!-- 输入搜索 -->
+        <input type="text" [(ngModel)]="keyword" (keyup)="doAdd($event)">
+
+    </div>
+    <!-- 分割线 -->
+    <hr>
+    <h2>待办事项</h2>
+    <!-- 历史表单 -->
+    <ul>
+        <li *ngFor="let item of todolist; let key = index">
+            <input type="checkbox">
+            {{item.title}} ------
+            <button (click)="deleteData(key)">×</button>
+        </li>
+    </ul>
+
+    <h2>已完成事项</h2>
+</div>

@@ -7,18 +7,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  public peopleInfo:any = {
-    username:'He Zhu'
+  public peopleInfo: any = {
+    username: 'He Zhu',
+    gender: '1',
+    cityList: ['Beijing', 'ShangHai', 'ShenZhen'],
+    city: 'Beijing',
+    // hobby 对象
+    hobby: [
+      {
+        title: 'eat',
+        checked: false,
+      },
+      {
+        title: 'sleep',
+        checked: false,
+
+      },
+      {
+        title: 'coding',
+        checked: false
+      }
+    ],
+    mark: '',
   }
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
 
-  doSubmit(){
+  doSubmit() {
     // jQuery dom 获取表单中的值
-    let nameDom:any = document.getElementById('username');
+    let nameDom: any = document.getElementById('username');
     console.log(nameDom.value)
 
     // 双向数据绑定

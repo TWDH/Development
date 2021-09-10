@@ -2,6 +2,10 @@ h2{
     text-align: center;
 }
 
+ul li {
+    list-style: none; 
+}
+
 .people_list{
     width: 400px;
     margin: 100px auto;
@@ -9,18 +13,18 @@ h2{
 
     border: 1px solid #eee;
 
-    li{
-        height: 50px;
-        line-height: 50px;
-        input{
-            width: 300px;
-            height: 30px;
-        }
-    }
+    // li{
+    //     height: 50px;
+    //     line-height: 50px;
+    //     input{
+    //         width: 300px;
+    //         height: 30px;
+    //     }
+    // }
 
-    button{
-        width: 100px;
-        height: 30px;
+    // button{
+    //     width: 100px;
+    //     height: 30px;
         
-    }
+    // }
 }
