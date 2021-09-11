@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="565678c5-54f5-4d1a-8fe7-6b3e3211c5cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../01.笔记/03.web.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../01.笔记/03.web.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boot-05-web-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../boot-05-web-01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boot-05-web-01/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../boot-05-web-01/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:\Software\Intellij\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mblHlCV7e6IOOZNiiecdqHmQXs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java\2.SSM\05.SpringBoot\02.代码\chapter1\boot-01-helloworld\src\main\resources" />
+      <recent name="E:\Java\2.SSM\05.SpringBoot\02.代码\chapter1\boot-01-helloworld\src\main\java\com\atguigu\boot" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="boot-01-helloworld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.boot.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MainApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="565678c5-54f5-4d1a-8fe7-6b3e3211c5cc" name="Default Changelist" comment="" />
+      <created>1609770087424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609770087424</updated>
+      <workItem from="1609770088569" duration="11688000" />
+      <workItem from="1609896217635" duration="13000" />
+      <workItem from="1610746265566" duration="785000" />
+      <workItem from="1610747185513" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2610" y="575" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609880184314">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state x="2610" y="575" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1609880184314" />
+    <state x="2660" y="584" key="FileChooserDialogImpl" timestamp="1609896229175">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="584" key="FileChooserDialogImpl/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1609896229175" />
+    <state width="1365" height="250" key="GridCell.Tab.0.bottom" timestamp="1610747173767">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state width="1365" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1610747173767" />
+    <state width="1365" height="250" key="GridCell.Tab.0.center" timestamp="1610747173767">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state width="1365" height="250" key="GridCell.Tab.0.center/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1610747173767" />
+    <state width="1365" height="250" key="GridCell.Tab.0.left" timestamp="1610747173767">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state width="1365" height="250" key="GridCell.Tab.0.left/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1610747173767" />
+    <state width="1365" height="250" key="GridCell.Tab.0.right" timestamp="1610747173767">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state width="1365" height="250" key="GridCell.Tab.0.right/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1610747173767" />
+    <state width="1365" height="250" key="GridCell.Tab.1.bottom" timestamp="1610747173768">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state width="1365" height="250" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1610747173768" />
+    <state width="1365" height="250" key="GridCell.Tab.1.center" timestamp="1610747173768">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state width="1365" height="250" key="GridCell.Tab.1.center/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1610747173768" />
+    <state width="1365" height="250" key="GridCell.Tab.1.left" timestamp="1610747173768">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state width="1365" height="250" key="GridCell.Tab.1.left/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1610747173768" />
+    <state width="1365" height="250" key="GridCell.Tab.1.right" timestamp="1610747173768">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state width="1365" height="250" key="GridCell.Tab.1.right/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1610747173768" />
+    <state x="2234" y="422" width="1158" height="711" key="SettingsEditor" timestamp="1609879136893">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state x="2234" y="422" width="1158" height="711" key="SettingsEditor/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1609879136893" />
+    <state x="2303" y="565" width="1153" height="641" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1609880165610">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state x="2303" y="565" width="1153" height="641" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1609880165610" />
+    <state x="2786" y="560" width="596" height="594" key="find.popup" timestamp="1609773389803">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state x="2786" y="560" width="596" height="594" key="find.popup/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1609773389803" />
+    <state x="2254" y="489" key="new project wizard" timestamp="1609882466299">
+      <screen x="1920" y="309" width="1920" height="1040" />
+    </state>
+    <state x="2254" y="489" key="new project wizard/0.0.1920.1040/1920.309.1920.1040@1920.309.1920.1040" timestamp="1609882466299" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException" package="org.springframework.beans.factory.xml" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

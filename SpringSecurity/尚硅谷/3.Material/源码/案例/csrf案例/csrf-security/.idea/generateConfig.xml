@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GenerateConfig">
+    <option name="packageName" value="" />
+    <option name="passWord" value="root" />
+    <option name="path" value="$PROJECT_DIR$/src/main/java" />
+    <option name="tableNames" value="" />
+    <option name="url" value="" />
+    <option name="userName" value="root" />
+  </component>
+</project>

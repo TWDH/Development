@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>用户登录界面</title>
+</head>
+<body class="text-center">
+    <form class="form-signin" th:method="post" th:action="@{/userLogin}">
+        <h1 class="h3 mb-3 font-weight-normal">请登录</h1>
+
+        <input type="text" class="form-control" placeholder="用户名" required="" autofocus="" name="username">
+        <input type="password" class="form-control" placeholder="密码" required="" name="password">
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" name="rememberme"> 记住我
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" >登录</button>
+    </form>
+</body>
+</html>
