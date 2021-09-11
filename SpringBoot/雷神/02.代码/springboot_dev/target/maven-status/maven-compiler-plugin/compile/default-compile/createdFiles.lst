@@ -1,7 +1,0 @@
-com\hezhu\ottdev\controller\UserController.class
-com\hezhu\ottdev\config\InterceptorConfig.class
-com\hezhu\ottdev\OttdevApplication.class
-com\hezhu\ottdev\config\FilterConfig.class
-com\hezhu\ottdev\filter\MyFilter.class
-com\hezhu\ottdev\interceptor\MyInterceptor.class
-com\hezhu\ottdev\entity\User.class
