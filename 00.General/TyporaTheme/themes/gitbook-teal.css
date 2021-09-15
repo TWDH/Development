@@ -502,7 +502,7 @@ table tr td:last-child {
 }
 
 .cm-s-inner .cm-qualifier{
-    color: #ffb938;
+    color: #CC7832;
 }
 
 .cm-s-inner.CodeMirror {
@@ -547,7 +547,8 @@ table tr td:last-child {
 }
 
 .cm-s-inner span.cm-keyword {
-    color: #f92672;
+    /* color: #f92672; */
+    color: #CC7832;
 }
 
 .cm-s-inner span.cm-builtin {
@@ -555,24 +556,30 @@ table tr td:last-child {
 }
 
 .cm-s-inner span.cm-string {
-    color: #e6db74;
+    color: #629755;
+}
+
+.cm-s-inner .cm-string-2 {
+    color: #a9b7c6;
 }
 
 .cm-s-inner span.cm-variable {
-    color: #fff;
+    color: #a9b7c6;
 }
 
 .cm-s-inner span.cm-variable-2 {
-    color: #fff;
+    color: #a9b7c6;
 }
 
 .cm-s-inner span.cm-variable-3,
 .cm-s-inner span.cm-type {
-    color: #f92672;
+    /* color: #f92672; */
+    color: #ffc66d;
 }
 
 .cm-s-inner span.cm-def {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: rgba(255, 255, 255, 0.753);
 }
 
 .cm-s-inner span.cm-bracket {
@@ -596,6 +603,10 @@ table tr td:last-child {
     color: #f8f8f0;
 }
 
+.cm-s-inner .cm-meta {
+    color: #BBB529;
+}
+
 .cm-s-inner .CodeMirror-matchingbracket {
     text-decoration: underline;
     color: white !important;
@@ -603,6 +614,47 @@ table tr td:last-child {
 
 .CodeMirror div.CodeMirror-cursor {
     border-left: 1px solid white;
+}
+
+/* 代码块中设置 */
+.md-fences,
+tt {
+    border-radius: 0.3rem;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+code {
+    padding: 0.2rem 0.4rem;
+    background-color: var(--borders);
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.md-fences .CodeMirror div.CodeMirror-cursor,
+#typora-source div.CodeMirror-cursor {
+    border-left: solid 1px white;
+}
+
+.md-fences {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    /*background-color: var(--codeboxes);*/
+}
+
+#typora-source {
+    background-color: var(--codeboxes);
+    color: white;
+    font-size: 0.9rem;
+}
+
+.code-tooltip .ty-input{
+    color: #CC7832;
 }
 
 /*DIAGRAMS*/
@@ -845,7 +897,8 @@ input[type="checkbox"]:checked:after {
 }
 
 .md-rawblock-input span.cm-keyword {
-    color: #156db6;
+    /* color: #156db6; */
+    color: #CC7832;
 }
 
 .md-mathblock-input span.cm-bracket {
