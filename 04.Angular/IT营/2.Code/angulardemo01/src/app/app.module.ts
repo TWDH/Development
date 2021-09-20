@@ -10,6 +10,13 @@ import { FormComponent } from './components/form/form.component';
 import { SearchComponent } from './components/search/search.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 
+// 引入并配置服务
+import {StorageService} from './services/storage.service';
+import { DomComponent } from './components/dom/dom.component';
+import { ViewchildComponent } from './components/viewchild/viewchild.component';
+import { TransitionComponent } from './components/transition/transition.component'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +25,16 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
     HeaderComponent,
     FormComponent,
     SearchComponent,
-    TodoListComponent
+    TodoListComponent,
+    DomComponent,
+    ViewchildComponent,
+    TransitionComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [StorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

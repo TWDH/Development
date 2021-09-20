@@ -41,10 +41,20 @@ export class TodoListComponent implements OnInit {
     // 点击回车
     if(e.keyCode == 13){
       // 当前输入加入 todolist
-      this.todolist.push({
-        title: this.keyword,
-        status: 0 // 0：待办事项；1：已完成事项
-      });
+      // 不存在则加入列表
+      
+      
+      if(!this.todolistHasKeyword(this.todolist, this.keyword)){
+          this.todolist.push({
+          title: this.keyword,
+          status: 0 // 0：待办事项；1：已完成事项
+        });
+      }
+      else{
+        alert("数据已存在");
+        this.keyword='';
+      }
+      
 
       this.keyword=''
     }
@@ -52,6 +62,29 @@ export class TodoListComponent implements OnInit {
 
   deleteData(key){
     this.todolist.splice(key, 1)
+  }
+
+  // 如果数组里面有keyword返回true，否则返回false
+  todolistHasKeyword(todolist:any, keyword:any){
+    // 异步
+    // todolist.foreach(value => {
+    //   if(value.title == keyword){
+    //     return true;
+    //   }
+    // })
+
+    if(!keyword){
+      return false;
+    }
+
+    for(var i = 0; i < todolist.length; i++){
+      if(this.todolist[i].title == keyword){
+          return true;
+      }
+      
+    }
+
+    return false;
   }
 
 }

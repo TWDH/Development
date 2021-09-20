@@ -1,21 +1,20 @@
 <div class="search">
-    <!-- 搜索 -->
-    <div class="mainSearch">
-        <!-- 输入搜索 -->
-        <input type="text" [(ngModel)]="keyword">
+  <h2>Search Component</h2>
+  <!-- 搜索 -->
+  <div class="mainSearch">
+    <!-- 输入搜索 -->
+    <input type="text" [(ngModel)]="keyword" />
 
-        <button (click)="doSearch()">
-            Search
-        </button>
-    </div>
-    <!-- 分割线 -->
-    <hr>
-    <!-- 历史表单 -->
-    <ul>
-        <li *ngFor="let history of historyList; let key = index">
-            {{history}} ----- 
-            <!-- 将当前 history 编号，传入方程 -->
-            <button (click)="deleteHistory(key)">×</button>
-        </li>
-    </ul>
+    <button (click)="doSearch()">Search</button>
+  </div>
+  <!-- 分割线 -->
+  <hr />
+  <!-- 历史表单 -->
+  <ul>
+    <li *ngFor="let history of historyList; let key = index">
+      {{ history }} -----
+      <!-- 将当前 history 编号，传入方程 -->
+      <button (click)="deleteHistory(key)">×</button>
+    </li>
+  </ul>
 </div>

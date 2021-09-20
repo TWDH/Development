@@ -1,29 +1,35 @@
 <div class="search">
-    <!-- 搜索 -->
-    <div class="mainSearch">
-        <!-- 输入搜索 -->
-        <input type="text" [(ngModel)]="keyword" (keyup)="doAdd($event)">
+  <!-- 搜索 -->
+  <div class="mainSearch">
+    <!-- 输入搜索 -->
+    <input type="text" [(ngModel)]="keyword" (keyup)="doAdd($event)" />
+  </div>
+  <!-- 分割线 -->
+  <hr />
+  <h2>待办事项</h2>
+  <!-- 历史表单 -->
+  <ul>
+    <!-- 如何 status = 1则隐藏；status = 0 则显示 -->
+    <li
+      *ngFor="let item of todolist; let key = index"
+      [hidden]="item.status == 1"
+    >
+      <input type="checkbox" [(ngModel)]="item.status" />
+      {{ item.title }} ------
+      <button (click)="deleteData(key)">×</button>
+    </li>
+  </ul>
 
-    </div>
-    <!-- 分割线 -->
-    <hr>
-    <h2>待办事项</h2>
-    <!-- 历史表单 -->
-    <ul>
-        <li *ngFor="let item of todolist; let key = index" [hidden]="item.status == 1">
-            <input type="checkbox" [(ngModel)] = "item.status">
-            {{item.title}} ------
-            <button (click)="deleteData(key)">×</button>
-        </li>
-    </ul>
-
-    <h2>已完成事项</h2>
-    <!-- 历史表单 -->
-    <ul>
-        <li *ngFor="let item of todolist; let key = index" [hidden]="item.status == 0">
-            <input type="checkbox" [(ngModel)] = "item.status">
-            {{item.title}} ------
-            <button (click)="deleteData(key)">×</button>
-        </li>
-    </ul>
+  <h2>已完成事项</h2>
+  <!-- 历史表单 -->
+  <ul>
+    <li
+      *ngFor="let item of todolist; let key = index"
+      [hidden]="item.status == 0"
+    >
+      <input type="checkbox" [(ngModel)]="item.status" />
+      {{ item.title }} ------
+      <button (click)="deleteData(key)">×</button>
+    </li>
+  </ul>
 </div>
