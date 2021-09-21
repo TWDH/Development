@@ -1,1 +1,13 @@
-<header>I am a header</header>
+<header>{{ title }} --- {{ msg }}</header>
+
+<br />
+
+<button (click)="getParentMsg()">子组件获取父组件传入的msg</button>
+
+<br />
+
+<button (click)="getParentRun()">子组件里面执行父组件的run方法</button>
+
+<br />
+
+<button (click)="getParentAll()">子组件里面执行父组件的全部</button>
