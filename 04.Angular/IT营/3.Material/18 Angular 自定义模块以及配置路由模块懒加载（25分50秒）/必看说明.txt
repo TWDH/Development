@@ -1,0 +1,20 @@
+注意：Angular最新版本中配置懒加载和以前版本有一些区别
+
+Angular10.x之前
+
+{
+  path:'user',
+  loadChildren:'./module/user/user.module#UserModule'   
+}
+
+
+
+Angular10.x之后
+
+{
+    path:'user',
+    loadChildren: () => import('./module/user/user.module').then(m => m.UserModule)
+}
+
+
+详细代码也可以参考大地老师教程源码

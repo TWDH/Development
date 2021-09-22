@@ -1,0 +1,25 @@
+管道相关帖子：http://bbs.itying.com/topic/5bf519657e9f5911d41f2a34
+
+
+1、使用angular自带管道格式化日期
+
+	 {{ data.add_time*1000 | date:'yyyy-MM-dd HH:mm:ss'}}
+
+
+2、自定义管道格式化日期
+	
+	1、 创建管道ng g pipe pipe/formattime
+
+	2、用到的模块引入并且声明
+
+		import { FormattimePipe } from '../../pipe/formattime.pipe';
+
+
+		@NgModule({
+ 			 declarations: [.....,FormattimePipe],
+
+		})
+	3、改自定义管道的方法
+
+	4、     {{ data.add_time*1000 | formattime}}
+

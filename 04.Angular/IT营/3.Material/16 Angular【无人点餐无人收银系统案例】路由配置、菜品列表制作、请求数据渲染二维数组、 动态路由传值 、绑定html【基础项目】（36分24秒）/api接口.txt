@@ -1,0 +1,4 @@
+¡–±Ì£∫http://a.itying.com/api/productlist
+
+
+œÍ«È£∫http://a.itying.com/api/productcontent?id=5ac1a22011f48140d0002955
