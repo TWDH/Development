@@ -492,128 +492,186 @@ table tr td:last-child {
 
 /*CODE*/
 
-/* ===== Code Blocks ===== */
-
-.md-fences {
-    border: 1px solid #696969;
-    border-radius: 5px;
-    padding: 5px;
-    background: #272822;
+.CodeMirror {
+    padding: 1rem;
+    font-family: var(--code-font-family);
 }
 
-.cm-s-inner .cm-qualifier{
-    color: #CC7832;
+.cm-s-inner .CodeMirror-gutters {
+    background-color: none;
+    border-right: none;
+    border-radius: 0px;
+    width: 2rem;
+    color: white;
+    height: 100%;
+    white-space: nowrap;
 }
 
-.cm-s-inner.CodeMirror {
-    color: #ffffff;
+.cm-s-inner .CodeMirror-gutter-wrapper {
+    left: -2.75rem !important;
 }
 
-.cm-s-inner span.cm-comment {
-    color: #75715e;
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+    border-left: solid 2px var(--light-text-color-darker);
 }
 
-.cm-s-inner span.cm-atom {
-    color: #ae81ff;
+.CodeMirror.cm-s-typora-default .CodeMirror-activeline-background {
+    background-color: var(--codeboxes-lighter);
+}
+
+.cm-s-inner .CodeMirror-cursor {
+    color: white;
+    border-left: solid 1px white;
+}
+
+.CodeMirror-linenumber {
+    color: var(--bg-color);
+    opacity: 0.6;
+    width: 1.9532rem !important;
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cm-error {
+    color: var(--danger-color);
+}
+
+.cm-s-inner span.cm-comment,
+.cm-s-typora-default span.cm-comment,
+.cm-s-typora-default span.cm-code {
+    color: #9daab6;
+}
+
+.cm-s-inner span.cm-string,
+.cm-s-inner span.cm-string-2 {
+    color: #71a7ff;
 }
 
 .cm-s-inner span.cm-number {
-    color: #ae81ff;
+    color: #ff9d3d;
 }
 
-.cm-s-inner span.cm-operator {
-    color: #fff;
-}
-
-.cm-s-inner span.cm-comment.cm-attribute {
-    color: #97b757;
-}
-
-.cm-s-inner span.cm-comment.cm-def {
-    color: #bc9262;
-}
-
-.cm-s-inner span.cm-comment.cm-tag {
-    color: #bc6283;
-}
-
-.cm-s-inner span.cm-comment.cm-type {
-    color: #5998a6;
-}
-
-.cm-s-inner span.cm-property,
-.cm-s-inner span.cm-attribute {
-    color: #a6e22e;
-}
-
-.cm-s-inner span.cm-keyword {
-    /* color: #f92672; */
-    color: #CC7832;
-}
-
-.cm-s-inner span.cm-builtin {
-    color: #f92672;
-}
-
-.cm-s-inner span.cm-string {
-    color: #629755;
-}
-
-.cm-s-inner .cm-string-2 {
-    color: #a9b7c6;
-}
-
-.cm-s-inner span.cm-variable {
-    color: #a9b7c6;
-}
-
+.cm-s-inner span.cm-variable,
 .cm-s-inner span.cm-variable-2 {
-    color: #a9b7c6;
-}
-
-.cm-s-inner span.cm-variable-3,
-.cm-s-inner span.cm-type {
-    /* color: #f92672; */
-    color: #ffc66d;
+    color: white;
 }
 
 .cm-s-inner span.cm-def {
-    /* color: #ffffff; */
-    color: rgba(255, 255, 255, 0.753);
+    color: white;
 }
 
-.cm-s-inner span.cm-bracket {
+.cm-s-inner span.cm-operator {
+    color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-keyword {
+    color: #61e3a5;
+}
+
+.cm-s-inner span.cm-atom {
+    color: #bd93f9;
+}
+
+.cm-s-inner span.cm-meta {
     color: #f8f8f2;
 }
 
-.cm-s-inner span.cm-tag {
-    color: #f92672;
+.cm-s-inner span.cm-link,
+.cm-s-typora-default .cm-link {
+    color: var(--primary-color);
 }
 
-.cm-s-inner span.cm-header {
-    color: #ae81ff;
+.cm-s-inner span.cm-tag,
+.cm-s-inner .cm-header {
+    color: #b4f6d6;
 }
 
-.cm-s-inner span.cm-link {
-    color: #ae81ff;
+.cm-s-inner span.cm-attribute {
+    color: #ff9d3d;
 }
 
-.cm-s-inner span.cm-error {
-    background: #f92672;
-    color: #f8f8f0;
+.cm-s-inner span.cm-qualifier,
+.cm-s-inner span.cm-type,
+.cm-s-inner span.cm-variable-3 {
+    color: #82ee9d;
 }
 
-.cm-s-inner .cm-meta {
-    color: #BBB529;
+.cm-s-inner span.cm-property {
+    color: #ffd6ad;
 }
 
-.cm-s-inner .CodeMirror-matchingbracket {
-    text-decoration: underline;
-    color: white !important;
+.cm-s-inner span.cm-builtin {
+    color: #8ffaaa;
 }
 
-.CodeMirror div.CodeMirror-cursor {
-    border-left: 1px solid white;
+.md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
+    background: none;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-typora-default .cm-header,
+.cm-s-typora-default .cm-property {
+    color: white;
+    font-weight: 400;
+}
+
+.md-fences .code-tooltip {
+    box-shadow: rgba(116, 129, 141, 0.08) 0px 2px 6px 0px;
+    border: solid 1px var(--borders);
+    border-radius: 0.3rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 15rem;
+    height: 2.5rem;
+    bottom: -3rem;
+    padding: 0.1875rem;
+}
+
+.md-fences .code-tooltip .ty-input {
+    border: solid 1px var(--borders);
+    height: 2rem;
+    line-height: 2rem;
+    margin: 0rem;
+    padding-left: 0.5rem !important;
+    text-align: left;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+    transition-duration: 0.3s;
+    transition-property: border;
+}
+
+.md-fences .code-tooltip .ty-input:focus {
+    border-color: var(--primary-color);
+}
+
+.html-for-mac .ty-cm-lang-input:empty:after {
+    left: 0.5rem;
+}
+
+.autoComplt-list li,
+.fences-auto-suggest li {
+    font-weight: 500;
+    transition-duration: 0.3s;
+    transition-property: background-color, color;
+}
+
+.autoComplt-list li.active,
+.fences-auto-suggest li:hover {
+    background-color: var(--boxes);
+    color: var(--primary-color);
 }
 
 /* 代码块中设置 */
@@ -644,17 +702,13 @@ code {
     margin-top: 1.5rem;
     padding-top: 8px;
     padding-bottom: 6px;
-    /*background-color: var(--codeboxes);*/
+    background-color: var(--codeboxes);
 }
 
 #typora-source {
     background-color: var(--codeboxes);
     color: white;
     font-size: 0.9rem;
-}
-
-.code-tooltip .ty-input{
-    color: #CC7832;
 }
 
 /*DIAGRAMS*/
@@ -897,8 +951,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .md-rawblock-input span.cm-keyword {
-    /* color: #156db6; */
-    color: #CC7832;
+    color: #156db6;
 }
 
 .md-mathblock-input span.cm-bracket {
