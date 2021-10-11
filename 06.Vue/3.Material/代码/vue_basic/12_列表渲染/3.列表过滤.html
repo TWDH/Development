@@ -22,29 +22,29 @@
 
       //用watch实现
       //#region
-      /* new Vue({
-				el:'#root',
-				data:{
-					keyWord:'',
-					persons:[
-						{id:'001',name:'马冬梅',age:19,sex:'女'},
-						{id:'002',name:'周冬雨',age:20,sex:'女'},
-						{id:'003',name:'周杰伦',age:21,sex:'男'},
-						{id:'004',name:'温兆伦',age:22,sex:'男'}
-					],
-					filPerons:[]
-				},
-				watch:{
-					keyWord:{
-						immediate:true,
-						handler(val){
-							this.filPerons = this.persons.filter((p)=>{
-								return p.name.indexOf(val) !== -1
-							})
-						}
-					}
-				}
-			}) */
+      new Vue({
+        el: "#root",
+        data: {
+          keyWord: "",
+          persons: [
+            { id: "001", name: "马冬梅", age: 19, sex: "女" },
+            { id: "002", name: "周冬雨", age: 20, sex: "女" },
+            { id: "003", name: "周杰伦", age: 21, sex: "男" },
+            { id: "004", name: "温兆伦", age: 22, sex: "男" },
+          ],
+          filPerons: [],
+        },
+        watch: {
+          keyWord: {
+            immediate: true,
+            handler(val) {
+              this.filPerons = this.persons.filter((p) => {
+                return p.name.indexOf(val) !== -1;
+              });
+            },
+          },
+        },
+      });
       //#endregion
 
       //用computed实现
@@ -60,6 +60,7 @@
           ],
         },
         computed: {
+		  // 计算属性的名字	
           filPerons() {
             return this.persons.filter((p) => {
               return p.name.indexOf(this.keyWord) !== -1;
