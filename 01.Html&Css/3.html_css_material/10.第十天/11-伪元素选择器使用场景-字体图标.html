@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>伪元素选择器使用场景-字体图标</title>
     <style>
+        /* 字体图标 */
         @font-face {
             font-family: 'icomoon';
             src: url('fonts/icomoon.eot?1lv3na');
@@ -20,6 +21,7 @@
         }
 
         div {
+            /* 子绝父相 */
             position: relative;
             width: 200px;
             height: 35px;
@@ -27,6 +29,7 @@
         }
 
         div::after {
+            /* 子绝父相 */
             position: absolute;
             top: 10px;
             right: 10px;
