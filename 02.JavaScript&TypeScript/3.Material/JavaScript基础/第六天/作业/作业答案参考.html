@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 字符串操作
+        /*1.（字符）判断一个字符（比如”a”）是否出现在另一个字符（比如”2340sadfj2affa2”）中，如果出现，并求出现了几次。
+        var str = "2340sadfj2affa2";
+        var n = str.indexOf("a");
+        if(n==-1){
+            alert("没出现");
+        }else{
+            alert("出现了");
+        }
+        var count = 0;
+        var arr = str.split("");
+        for(var i=0;i<arr.length;i++){
+            if(arr[i] == 'a'){
+                count++;
+            }
+        }
+        document.write("出现了"+count+"次");*/
+
+
+        //2.    （字符，偏难）获取一个长文件路径（比如”E:\itcast\class\php\js\day2\abc.html”）中的文件名及其后缀（结果应该为”abc”和”html”）。
+        //注意：在js中，字符串中的特殊字符需要使用反斜杠进行转义，比如“\”要写成“\\”，换行要写成“\n”，单引号要写成“ \’ ”，双引号要写成“ \” ”
+        //因为“\\”前面反斜杠是转义后面的斜杠，当成一个字符；所以 \\ 只能算一个斜杠
+        /*var str = "E:\\itcast\\class\\php\\js\\day2\\abc.html";
+        var gang = str.lastIndexOf("\\");
+        var dian = str.lastIndexOf(".");
+        var ming = str.substring(gang+1,dian);
+        var houzhui = str.substr(dian+1);
+        document.write("文件名"+ming+"后缀"+houzhui);*/
+
+
+        //3.    （字符，偏难）利用var s1 = prompt(“请输入任意字符”,””)可以获取用户输入的字符（存到变量s1中了），试编程将用户输入的字符“反转顺序”并首尾字母转为大写，其他字母转为小写后alert出来。
+        /*var s1 = prompt("请输入任意字符","");//s1=ajdshakjshd
+        var arr = s1.split("");//转成数组
+        var newArr = arr.reverse();//翻转顺序保存给newArr=['c','b','a']
+        for(var i=0;i<newArr.length;i++){
+            if(i==0||i==newArr.length-1){
+                newArr[i] = newArr[i].toUpperCase();
+            }else{
+                newArr[i] = newArr[i].toLowerCase();
+            }
+        }
+        var str = newArr.join("");
+        alert(str);*/
+
+
+
+        //4.    （Math，逻辑）编写一个函数，带一个参数n，在页面上输出1～n（n>1）之间所有能同时被3和5整除的偶数，并要求每行只输出6个（即超过6个后要换行再输出）。
+        /*
+            1,2,3,4,5,6个<br />
+            7,8,9,10,11,12个<br />
+            13,14,15,16,17,18个<br />
+        */
+        /*function fn(n){
+            var count = 0;
+            for(var i=1;i<=n;i++){
+                if(i%3==0&&i%5==0&&i%2==0){
+                    document.write(i+' ');
+                    count++;
+                    if(count%6==0){
+                        document.write("<br />");
+                    }
+                }
+            }
+        }
+        fn(1000);*/
+
+        // 5.（Date）打开页面的时候在页面上使用中文显示当天的日期和星期（即“星期几”）。
+    /*  function times(){
+        var now = new Date();
+        // console.log(day);
+        var year = now.getFullYear();
+        var month = now.getMonth() + 1;
+        var date = now.getDate();
+        console.log(date);
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        //补0  小于10的，前面补0
+        month = month < 10 ? '0' + month : month;
+        // if(month < 10){
+        //  month = '0' + month;
+        // }
+        date = date < 10 ? '0' + date : date;
+        hours = hours < 10 ? '0' + hours : hours;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        return '' + year + '年' + month + '月' + date + '日 ' + hours + ':' + minutes + ':' + seconds;
+    }
+    console.log(times());*/
+    // document.write(times());
+    // ***************************************************************************
+    
+        // 2 - 进阶作业
+        //2.1  随机选学员
+
+        // ​	从以下学员名单中随机选出4个学员：
+        // ​	注意：不要有重复的学员
+        //           0       1       2         3         4        5        6
+        // var arr = ["鹿晗", "王三", "彭于晏", "刘德华", "张学友", "张三丰", "乔峰"];
+
+        // function getRandom(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1) + min);
+        // }
+        // var numArray = []; // 存放索引的数组
+        // var newArray = []; //存放筛选出来的4个学员
+        // // 如果真的突然出现筛选出重复的人，最多不会出现3次等
+
+        // for (var i = 0; i < 11; i++) {
+        //     var num = getRandom(0, 6);
+        //     // console.log(num);
+        //     if (numArray.indexOf(num) == -1) {
+        //         // 如果在numArray空数组里面检测不到 随机的num,就放到数组里面
+        //         numArray[numArray.length] = num;
+        //         newArray[newArray.length] = arr[num];
+        //     }
+        //     if (numArray.length == 4) {
+        //         break;
+        //     }
+
+        // }
+        // console.log(newArray);
+        // console.log(numArray);
+
+
+        // --------------------------------------------------------------------------
+
+        // 对以下学员随机排序，生成一个新数组：
+
+        var arr = ["鹿晗", "王俊凯", "蔡徐坤", "彭于晏", "周杰伦", "刘德华", "赵本山"];
+        // var arr = [1, 2, 3, 6, 5, 0];
+
+        // arr.sort();
+        // console.log(arr);
+
+        // arr.sort(function(a,b){
+        //     a -b;//正序
+        // });
+
+        // 接下来封装自己的计算函数
+        arr.sort(function() {
+            //前置知识点：Math.random 结果是：0--1之间的数字，减去0.5，这样的最后的结果是不准确的（丢失精度问题） 利用这一弱点。
+            return Math.random() - 0.5;
+        });
+        console.log(arr);
+    </script>
+</body>
+
+</html>

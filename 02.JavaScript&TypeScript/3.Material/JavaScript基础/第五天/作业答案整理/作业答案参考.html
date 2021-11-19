@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 2 - 进阶练习：
+        var arr = ["张瑞淑", "徐海涛", "谢岗岗", "薛鹏", "魏明杨", "党婷", "熊飞", "郑翠翠", "李航卫", '张大大', "屈涛", "汪孝双", "代攀飞", "武志钰"];
+        var currentArr = ["张瑞淑", "徐海涛", "谢岗岗", "魏明杨", "党婷", "熊飞", "郑翠翠"];
+        // 方法一：
+        // function arrMath(arr,currentArr){
+        // 	var flag = false;//表示在已经提交作业的数组中去匹配，匹配到就false，没有找到就是true
+        // 	var newArr = new Array(); //存放帅选出来的元素
+        // 	for(var i=0; i<arr.length; i++){
+        // 		for(var j=0; j<currentArr.length; j++){
+        // 			if(arr[i] === currentArr[j]){
+        // 				flag = false;
+        // 				break; //找到匹配的之后就不必继续匹配了
+        // 			}else{
+        // 				flag = true;
+        // 			}
+        // 		}
+        // 		if(flag === true){
+        // 				newArr[newArr.length] = arr[i];
+        // 			}
+        // 	}
+        // return newArr;
+
+        // }
+        // var xinde = arrMath(arr,currentArr);
+        // console.log(xinde);
+
+
+        // 方法二：
+        function arrMath(arr, currentArr) {
+            // var flag = false;//表示在已经提交作业的数组中去匹配，匹配到就false，没有找到就是true
+            // var newArr = new Array(); //存放帅选出来的元素
+            for (var i = 0; i < arr.length; i++) {
+                for (var j = 0; j < currentArr.length; j++) {
+                    if (arr[i] === currentArr[j]) {
+                        arr.splice(i, 1);
+                    }
+
+                }
+
+            }
+            return arr;
+
+        }
+        var xinde = arrMath(arr, currentArr);
+        console.log(xinde);
+    </script>
+</body>
+
+</html>
