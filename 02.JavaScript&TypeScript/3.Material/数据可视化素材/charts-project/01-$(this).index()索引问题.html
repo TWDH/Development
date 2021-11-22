@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>第一个h1</h1>
+      <h1>第二个h1</h1>
+      <p>屁1</p>
+      <p>屁2</p>
+      <p>屁3</p>
+    </div>
+    <script>
+      $("div p").on("click", function() {
+        console.log($(this).index());
+      });
+    </script>
+  </body>
+</html>

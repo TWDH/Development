@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- 一定不要忘记引入bootstrap 的样式文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .row div {
+            height: 50px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">左侧</div>
+            <!-- 偏移的份数 就是 12 - 两个盒子的份数 = 6 -->
+            <div class="col-md-3 col-md-offset-6">右侧</div>
+        </div>
+        <div class="row">
+            <!-- 如果只有一个盒子 那么就偏移 = (12 - 8) /2 -->
+            <div class="col-md-8 col-md-offset-2">中间盒子</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

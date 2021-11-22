@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var star = {
+        name: "刘德华",
+        age: 18
+      };
+      //   以前的写法 拼接的时候引号很容易出问题
+      console.log("我的名字是" + star.name + "我的年龄是" + star.age);
+      //   ES6 模板字符写法
+      console.log(`我的名字是${star.name}
+      我的年龄是${star.age}`);
+      console.log(`<span>${star.name}</span><span>${star.age}</span>`);
+    </script>
+  </body>
+</html>

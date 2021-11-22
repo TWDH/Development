@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       // 1.1 求100以内所有能被3和7整除的数的和
+       // 定义求和变量
+       // var sum = 0;
+       // for(var i=1; i<=100; i++){
+       //  if(i%3==0 && i%7==0){
+       //      sum +=i;
+       //  }
+       // }
+       // console.log(sum);
+        // *****************************************************************
+        // 2.打印出正金字塔 （1357）
+        /*   for (var i = 1; i <= 4; ++i) {
+              // 2.我们根据规律知道。需要用for输出多余的空格
+              for (var k = 1; k <= 4 - i; ++k) {
+                  document.write("&ensp; ");
+              }
+              // 1.下面一行是结合2n-1的公式求出每一行的星星数
+              for (var j = 1; j <= 2 * i - 1; ++j) {
+                  document.write("☆");
+              }
+              document.write("<br />");
+
+          } */
+
+
+        //   改进要求：倒金字塔
+        /*  for (var i = 4; i >= 1; i--) {
+             // 2.我们根据规律知道。需要用for输出多余的空格
+             for (var k = 1; k <= 4 - i; ++k) {
+                 document.write("&ensp; ");
+             }
+             // 1.下面一行是结合2n-1的公式求出每一行的星星数
+             for (var j = 1; j <= 2 * i - 1; ++j) {
+                 document.write("☆");
+             }
+             document.write("<br />");
+         } */
+
+
+            // 需求：打印出正的金字塔
+        // for (var i = 1; i <= 5; i++) { //外城循环控制行数
+
+        //     // 根据我们规律，使用一个for循环实现空格数量
+        //     for (var k = 1; k <= 5 - i; ++k) {
+        //         document.write("&nbsp;&ensp;");
+        //     }
+        //     // 下面循环的判断条件是结合2n-1的公式，求出来每一行的星星个数
+        //     for (var j = 1; j <= 2 * i - 1; j++) { //内层循环控制每一行的个数
+        //         document.write("☆");
+        //     }
+        //     document.write("<br />");
+
+        // }
+        // ****************************************************************
+        // 1.4用户登录验证
+        // var msg = prompt('名字');
+        // var pwd = prompt('密码');
+        // while (msg != 'admin' || pwd != '123') {
+        //     alert('请你先登录');
+        //     msg = prompt('名字');
+        //     pwd = prompt('密码');
+        // }
+        // alert('登录成功');
+
+        // 方法二：
+        // do {
+        //     var msg = prompt('名字');
+        //     var pwd = prompt('密码');
+        // } while (msg != 'admin' || pwd != '123');
+        // alert('登录成功');
+
+        // ***********************************************************
+        // 1.5 求1-100之间个位数不为3的数的累加和。
+        /*  var sum = 0;
+         for (var i = 1; i < 101; i++) {
+             // if (i % 10 == 3 || Math.floor(i / 10 == 3)) {
+             //     console.dir('挑出' + i);
+             // }
+             if (i % 10 == 3) {
+                 // console.log(i);
+                 continue;
+             }
+             sum = sum + i;
+         }
+         console.dir(sum); */
+
+        // *********************************************************
+        // 2.1 简易ATM
+        /* shuru = prompt('操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出');
+        qian = 100;
+        while (qian >= 10) {
+            if (shuru == '1') {
+                var msg = prompt('存钱');
+                msg = parseInt(msg);
+                qian = qian + msg;
+                alert('余额' + qian);
+                shuru = prompt('操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出');
+            }
+            if (shuru == '2') {
+                var msg = prompt('存钱');
+                msg = parseInt(msg);
+                qian = qian - msg;
+                alert('余额' + qian);
+                shuru = prompt('操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出');
+            }
+            if (shuru == '3') {
+                alert('余额' + qian);
+                shuru = prompt('操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出');
+            }
+            if (shuru == '4') {
+                shuru = false;
+                break;
+            }
+        } */
+
+
+
+
+
+//         2.1 简易ATM
+//  shuru = prompt("请输入操作:\n 1.存钱\n2.取钱\n3.显示余额\n4.退出");
+//  qian = 100;
+// while(qian>=10){
+//     if(shuru == '1'){
+//         var msg = prompt("请输入存钱金额");
+//     msg = parseInt(msg);
+//     qian = qian + msg;
+//     alert('余额为'+qian);
+//     shuru = prompt("请输入操作:\n 1.存钱\n2.取钱\n3.显示余额\n4.退出");
+//     }
+//     if(shuru == '2'){
+//     var msg = prompt("请输入取钱金额");
+//     msg = parseInt(msg);
+//     qian = qian - msg;
+//     alert('余额为'+qian);
+//      shuru = prompt("请输入操作:\n 1.存钱\n2.取钱\n3.显示余额\n4.退出");
+//     }
+//     if(shuru == '3'){
+//     alert('余额为'+qian);
+//     shuru = prompt("请输入操作:\n 1.存钱\n2.取钱\n3.显示余额\n4.退出");
+//     }
+//     if(shuru == '4'){
+//         shuru = false;
+//         break;
+//     }
+// }
+
+
+        // **************************************************
+        // 2.2 求从1 开始第35个能被7和3整除的整数 数
+        /*  var i = 1;
+         var jishu = 0;
+         //第 35 个数字不可能特别大 
+         while (i <= 5000) {
+             if (i % 3 == 0 && i % 7 == 0) {
+                 // console.dir(i);
+                 jishu = jishu + 1;
+                 if (jishu == 35) {
+                     alert(i);
+                     break;
+                 }
+             }
+             i++;
+         }
+         console.log('您一共的数字是：' + jishu); */
+
+        // **************************************************************
+        
+         // 穷举：从1遍历到无穷大，找出符合条件的     
+        // 需求 ：有一群人，如果3个人站一排多出一人，如果4个人站一排 多出来2个人；如果5人一拍，多出3人。
+        // 请问：这群人的数量
+        // for (var i = 1; i <= Infinity; i++) {
+
+        //     // 假设总的人数就是 i   
+        //     if (i % 3 == 1 && i % 4 == 2 && i % 5 == 3) {
+        //         console.log("人数为" + i);
+        //         break;
+        //     }
+
+        // }
+    </script>
+</body>
+
+</html>
