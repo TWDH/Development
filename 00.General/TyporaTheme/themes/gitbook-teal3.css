@@ -316,10 +316,23 @@ ol:first-child {
   margin-top: 0;
 }
 
-ul:last-child,
-ol:last-child {
+/* ul:first-child ,
+ol:first-child  {
+  margin-top: 0;
+} */
+
+ul:last-child {
   margin-bottom: 0;
 }
+ol:last-child {
+  margin-bottom: 0;
+  /* list-style-type: upper-roman; */
+}
+
+/* ol:nth-last-child(1) {
+  margin-bottom: 0;
+  list-style-type: upper-roman;
+} */
 
 .md-blockmeta {
   color: var(--md-char-color);
@@ -507,6 +520,11 @@ table tr td:last-child {
 
 .cm-s-inner span.cm-comment {
   color: #75715e;
+}
+
+/* new */
+.cm-s-inner .cm-qualifier{
+  color: #f92672;
 }
 
 .cm-s-inner span.cm-atom {
