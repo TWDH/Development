@@ -284,7 +284,8 @@ blockquote,
 ul,
 ol,
 dl {
-  margin: 0.5rem 0rem 1.5rem 0rem;
+  /* margin: 0.5rem 0rem 0.5rem 0rem; */
+  margin: 0rem 0rem 0rem 0rem;
 }
 
 li > ol,
@@ -630,6 +631,7 @@ tt {
 
 code {
   padding: 0.2rem 0.4rem;
+  margin: 0 0.2rem;
   background-color: var(--borders);
   font-size: 0.9rem;
   border-radius: 0.2rem;
