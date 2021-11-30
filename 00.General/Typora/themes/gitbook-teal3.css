@@ -177,7 +177,7 @@ h2 {
   font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -285,7 +285,7 @@ ul,
 ol,
 dl {
   /* margin: 0.5rem 0rem 0.5rem 0rem; */
-  margin: 0rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0.3rem 0rem;
 }
 
 li > ol,
