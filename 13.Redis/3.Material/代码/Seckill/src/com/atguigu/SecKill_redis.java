@@ -1,6 +1,7 @@
 package com.atguigu;
 
 import java.io.IOException;
+import java.net.Socket;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -26,6 +27,8 @@ public class SecKill_redis {
 		Jedis jedis =new Jedis("192.168.44.168",6379);
 		System.out.println(jedis.ping());
 		jedis.close();
+
+		Socket socket = new Socket();
 	}
 
 	//秒杀过程
