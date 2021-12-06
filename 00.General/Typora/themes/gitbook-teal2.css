@@ -177,7 +177,7 @@ h2 {
   font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -284,7 +284,8 @@ blockquote,
 ul,
 ol,
 dl {
-  margin: 0.5rem 0rem 1.5rem 0rem;
+  /* margin: 0.5rem 0rem 1.5rem 0rem; */
+  margin: 0rem 0rem 0.3rem 0rem;
 }
 
 li > ol,
@@ -627,6 +628,7 @@ tt {
 
 code {
   padding: 0.2rem 0.4rem;
+  margin: 0 0.2rem;
   background-color: var(--borders);
   font-size: 0.9rem;
   border-radius: 0.2rem;
