@@ -27,8 +27,6 @@ public class SecKill_redis {
 		Jedis jedis =new Jedis("192.168.44.168",6379);
 		System.out.println(jedis.ping());
 		jedis.close();
-
-		Socket socket = new Socket();
 	}
 
 	//秒杀过程

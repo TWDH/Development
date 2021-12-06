@@ -7,8 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1825c4ff-b578-4415-9106-9b0301216a0b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../1.Note/8.Redis事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../1.Note/8.Redis事务.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../1.Note/9.秒杀.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../1.Note/9.秒杀.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/SecKill_redis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/SecKill_redis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/SecKill_redisByScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/SecKill_redisByScript.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,18 @@
         <option value="$PROJECT_DIR$/src/com/atguigu/SecKillServlet.java" />
         <option value="$PROJECT_DIR$/src/com/atguigu/SecKill_redisByScript.java" />
       </list>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Structure" value="true" />
+      </map>
     </option>
   </component>
   <component name="LogFilters">
@@ -297,6 +312,8 @@
       <workItem from="1618112193837" duration="12642000" />
       <workItem from="1618283577144" duration="39000" />
       <workItem from="1637957712319" duration="5926000" />
+      <workItem from="1638547889103" duration="1285000" />
+      <workItem from="1638559027944" duration="2717000" />
     </task>
     <servers />
   </component>
