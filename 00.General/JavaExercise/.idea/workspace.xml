@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="492a3f0a-0b9a-453d-856c-275f80281931" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sortExercise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/845. 数组中的最长山脉.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/845. 数组中的最长山脉.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638640070292</updated>
-      <workItem from="1638640071755" duration="2016000" />
+      <workItem from="1638640071755" duration="2051000" />
     </task>
     <servers />
   </component>
