@@ -1,5 +1,6 @@
 package com.atguigu.redis_springboot.controller;
 
+import com.atguigu.redis_springboot.entity.People;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
@@ -18,6 +19,18 @@ public class RedisTestController {
 
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @GetMapping("/test-redis")
+    public void redisConfig() {
+        People people = new People();
+        people.setName("zhangsan");
+        people.setAge(10);
+
+        redisTemplate.opsForValue().set("redis1", people);
+        Object result =  redisTemplate.opsForValue().get("redis1");
+        System.out.println(result);
+
+    }
 
     @GetMapping("testLockLua")
     public void testLockLua() {

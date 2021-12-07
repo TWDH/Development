@@ -7,11 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1825c4ff-b578-4415-9106-9b0301216a0b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../1.Note/8.Redis事务.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../1.Note/8.Redis事务.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../1.Note/9.秒杀.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../1.Note/9.秒杀.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis_springboot/src/main/java/com/atguigu/redis_springboot/entity/People.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02.JavaScript&amp;TypeScript/1.Note/JS/04.DOM.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../02.JavaScript&amp;TypeScript/1.Note/JS/04.DOM.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/SecKill_redis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/SecKill_redis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/SecKill_redisByScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/SecKill_redisByScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jedis_redisdemo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jedis_redisdemo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jedis_redisdemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jedis_redisdemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis_springboot/src/main/java/com/atguigu/redis_springboot/controller/RedisTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_springboot/src/main/java/com/atguigu/redis_springboot/controller/RedisTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis_springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +316,7 @@
       <workItem from="1618283577144" duration="39000" />
       <workItem from="1637957712319" duration="5926000" />
       <workItem from="1638547889103" duration="1285000" />
-      <workItem from="1638559027944" duration="2717000" />
+      <workItem from="1638559027944" duration="4525000" />
     </task>
     <servers />
   </component>
