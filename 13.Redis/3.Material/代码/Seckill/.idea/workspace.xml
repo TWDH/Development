@@ -7,13 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1825c4ff-b578-4415-9106-9b0301216a0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../redis_springboot/src/main/java/com/atguigu/redis_springboot/entity/People.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../02.JavaScript&amp;TypeScript/1.Note/JS/04.DOM.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../02.JavaScript&amp;TypeScript/1.Note/JS/04.DOM.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jedis_redisdemo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jedis_redisdemo/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jedis_redisdemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jedis_redisdemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis_springboot/src/main/java/com/atguigu/redis_springboot/controller/RedisTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_springboot/src/main/java/com/atguigu/redis_springboot/controller/RedisTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis_springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_springboot/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

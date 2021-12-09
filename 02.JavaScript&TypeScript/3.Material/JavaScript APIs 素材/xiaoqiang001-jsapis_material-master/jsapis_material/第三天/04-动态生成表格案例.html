@@ -69,15 +69,16 @@
             // 1. 创建 tr行
             var tr = document.createElement('tr');
             tbody.appendChild(tr);
+
             // 2. 行里面创建单元格(跟数据有关系的3个单元格) td 单元格的数量取决于每个对象里面的属性个数  for循环遍历对象 datas[i]
             for (var k in datas[i]) { // 里面的for循环管列 td
                 // 创建单元格 
                 var td = document.createElement('td');
                 // 把对象里面的属性值 datas[i][k] 给 td  
-                // console.log(datas[i][k]);
                 td.innerHTML = datas[i][k];
                 tr.appendChild(td);
             }
+
             // 3. 创建有删除2个字的单元格 
             var td = document.createElement('td');
             td.innerHTML = '<a href="javascript:;">删除 </a>';
