@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="492a3f0a-0b9a-453d-856c-275f80281931" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sortExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sortExercise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/26. 删除有序数组中的重复项.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/26. 删除有序数组中的重复项.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/287. 寻找重复数.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/287. 寻找重复数.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/80. 删除有序数组中的重复项 II.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../大赫的算法宝典/2.LeetCode Hot and Interview/80. 删除有序数组中的重复项 II.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638640070292</updated>
-      <workItem from="1638640071755" duration="2051000" />
+      <workItem from="1638640071755" duration="3242000" />
     </task>
     <servers />
   </component>
