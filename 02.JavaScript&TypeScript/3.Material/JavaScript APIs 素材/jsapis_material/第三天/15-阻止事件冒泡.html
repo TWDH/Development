@@ -31,9 +31,11 @@
     <div class="father">
         <div class="son">son儿子</div>
     </div>
+
     <script>
         // 常见事件对象的属性和方法
         // 阻止冒泡  dom 推荐的标准 stopPropagation() 
+        // son
         var son = document.querySelector('.son');
         son.addEventListener('click', function(e) {
             alert('son');
@@ -41,10 +43,13 @@
             e.cancelBubble = true; // 非标准 cancel 取消 bubble 泡泡
         }, false);
 
+        // father
         var father = document.querySelector('.father');
         father.addEventListener('click', function() {
             alert('father');
         }, false);
+
+        // document
         document.addEventListener('click', function() {
             alert('document');
         })
