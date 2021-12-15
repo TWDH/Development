@@ -19,7 +19,10 @@
         var btn = document.querySelector('button');
         var time = 3; // 定义剩下的秒数
         btn.addEventListener('click', function() {
+            // 按钮禁用
             btn.disabled = true;
+
+            // 修改 button 中的文字
             var timer = setInterval(function() {
                 if (time == 0) {
                     // 清除定时器和复原按钮
