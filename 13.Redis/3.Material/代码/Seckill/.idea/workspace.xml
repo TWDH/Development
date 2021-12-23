@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1825c4ff-b578-4415-9106-9b0301216a0b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../02.JavaScript&amp;TypeScript/1.Note/JS/04.DOM.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../02.JavaScript&amp;TypeScript/1.Note/JS/04.DOM.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../1.Note/14.Redis6新功能.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../1.Note/14.Redis6新功能.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jedis_redisdemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jedis_redisdemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,14 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="190" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
@@ -313,6 +322,7 @@
       <workItem from="1637957712319" duration="5926000" />
       <workItem from="1638547889103" duration="1285000" />
       <workItem from="1638559027944" duration="4525000" />
+      <workItem from="1640295478787" duration="1034000" />
     </task>
     <servers />
   </component>

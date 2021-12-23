@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce370e89-08e3-4da9-b33c-ed700c6c7228" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/src/com/atguigu/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1.Note/01.消息队列.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.Note/01.消息队列.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../13.Redis/1.Note/14.Redis6新功能.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13.Redis/1.Note/14.Redis6新功能.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:\Software\Intellij\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="22hk7tytIrNNEQTcbSrhX1HtkP6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.Consumer">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Consumer" />
+      <module name="RabbitMQ" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Producer" />
+      <module name="RabbitMQ" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.Producer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce370e89-08e3-4da9-b33c-ed700c6c7228" name="Changes" comment="" />
+      <created>1640297042785</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640297042785</updated>
+      <workItem from="1640297044199" duration="905000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
