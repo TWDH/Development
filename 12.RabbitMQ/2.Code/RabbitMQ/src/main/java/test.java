@@ -9,15 +9,12 @@ import java.util.PriorityQueue;
  */
 public class test {
     public static void main(String[] args) {
-        PriorityQueue<Integer> queMin = new PriorityQueue<Integer>((a, b) -> (b - a));
+        PriorityQueue<Integer> queMin = new PriorityQueue<Integer>(2, (a, b) -> (b - a));
         queMin.offer(1);
         queMin.offer(2);
         queMin.offer(3);
 
-        System.out.println(queMin.peek());
-
-        List<Integer> list = new ArrayList<>();
-        list.add();
+        System.out.println(queMin.toString());
 
     }
 }
