@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce370e89-08e3-4da9-b33c-ed700c6c7228" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/src/com/atguigu/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../1.Note/01.消息队列.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.Note/01.消息队列.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../13.Redis/1.Note/14.Redis6新功能.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13.Redis/1.Note/14.Redis6新功能.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13.Redis/3.Material/代码/Seckill/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Consumer">
+  <component name="RunManager" selected="Application.test">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Consumer" />
       <module name="RabbitMQ" />
@@ -63,8 +58,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="RabbitMQ" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.Producer" />
       </list>
@@ -78,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640297042785</updated>
-      <workItem from="1640297044199" duration="905000" />
+      <workItem from="1640297044199" duration="3113000" />
     </task>
     <servers />
   </component>
