@@ -16,5 +16,10 @@ public class test {
 
         System.out.println(queMin.toString());
 
+        int[] nums = new int[]{1, 2, 3};
+        List<Integer> list = new ArrayList<Integer>();
+
     }
+
+
 }
