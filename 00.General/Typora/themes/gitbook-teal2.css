@@ -629,7 +629,9 @@ tt {
 code {
   padding: 0.2rem 0.4rem;
   margin: 0 0.2rem;
-  background-color: var(--borders);
+  /* background-color: var(--borders); */
+  color: #c7254e;
+  background-color: #f8e7ec;
   font-size: 0.9rem;
   border-radius: 0.2rem;
   box-decoration-break: clone;
