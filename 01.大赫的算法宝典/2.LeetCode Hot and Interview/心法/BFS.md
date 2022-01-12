@@ -29,19 +29,27 @@
   
       // while 队列不空，不停的从队列⾥拿出⼀个点，拓展邻居节点放到队列中
       while (!queue.isEmpty()) {
-          Node node = queue.poll();
-          // 如果有明确的终点可以在这⾥加终点的判断
-          if (node 是终点) {
-          	break or return something;
-          }
-          for (Node neighbor : node.getNeighbors()) {
-              if (distance.containsKey(neighbor)) {
-              	continue;
-          	}
-              queue.offer(neighbor);
-              distance.put(neighbor, distance.get(node) + 1);
+          // 当前层的元素个数
+          int size = queue.size();
+          // BFS 遍历当前层的所有节点
+          for(int i = 0; i < size; i++){
+              // 获取结点
+              Node node = queue.poll();
+              // 如果有明确的终点可以在这⾥加终点的判断
+              if (node 是终点) {
+                  break or return something;
+              }
+              // 遍历当前结点的所有 neighbor
+              for (Node neighbor : node.getNeighbors()) {
+                  if (distance.containsKey(neighbor)) {
+                      continue;
+                  }
+                  queue.offer(neighbor);
+                  distance.put(neighbor, distance.get(node) + 1);
+              }
           }
       }
+      
       // 如果需要返回所有点离起点的距离，就 return hashmap
       return distance;
       // 如果需要返回所有连通的节点, 就 return HashMap ⾥的所有点
