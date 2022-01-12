@@ -42,6 +42,10 @@
             obj.timer = setInterval(function() {
                 // 步长值写到定时器的里面
                 var step = (target - obj.offsetLeft) / 10;
+                console.log(step);
+                if(step == 0.4){
+                    clearInterval(obj.timer)
+                }
                 if (obj.offsetLeft == target) {
                     // 停止动画 本质是停止定时器
                     clearInterval(obj.timer);

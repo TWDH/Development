@@ -32,7 +32,7 @@ window.addEventListener('load', function() {
         ol.appendChild(li);
         // 4. 小圆圈的排他思想 我们可以直接在生成小圆圈的同时直接绑定点击事件
         li.addEventListener('click', function() {
-            // 干掉所有人 把所有的小li 清除 current 类名
+            // 干掉所有人 把所有的小li 清除 current 类名 
             for (var i = 0; i < ol.children.length; i++) {
                 ol.children[i].className = '';
             }
