@@ -9,8 +9,8 @@
 ### # 技巧
 
 * `queue.offer()` 和 `visited = ture` 必须同时出现
-
 * 层数 `level++` 在 `while` 和 `for(size)` 之间
+* 防止重复：遍历过的 (`visited`) 不加入 queue，其他操作可以照常进行。慎用 `continue`（133）
 
 ### 九章算法模板：
 
