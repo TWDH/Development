@@ -18,11 +18,13 @@
   ReturnType bfs(Node startNode) {
       // BFS 必须要⽤队列 queue，别⽤栈 stack！
       Queue<Node> queue = new ArrayDeque<>();
+      
       // hashmap 有两个作⽤，⼀个是记录⼀个点是否被丢进过队列了，避免重复访问
       // 另外⼀个是记录 startNode 到其他所有节点的最短距离
       // 如果只求连通性的话，可以换成 HashSet 就⾏
       // node 做 key 的时候⽐较的是内存地址
       Map<Node, Integer> distance = new HashMap<>();
+      
       // 把起点放进队列和哈希表⾥，如果有多个起点，都放进去
       queue.offer(startNode);
       distance.put(startNode, 0); // or 1 if necessary
@@ -31,14 +33,17 @@
       while (!queue.isEmpty()) {
           // 当前层的元素个数
           int size = queue.size();
+          
           // BFS 遍历当前层的所有节点
           for(int i = 0; i < size; i++){
               // 获取结点
               Node node = queue.poll();
+              
               // 如果有明确的终点可以在这⾥加终点的判断
               if (node 是终点) {
                   break or return something;
               }
+              
               // 遍历当前结点的所有 neighbor
               for (Node neighbor : node.getNeighbors()) {
                   if (distance.containsKey(neighbor)) {
