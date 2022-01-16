@@ -1,0 +1,101 @@
+#### [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
+
+![image-20201128200655310](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20201128200655310.png)
+
+## 1.迭代(Iterative)
+
+#### 套路模板：
+
+* 另一种写法：详见**Leetcode98**
+
+```java
+//迭代法：套路
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        //1.创建res存储答案
+        List<Integer> res = new ArrayList<>();
+        //2.创建stack模仿递归
+        Deque<TreeNode> stack = new LinkedList<>();
+        TreeNode node = root;
+        //3.遍历
+        while(!stack.isEmpty() || node != null){
+            if(node != null){
+                stack.push(node);
+                //左
+                node = node.left;
+            }
+            else{
+                node = stack.pop();
+                //根
+                res.add(node.val);
+                //右
+                node = node.right;
+            }
+        }
+       return res;
+    }
+}
+```
+
+#### 套路做法：
+
+```java
+//迭代法：普通
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        //1.建立res储存答案
+        List<Integer> res = new ArrayList<>();
+        
+        //2.特殊情况
+        if(root == null){
+            return res;
+        }
+        //3.建立stack模仿递归
+        Deque<TreeNode> stack = new LinkedList<>();
+        TreeNode node = root;
+        //当node到叶子节点(null,最底下)时则从stack中取，如果stack中也没有了就结束。
+        //刚开始stack没有任何元素
+        while(!stack.isEmpty() || node != null){
+            while(node != null){
+                stack.push(node);
+                //3.1左
+                node = node.left;
+            }
+            //3.2根
+            node = stack.pop();
+            res.add(node.val);
+            //3.3右
+            node = node.right;
+        }
+        return res;
+    }
+}
+```
+
+## 2.递归（recursive)
+
+```java
+//递归
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        //1.建立res的标储存答案
+        List<Integer> res = new ArrayList<>();
+        //2.递归函数
+        inOrder(root, res);
+        return res;
+    }
+    
+    public void inOrder(TreeNode root, List<Integer> res){
+        //2.递归出口条件
+        if(root == null){
+            return;
+        }
+        //左
+        inOrder(root.left, res);
+        //根
+        res.add(root.val);
+        //右
+        inOrder(root.right, res);
+    }
+}
+```
