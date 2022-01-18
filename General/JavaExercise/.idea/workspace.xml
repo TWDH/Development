@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="492a3f0a-0b9a-453d-856c-275f80281931" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/0. 刷题手册.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/0. 刷题手册.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/101. 对称二叉树.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/101. 对称二叉树.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/144. 二叉树的前序遍历.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/144. 二叉树的前序遍历.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/145. 二叉树的后序遍历.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/145. 二叉树的后序遍历.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/230. 二叉搜索树中第K小的元素.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/230. 二叉搜索树中第K小的元素.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/心法/二叉树.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/心法/二叉树.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/心法/实用语法.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/心法/实用语法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +79,7 @@
       <workItem from="1639958958300" duration="736000" />
       <workItem from="1641760691064" duration="656000" />
       <workItem from="1641761369217" duration="1876000" />
-      <workItem from="1642456372787" duration="2589000" />
+      <workItem from="1642456372787" duration="3214000" />
     </task>
     <servers />
   </component>
