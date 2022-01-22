@@ -49,5 +49,11 @@ public class hello {
 
         Set<Integer> set = new HashSet<>();
 
+        Queue<Integer> pq = new PriorityQueue<>();
+
+        int[] nums = new int[]{3354, 4316, 3259, 4904, 4598, 474, 3166, 6322, 8080, 9009};
+        Arrays.sort(nums);
+        System.out.println(nums);
+
     }
 }
