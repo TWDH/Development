@@ -8,6 +8,8 @@ import java.util.*;
 public class hello {
     public static void main(String[] args) {
         List<List<String>> resList = new ArrayList<>();
+        List<String> list = new LinkedList<>();
+
         List<String> s1 = new ArrayList<>();
         List<String> s2 = new ArrayList<>();
         List<String> s3 = new ArrayList<>();

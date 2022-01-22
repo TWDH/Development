@@ -4,6 +4,8 @@
   - 如果需要**遍历整颗树**，递归函数就**不能有返回值**。
   - 如果需要遍历**某一条固定路线**，递归函数就**一定要有返回值**！
 - 数组记录 `visited` 速度更快（LeetCode 1306）
+- 在 `backtracking` 时，进入下一层，是 `i + 1`，而**不是** `start + 1`
+- [DFS LeetCode讲解](https://leetcode-cn.com/problems/permutations/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liweiw/)
 
 
 
