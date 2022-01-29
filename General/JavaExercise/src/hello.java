@@ -9,6 +9,9 @@ public class hello {
     public static void main(String[] args) {
         List<List<String>> resList = new ArrayList<>();
         List<String> list = new LinkedList<>();
+        StringBuilder sb = new StringBuilder();
+
+        String.join()
 
         List<String> s1 = new ArrayList<>();
         List<String> s2 = new ArrayList<>();

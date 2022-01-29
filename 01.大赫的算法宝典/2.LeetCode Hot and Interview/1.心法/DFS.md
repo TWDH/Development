@@ -5,6 +5,8 @@
 - **DFS 是否有返回值**：
   - 如果需要**遍历整颗树**，递归函数就**不能有返回值**。
   - 如果需要遍历**某一条固定路线**，递归函数就**一定要有返回值**！
+- DFS (boolean)：
+  - 当前状态 + 未来状态 `dfs()` **同时为真时** （LeetCode 139）
 - 数组记录 `visited` 速度更快（LeetCode 1306）
 - 在 `backtracking` 时，进入下一层，是 `i + 1`，而**不是** `start + 1`
 - [DFS LeetCode讲解](https://leetcode-cn.com/problems/permutations/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liweiw/)
@@ -212,4 +214,57 @@
   }
   ```
 
+# 字符串分割模板
 
+- 131
+
+- ```java
+  class Solution {
+      public List<List<String>> partition(String s) {
+          // 准备工作
+          List<List<String>> result = new ArrayList<>();
+          List<String> path = new ArrayList<>();
+  
+          // DFS
+          dfs(s, 0, path, result);
+  
+          return result;
+      }
+  
+      private void dfs(String s, int index, List<String> path, List<List<String>> result){
+          // 递归出口
+          if(index == s.length()){
+              result.add(new ArrayList<>(path));
+              return;
+          }
+  
+          // DFS
+          // index = left, i = right
+          for(int i = index; i < s.length(); i++){
+              // 判断回文
+              if(!isPalindrome(s, index, i)){
+                  continue;
+              }
+  
+              // backtracking
+              // i: 当前选取字符串的右端点; 截取 [index, i]
+              path.add(s.substring(index, i + 1));
+              dfs(s, i + 1, path, result);
+              path.remove(path.size() - 1);
+          }
+      }
+  
+      private boolean isPalindrome(String s, int left, int right){
+          while(left < right){
+              if(s.charAt(left) != s.charAt(right)){
+                  return false;
+              }
+              left++;
+              right--;
+          }
+          return true;
+      }
+  }
+  ```
+
+- 

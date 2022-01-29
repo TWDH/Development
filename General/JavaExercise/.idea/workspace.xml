@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="492a3f0a-0b9a-453d-856c-275f80281931" name="Changes" comment="" />
+    <list default="true" id="492a3f0a-0b9a-453d-856c-275f80281931" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 刷题手册.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 刷题手册.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hello.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +94,7 @@
       <workItem from="1642694511015" duration="2064000" />
       <workItem from="1642728689547" duration="1963000" />
       <workItem from="1642739641629" duration="3176000" />
-      <workItem from="1642819024182" duration="5824000" />
+      <workItem from="1642819024182" duration="9241000" />
     </task>
     <servers />
   </component>
@@ -114,7 +118,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/hello.java</url>
-          <line>55</line>
+          <line>58</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
