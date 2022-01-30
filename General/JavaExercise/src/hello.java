@@ -11,7 +11,9 @@ public class hello {
         List<String> list = new LinkedList<>();
         StringBuilder sb = new StringBuilder();
 
-        String.join()
+        List<Integer> list1 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>(list1);
+        Map<Integer, Integer> map = new HashMap<>();
 
         List<String> s1 = new ArrayList<>();
         List<String> s2 = new ArrayList<>();
