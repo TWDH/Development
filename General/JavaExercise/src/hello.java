@@ -8,7 +8,8 @@ import java.util.*;
 public class hello {
     public static void main(String[] args) {
         List<List<String>> resList = new ArrayList<>();
-        List<String> list = new LinkedList<>();
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.pollFirst();
         StringBuilder sb = new StringBuilder();
 
         List<Integer> list1 = new ArrayList<>();
