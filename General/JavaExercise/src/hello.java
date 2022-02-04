@@ -12,6 +12,8 @@ public class hello {
         linkedList.pollFirst();
         StringBuilder sb = new StringBuilder();
 
+        Map<Integer, Integer> map = new HashMap<>()
+
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>(list1);
         Map<Integer, Integer> map = new HashMap<>();
