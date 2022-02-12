@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="492a3f0a-0b9a-453d-856c-275f80281931" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 刷题手册.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 刷题手册.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/206. Reverse Linked List.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/206. Reverse Linked List.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/25. Reverse Nodes in k-Group.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/25. Reverse Nodes in k-Group.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/82. Remove Duplicates from Sorted List II.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/82. Remove Duplicates from Sorted List II.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/83. Remove Duplicates from Sorted List.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/83. Remove Duplicates from Sorted List.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/86. 分隔链表.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../10.SpringCloud/Code/saas/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10.SpringCloud/Note/1.SpringCloud.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../10.SpringCloud/Note/1.SpringCloud.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="E:\Software\Intellij\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="21pZccwxhdiOWONRUKxZcWFgMkQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -99,6 +87,7 @@
       <workItem from="1642728689547" duration="1963000" />
       <workItem from="1642739641629" duration="3176000" />
       <workItem from="1642819024182" duration="12650000" />
+      <workItem from="1644621674619" duration="1196000" />
     </task>
     <servers />
   </component>

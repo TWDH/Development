@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud_service_member" />
+        <module name="common_utils" />
+        <module name="spring_security" />
+        <module name="infrastructure" />
+        <module name="cloud_service_base" />
+        <module name="cloud_service_acl" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-card-service" target="1.8" />
+      <module name="cloud-order-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

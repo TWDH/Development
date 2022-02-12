@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="010c04d5-091b-4d5b-b67a-e020ac35f373" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_acl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/java/ca/ott/saas/member/MemberMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/java/ca/ott/saas/member/config/ApplicationContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/java/ca/ott/saas/member/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/cloud_service_base/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common_utils/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/spring_security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Note/1.SpringCloud.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Note/1.SpringCloud.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.6.3-bin/1iopthnavndlasol9gbrbg6bf2/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/java/ca/ott/saas/member" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\3.Java\Development\10.SpringCloud\Code\saas\cloud_service\cloud_service_member\src\main\java\ca\ott\saas\member" />
+      <recent name="E:\3.Java\Development\10.SpringCloud\Code\saas\cloud_service\cloud_service_member\src\main\resources" />
+      <recent name="E:\3.Java\Development\10.SpringCloud\Code\saas\cloud-order-service\src\main\java\ca\ott\saas\order" />
+      <recent name="E:\3.Java\Development\10.SpringCloud\Code\saas\cloud-order-service\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MemberMain">
+    <configuration name="CardMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-card-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ca.ott.saas.card.CardMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud_service_member" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.ott.saas.member.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ca.ott.saas.member.MemberMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ca.ott.saas.order.OrderMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MemberMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="010c04d5-091b-4d5b-b67a-e020ac35f373" name="Changes" comment="" />
+      <created>1644623664752</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644623664752</updated>
+      <workItem from="1644623667268" duration="10046000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
