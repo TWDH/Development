@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud_service/cloud_service.iml" filepath="$PROJECT_DIR$/cloud_service/cloud_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_service/cloud_service_acl/cloud_service_acl.iml" filepath="$PROJECT_DIR$/cloud_service/cloud_service_acl/cloud_service_acl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/cloud_service_base/cloud_service_base.iml" filepath="$PROJECT_DIR$/common/cloud_service_base/cloud_service_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_service/cloud_service_member/cloud_service_member.iml" filepath="$PROJECT_DIR$/cloud_service/cloud_service_member/cloud_service_member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common_utils/common_utils.iml" filepath="$PROJECT_DIR$/common/common_utils/common_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/infrastructure.iml" filepath="$PROJECT_DIR$/infrastructure/infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/saas.iml" filepath="$PROJECT_DIR$/saas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/spring_security/spring_security.iml" filepath="$PROJECT_DIR$/common/spring_security/spring_security.iml" />
+    </modules>
+  </component>
+</project>

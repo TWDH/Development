@@ -80,4 +80,27 @@
         </dependency>
     </dependencies>
 
+    <!--配置环境的profile-->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <!--使用${environment}获取值-->
+                <environment>dev</environment>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <environment>test</environment>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <environment>prod</environment>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>

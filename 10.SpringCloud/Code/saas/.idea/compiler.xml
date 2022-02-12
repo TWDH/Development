@@ -18,6 +18,15 @@
     <bytecodeTargetLevel>
       <module name="cloud-card-service" target="1.8" />
       <module name="cloud-order-service" target="1.8" />
+      <module name="cloud_service" target="1.8" />
+      <module name="cloud_service_acl" target="15" />
+      <module name="cloud_service_base" target="1.8" />
+      <module name="cloud_service_member" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="common_utils" target="1.8" />
+      <module name="infrastructure" target="1.8" />
+      <module name="saas" target="1.8" />
+      <module name="spring_security" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
