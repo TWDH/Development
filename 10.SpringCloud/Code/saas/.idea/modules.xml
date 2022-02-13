@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/api_gateway/api_gateway.iml" filepath="$PROJECT_DIR$/infrastructure/api_gateway/api_gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_service/cloud_service.iml" filepath="$PROJECT_DIR$/cloud_service/cloud_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_service/cloud_service_acl/cloud_service_acl.iml" filepath="$PROJECT_DIR$/cloud_service/cloud_service_acl/cloud_service_acl.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/cloud_service_base/cloud_service_base.iml" filepath="$PROJECT_DIR$/common/cloud_service_base/cloud_service_base.iml" />

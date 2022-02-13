@@ -11,5 +11,7 @@
     <file url="file://$PROJECT_DIR$/common/common_utils/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/spring_security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/spring_security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infrastructure/api_gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infrastructure/api_gateway/src/main/resources" charset="UTF-8" />
   </component>
 </project>

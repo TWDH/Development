@@ -19,7 +19,7 @@
     <dependencies>
         <!-- common -->
         <dependency>
-            <groupId>org.ott</groupId>
+            <groupId>ca.ott</groupId>
             <artifactId>cloud_service_base</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -102,5 +102,7 @@
             </properties>
         </profile>
     </profiles>
+
+
 
 </project>

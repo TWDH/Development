@@ -10,17 +10,19 @@
         <module name="cloud_service_member" />
         <module name="common_utils" />
         <module name="spring_security" />
-        <module name="infrastructure" />
+        <module name="api_gateway" />
         <module name="cloud_service_base" />
         <module name="cloud_service_acl" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api_gateway" target="1.8" />
       <module name="cloud-card-service" target="1.8" />
       <module name="cloud-order-service" target="1.8" />
       <module name="cloud_service" target="1.8" />
-      <module name="cloud_service_acl" target="15" />
+      <module name="cloud_service_acl" target="1.8" />
       <module name="cloud_service_base" target="1.8" />
+      <module name="cloud_service_gateway" target="1.8" />
       <module name="cloud_service_member" target="1.8" />
       <module name="common" target="1.8" />
       <module name="common_utils" target="1.8" />

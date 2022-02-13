@@ -14,11 +14,10 @@
     <dependencies>
         <!-- common_utils -->
         <dependency>
-            <groupId>org.ott</groupId>
+            <groupId>ca.ott</groupId>
             <artifactId>common_utils</artifactId>
             <version>${project.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

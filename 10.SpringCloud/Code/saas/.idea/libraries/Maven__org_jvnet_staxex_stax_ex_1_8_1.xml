@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.jvnet.staxex:stax-ex:1.8.1">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../0.资料/谷粒学院/项目资料/6-maven仓库/repository/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../0.资料/谷粒学院/项目资料/6-maven仓库/repository/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../0.资料/谷粒学院/项目资料/6-maven仓库/repository/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

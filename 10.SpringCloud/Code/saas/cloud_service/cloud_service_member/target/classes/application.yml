@@ -15,6 +15,8 @@ spring:
       test-while-idle: true
       test-on-return: false
       validation-query: select 1
+  profiles:
+    active: dev
   jpa:
     properties:
       hibernate:

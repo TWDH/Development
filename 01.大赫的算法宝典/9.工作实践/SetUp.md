@@ -1,5 +1,7 @@
 # 1. dev, test, prod
 
+- https://www.jianshu.com/p/b4c6d5ce3291
+
 - ```xml
   <!--配置环境的profile-->
   <profiles>
@@ -66,4 +68,7 @@
   </pluginRepositories>
   ```
 
-- 
+
+# java mail
+
+- https://blog.didispace.com/springbootmailsender/
