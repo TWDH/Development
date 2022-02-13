@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="010c04d5-091b-4d5b-b67a-e020ac35f373" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/ca/ott/saas/GateWayMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projects/EducationWeb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Projects/mall-swarm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../01.大赫的算法宝典/9.工作实践/SetUp.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../01.大赫的算法宝典/9.工作实践/SetUp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud_service/cloud_service_acl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_service/cloud_service_acl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/java/ca/ott/saas/member/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_service/cloud_service_member/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/java/ca/ott/saas/member/MemberMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/java/ca/ott/saas/member/MemberMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/java/ca/ott/saas/member/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/application-test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/resources/banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/cloud_service_base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/cloud_service_base/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/api_gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/api_gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/ca/ott/saas/GateWayMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/ca/ott/saas/GateWayMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projects/mall-swarm" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Projects/mall-swarm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +62,7 @@
     </option>
     <option name="enabledProfiles">
       <list>
-        <option value="dev" />
+        <option value="test" />
       </list>
     </option>
   </component>
@@ -84,7 +88,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud_service/cloud_service_member/src/main/java/ca/ott/saas/member" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/infrastructure/api_gateway/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -92,6 +96,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\3.Java\Development\10.SpringCloud\Code\saas\infrastructure\api_gateway\src\main\resources" />
       <recent name="E:\3.Java\Development\10.SpringCloud\Code\saas\cloud_service\cloud_service_member\src\main\java\ca\ott\saas\member" />
       <recent name="E:\3.Java\Development\10.SpringCloud\Code\saas\cloud_service\cloud_service_member\src\main\resources" />
       <recent name="E:\3.Java\Development\10.SpringCloud\Code\saas\cloud-order-service\src\main\java\ca\ott\saas\order" />
@@ -105,7 +110,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GateWayMain">
+  <component name="RunManager" selected="Spring Boot.MemberMain">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,9 +156,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GateWayMain" />
-        <item itemvalue="Spring Boot.GateWayMain" />
         <item itemvalue="Spring Boot.MemberMain" />
+        <item itemvalue="Spring Boot.GateWayMain" />
+        <item itemvalue="Spring Boot.GateWayMain" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +175,8 @@
       <updated>1644623664752</updated>
       <workItem from="1644623667268" duration="12383000" />
       <workItem from="1644705193676" duration="59000" />
-      <workItem from="1644705266235" duration="8459000" />
+      <workItem from="1644705266235" duration="9451000" />
+      <workItem from="1644777187906" duration="5531000" />
     </task>
     <servers />
   </component>
