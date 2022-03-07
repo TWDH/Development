@@ -159,128 +159,59 @@
   ```
 
 - ```java
-  public class AmazonOAClosingBrackets {
-  
+  public class AmazonDivideString {
       public static void main(String[] args) {
-          String inputStr = "[()]??";
-  
-          AmazonOAClosingBrackets closingBrackets = new AmazonOAClosingBrackets();
-          int count = closingBrackets.CountClosingBrackets(inputStr); 
-  
-          log("Balanced combinations : " + count);
+          String str = "[(?][??[";
+          int res = getNumBrackets(str);
+          System.out.println(res);
       }
   
-      public int CountClosingBrackets(String inputStr) {
-         	Brackets finalBrackets= new Brackets();
-         	finalBrackets.processChar(inputStr);
+      private static int getNumBrackets(String str) {
+          Map<Character, Integer> totalMap = new HashMap<>(){{
+              put('?', 0);
+              put('(', 0);
+              put(')', 0);
+              put('[', 0);
+              put(']', 0);
+          }};
+          Map<Character, Integer> curMap = new HashMap<>(){{
+              put('?', 0);
+              put('(', 0);
+              put(')', 0);
+              put('[', 0);
+              put(']', 0);
+          }};
   
-         	log("Final Brackets : " + finalBrackets); 
-         	log("Substring Brackets : "); 
+          for (int i = 0; i < str.length(); i++) {
+              char ch = str.charAt(i);
+              totalMap.put(ch, totalMap.getOrDefault(ch, 0) + 1);
+          }
   
-         	Brackets incrementalBracketsLeft = new Brackets();
-         	int count = 0;
+          int res = 0;
+          for(int i = 0; i < str.length() - 1; i++){
+              char ch = str.charAt(i);
+              curMap.put(ch, curMap.getOrDefault(ch, 0) + 1);
   
-         	for (int i = 0; i < inputStr.length(); i++) {
-         		incrementalBracketsLeft.processChar(inputStr.charAt(i)); 
-         		log("i = " + i);
-  			log("Sub left " + inputStr.substring(0, i + 1));
-  			log(incrementalBracketsLeft);
+              // left
+              int curQuestion = curMap.get('?');
+              int curRoundBracketDiff =Math.abs(curMap.get('(') - curMap.get(')')) ;
+              int curSquareBracketDiff = Math.abs(curMap.get('[') - curMap.get(']'));
   
-  			Brackets diffBrackets = diff(finalBrackets, incrementalBracketsLeft);
-  			log("Sub right " + inputStr.substring(i + 1));
-  			log(diffBrackets);
+              int leftDifference = curQuestion - (curRoundBracketDiff + curSquareBracketDiff);
   
-  			if (incrementalBracketsLeft.isBalanced() && diffBrackets.isBalanced()) {
-  				log("is balanced." ); 
-  				count++;
-  			} else {
-  				log("Not balanced"); 
-  			}
-         	}
+              // right
+              int curQuestionRight = totalMap.get('?') - curMap.get('?');
+              int curRoundBracketDiffRight = Math.abs((totalMap.get('(') - curMap.get('(')) - (totalMap.get(')') - curMap.get(')')));
+              int curSquareBracketDiffRight = Math.abs((totalMap.get('[') - curMap.get('[')) - (totalMap.get(']') - curMap.get(']')));
   
-         	return count;
-      }
+              int rightDifference = curQuestionRight - (curRoundBracketDiffRight + curSquareBracketDiffRight);
   
+              if(leftDifference == 0 && rightDifference == 0){
+                  res++;
+              }
+          }
   
-      private class Brackets {
-      	int sqClosing, sqOpening, rbClosing, rbOpening, wildCard; 
-  
-      	public Brackets() {
-      		sqClosing = sqOpening = rbClosing = rbOpening = wildCard = 0;
-      	}
-  
-      	public Brackets(int sqOpening, int sqClosing, int rbOpening, int rbClosing, int wildCard) {
-      		this.sqOpening = sqOpening; 
-      		this.sqClosing = sqClosing; 
-      		this.rbOpening = rbOpening;
-      		this.rbClosing = rbClosing; 
-      		this.wildCard = wildCard;
-      	}
-  
-      	public void processChar(String s) {
-      		for (int i = 0; i < s.length(); i++) {
-         			processChar(s.charAt(i));
-         		}
-      	}
-  
-      	public void processChar(char c) {
-      		switch (c){ 
-      			case '[' : 
-      				sqOpening++;
-      				break; 
-  
-      			case '(' : 
-      				rbOpening++;
-      				break; 
-  
-      			case ')' : 
-      				rbClosing++;
-      				break; 
-  
-      			case ']' : 
-      				sqClosing++; 
-      				break; 
-  
-      			case '?' :
-      				wildCard++;
-      				break; 
-      			default : 
-      				log("Invalid char encoutered " + c); 
-  
-      		}
-      	}
-  
-      	public boolean isBalanced() {
-      		int bracketDiff = Math.abs(sqOpening - sqClosing) + Math.abs(rbOpening - rbClosing); 
-      		if (bracketDiff == 0 && wildCard%2 == 0) {
-      			return true;
-      		}
-      		return bracketDiff - wildCard == 0;
-  
-      	}
-  
-      	@Override public String toString() {
-      		StringBuilder sb = new StringBuilder(); 
-      		sb.append("sq: " + sqOpening + ", " + sqClosing + "\n");
-      		sb.append("rb: " + rbOpening + ", " + rbClosing + "\n");
-      		sb.append("wildCard: " + wildCard);
-      		return sb.toString(); 
-  
-      	}
-  
-      }
-  
-      public static Brackets diff(Brackets left, Brackets right) {
-      		return new AmazonOAClosingBrackets().new Brackets(left.sqOpening - right.sqOpening, 
-      			left.sqClosing - right.sqClosing, 
-      			left.rbOpening - right.rbOpening, 
-      			left.rbClosing - right.rbClosing, 
-      			left.wildCard - right.wildCard); 
-  
-      }
-  
-      public static void log(Object s) {
-      	System.out.println(s.toString());
+          return res;
       }
   }
   ```
