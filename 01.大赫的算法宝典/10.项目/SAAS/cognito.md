@@ -6,7 +6,11 @@
 1. 获取 Authorization Code
 
    - ```
+     //
      https://preka.auth.ca-central-1.amazoncognito.com/oauth2/authorize?response_type=code&client_id=1f7romq14disc5kn1h1drokln6&redirect_uri=https://preka.auth.ca-central-1.amazoncognito.com
+     
+     // userpool2
+     https://saasbusiness7be1bfca-7be1bfca-dev.auth.ca-central-1.amazoncognito.com/login?response_type=code&client_id=5hp5srb3pmrjlpgse9jqgj8upj&redirect_uri=http://localhost:3000/welcome/
      ```
    
 2. 根据 Authorization Code 获取 token
