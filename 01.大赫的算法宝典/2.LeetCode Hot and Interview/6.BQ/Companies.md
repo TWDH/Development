@@ -1,7 +1,7 @@
 # Basis Technologies
 
 - ```
-  Basis Technologies is a Digital Advertising Platform and a global provider of workflow automation, intelligence and programmatic trading software for the marketing enterprise. It runs a more efficient business and better campaigns, by connecting all digital marketing data, which also include loads of intelligence metrics via one interface.
+  Basis Technologies is a Digital Advertising Platform and a global provider of workflow automation software for the marketing enterprise. It runs a more efficient business and better campaigns, by connecting all digital marketing data, which also include loads of intelligence metrics via one interface.
   
   Its technology platform consolidates digital operations across programmatic, publisher-direct, connected TV (CTV), search, and social campaigns. 
   
@@ -12,7 +12,13 @@
 
   - most automated and helpful software to help people do their job
   - automates the work they do and at the same time to frees them up to have a great work-life balance that creates a successful and thrive culture
-  - over last 20 years, advertising complexity  has tripled 
+  - over last 20 years, advertising complexity  has tripled - new channels, formats, and reporting metrics
+  - the industry operates on legacy point solutions and everything is disconnected
+  - not a disconnected point solution to solely buy advertising
+  - eliminates as many manual steps as possible
+  - comprehensive advertising technology platform
+  - sth’s blend of tech
+  - top demand side platform
 
 - Culture
 
