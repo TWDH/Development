@@ -1,4 +1,4 @@
-package WorkQueues;
+package WorkQueues.polling;
 
 import com.rabbitmq.client.Channel;
 import util.RabbitMqUtils;

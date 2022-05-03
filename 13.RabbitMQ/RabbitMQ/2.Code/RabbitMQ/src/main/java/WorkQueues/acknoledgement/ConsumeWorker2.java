@@ -1,4 +1,4 @@
-package WorkQueues;
+package WorkQueues.acknoledgement;
 
 import com.rabbitmq.client.CancelCallback;
 import com.rabbitmq.client.Channel;
@@ -7,6 +7,8 @@ import util.RabbitMqUtils;
 import util.SleepUtils;
 
 /**
+ * 消息应答
+ *
  * @Author He Zhu
  * @Date 2022-05-02
  * @Version 0.1
@@ -22,6 +24,7 @@ public class ConsumeWorker2 {
         //消息接受
         DeliverCallback deliverCallback = (consumerTag, message) -> {
             // 执行 1 s
+            System.out.println("================== C1 ==================");
             SleepUtils.sleep(1);
 
             String receivedMessage = new String(message.getBody());
@@ -34,14 +37,14 @@ public class ConsumeWorker2 {
              */
             channel.basicAck(message.getEnvelope().getDeliveryTag(), false);
         };
+
         //消息被取消
         CancelCallback cancelCallback = (consumerTag) -> {
             System.out.println(consumerTag + "消费者【取消】消费接口回调逻辑");
-
         };
 
-        System.out.println("C2 消费者启动等待消费.................. ");
-        // 消息接收
-        channel.basicConsume(TASK_QUEUE_NAME, true, deliverCallback, cancelCallback);
+        System.out.println("C1 消费者启动等待消费.................. ");
+        // 消息接收: 第二个参数 false，非自动应答
+        channel.basicConsume(TASK_QUEUE_NAME, false, deliverCallback, cancelCallback);
     }
 }

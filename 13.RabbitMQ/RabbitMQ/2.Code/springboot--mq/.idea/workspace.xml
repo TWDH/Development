@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89eed833-1d0e-4cbc-8b34-924d43f01fa5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/10.项目/SAAS/5.AWS.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/10.项目/SAAS/5.AWS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/6.经典面试题/01.Java面试基础篇/100题面试题资料.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/6.经典面试题/01.Java面试基础篇/10万字总结.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/6.经典面试题/01.Java面试基础篇/Java面试手册.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 经典题.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 经典题.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../1.Note/04.Work Queues.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.Note/04.Work Queues.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitMQ/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RabbitMQ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitMQ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/Consumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/Producer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ConsumeWorker1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ConsumeWorker2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ConsumeWorker3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ProducerWorker1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ProducerWorker2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/WorkQueues/ConsumeWorker1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/WorkQueues/ProducerWorker1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651257366851</updated>
       <workItem from="1651257368539" duration="777000" />
-      <workItem from="1651521606563" duration="628000" />
+      <workItem from="1651521606563" duration="1222000" />
     </task>
     <servers />
   </component>
