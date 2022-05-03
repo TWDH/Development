@@ -1,4 +1,4 @@
-# Phone Interview
+# Basic Questions & Phone Interview
 
 1. Tell me something about yourself.
 
@@ -43,6 +43,12 @@
    - My salary expectations are in line with my experience and qualifications.
 
    - If this is the right job for me, I'm sure we can come to an agreement on salary.
+
+   - I don’t feel comfortable sharing that.
+
+   - ```
+     To me, salary is important. But I care more about team, the company culture and how much I can contribute. Do you have a range for this role that you can share?
+     ```
 
    - ```
      My salary range is flexible. I would, of course, like to be compensated fairly for my years of experience and solid skills. However, I'm open to discussing specific numbers once we've discussed the details of the position.
