@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce370e89-08e3-4da9-b33c-ed700c6c7228" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../大赫的算法宝典/2.LeetCode Hot and Interview/0. Notice.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../大赫的算法宝典/2.LeetCode Hot and Interview/528. 按权重随机选择.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../大赫的算法宝典/2.LeetCode Hot and Interview/528. 按权重随机选择.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/6.经典面试题/01.Java面试基础篇/100题面试题资料.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/6.经典面试题/01.Java面试基础篇/10万字总结.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/6.经典面试题/01.Java面试基础篇/Java面试手册.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -41,34 +42,78 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="WorkQueues" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ProducerWorker1">
+    <configuration name="ConsumeWorker1" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WorkQueues.ConsumeWorker1" />
+      <module name="RabbitMQ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WorkQueues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Consumer" />
+      <option name="MAIN_CLASS_NAME" value="Basic.Consumer" />
       <module name="RabbitMQ" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Producer" />
+      <option name="MAIN_CLASS_NAME" value="Basic.Producer" />
       <module name="RabbitMQ" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerWorker1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WorkQueues.ProducerWorker1" />
+      <module name="RabbitMQ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WorkQueues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="Basic.test" />
       <module name="RabbitMQ" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.ConsumeWorker1" />
+      <item itemvalue="Application.Producer" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.ProducerWorker1" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.ProducerWorker1" />
+        <item itemvalue="Application.ConsumeWorker1" />
         <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.Producer" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -81,6 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640297042785</updated>
       <workItem from="1640297044199" duration="8636000" />
+      <workItem from="1651257321128" duration="8073000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="89eed833-1d0e-4cbc-8b34-924d43f01fa5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/10.项目/SAAS/5.AWS.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/10.项目/SAAS/5.AWS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/6.经典面试题/01.Java面试基础篇/100题面试题资料.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/6.经典面试题/01.Java面试基础篇/10万字总结.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/6.经典面试题/01.Java面试基础篇/Java面试手册.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1.Note/04.Work Queues.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.Note/04.Work Queues.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitMQ/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitMQ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/Consumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/Producer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -7,8 +35,51 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectId" id="28U3ViH0EaS3cIZ3lJoLpnKzpHV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootMqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot--mq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.mq.SpringbootMqApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89eed833-1d0e-4cbc-8b34-924d43f01fa5" name="Changes" comment="" />
+      <created>1651257366851</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651257366851</updated>
+      <workItem from="1651257368539" duration="777000" />
+      <workItem from="1651521606563" duration="628000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
