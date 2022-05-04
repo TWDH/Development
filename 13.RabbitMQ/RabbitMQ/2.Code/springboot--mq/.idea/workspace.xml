@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89eed833-1d0e-4cbc-8b34-924d43f01fa5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 经典题.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 经典题.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../1.Note/04.Work Queues.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.Note/04.Work Queues.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitMQ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ConsumeWorker1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ConsumeWorker2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ConsumeWorker3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ProducerWorker1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/src/main/java/WorkQueues/ProducerWorker2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/WorkQueues/ConsumeWorker1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RabbitMQ/target/classes/WorkQueues/ProducerWorker1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="89eed833-1d0e-4cbc-8b34-924d43f01fa5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

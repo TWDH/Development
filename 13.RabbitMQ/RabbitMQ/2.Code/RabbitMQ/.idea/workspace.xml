@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce370e89-08e3-4da9-b33c-ed700c6c7228" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 经典题.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../01.大赫的算法宝典/2.LeetCode Hot and Interview/2.题库/0. 经典题.md" afterDir="false" />
-    </list>
+    <list default="true" id="ce370e89-08e3-4da9-b33c-ed700c6c7228" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640297042785</updated>
       <workItem from="1640297044199" duration="8636000" />
-      <workItem from="1651257321128" duration="19207000" />
+      <workItem from="1651257321128" duration="21147000" />
     </task>
     <servers />
   </component>
