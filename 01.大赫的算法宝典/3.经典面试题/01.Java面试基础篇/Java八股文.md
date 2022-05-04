@@ -91,7 +91,56 @@
 | **Controlled by** | Process is controlled by the operating system.               | Threads are controlled by programmer in a program.           |
 | **Dependence**    | Processes are independent.                                   | Threads are dependent.                                       |
 
+### java多线程之启动线程的三种方式
 
+- 继承Thread类
+
+  - ```java
+    // Thread1类(线程类):
+    public class Thread1 extends Thread{
+        @Override
+        public void run() {
+            for (int i = 0; i < 50; i++) {
+                System.out.println(Thread.currentThread().getName() + "执行" + i);
+            }
+        }
+    }
+    
+    // Mian类，测试类：
+    public class Main {
+        public static void main(String[] args) {
+            new Thread1().start();
+            for (int i = 0; i < 50; i++) {
+                System.out.println(Thread.currentThread().getName() + "执行" + i);
+            }
+        }
+    }
+    ```
+
+- 实现Runnable接口
+
+  - ```java
+    // Thread2类（线程类）：
+    public class Thread2 implements Runnable{
+    	public void run() {
+    		for (int i = 0; i < 50; i++) {
+    			System.out.println(Thread.currentThread().getName() + "执行" + i);
+    		}
+    	}
+    }
+    
+    // Main类：
+    public class Main {
+    	public static void main(String[] args) {
+    		new Thread(new Thread2()).start();
+    		for (int i = 0; i < 50; i++) {
+    			System.out.println(Thread.currentThread().getName() + "执行" + i);
+    		}
+    	}
+    }
+    ```
+
+  - 
 
 # Spring
 

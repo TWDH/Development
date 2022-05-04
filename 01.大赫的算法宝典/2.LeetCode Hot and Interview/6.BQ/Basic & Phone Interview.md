@@ -28,7 +28,8 @@
      One time close the publish date of the new release, my front-end developer got sick and could finished the job on time. There was no other developers that are free to do these new functions. At that point, things looked so bleak that my supervisor even considered to postpone the release date. Instead, as I have already finshed my part of job and I kinda want to learn more front-end techs, I took three days to complete the job that ensured we could publish our APP on time, I think I have a better understanding of how it works and also strengthen my coding ability.
      ```
 
-   - 
+
+   
 
 3. What are your salary expectations? 
 
