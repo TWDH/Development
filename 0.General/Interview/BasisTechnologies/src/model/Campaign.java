@@ -4,13 +4,13 @@ import java.util.List;
 import java.util.Objects;
 
 public class Campaign {
-    Integer campaignId;
+    private Integer campaignId;
 
-    String targetCountry;
+    private String targetCountry;
 
-    String targetDomain;
+    private String targetDomain;
 
-    List<String> dimensions;
+    private List<String> dimensions;
 
     public Campaign() {
     }

@@ -3,10 +3,10 @@ package model;
 import java.util.List;
 
 public class Result {
-    List<Campaign> campaignList;
-    List<EvaluationResult> evaluationResultList;
-    Integer bidProcessed;
-    Long evaluationTime;
+    private List<Campaign> campaignList;
+    private List<EvaluationResult> evaluationResultList;
+    private Integer bidProcessed;
+    private Long evaluationTime;
 
     public Result() {
     }

@@ -21,6 +21,9 @@ public class evaluate {
         List<Campaign> campaignResult = new ArrayList<>();
         Result result = new Result();
         List<EvaluationResult> evaluationResultList = new ArrayList<>();
+
+        boolean[] visited = new boolean[bidList.size()];
+
         int bidSize = bidList.size();
 
         long start = System.currentTimeMillis();
@@ -31,8 +34,12 @@ public class evaluate {
             String targetDomain = campaign.getTargetDomain();
             List<String> dimensions = campaign.getDimensions();
 
-            for (Bid bid : bidList) {
+            for (int i = 0; i < bidSize;i ++) {
+                Bid bid = bidList.get(i);
                 // skip
+                if(visited[i]){
+                    continue;
+                }
                 if (!bid.getCountry().equals(targetCountry)) {
                     continue;
                 }
@@ -45,6 +52,8 @@ public class evaluate {
 
                 EvaluationResult evaluationResult = new EvaluationResult(bid, campaignId);
                 evaluationResultList.add(evaluationResult);
+                // remove the bid that has been processed
+                visited[i] = true;
             }
 
             campaignResult.add(campaign);

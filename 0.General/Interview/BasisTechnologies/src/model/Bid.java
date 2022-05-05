@@ -1,13 +1,13 @@
 package model;
 
 public class Bid {
-    Integer requestId;
+    private Integer requestId;
 
-    String pageURL;
+    private String pageURL;
 
-    String country;
+    private String country;
 
-    String dimension;
+    private String dimension;
 
     public Bid() {
     }

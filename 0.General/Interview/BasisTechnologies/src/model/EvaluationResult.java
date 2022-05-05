@@ -1,8 +1,8 @@
 package model;
 
 public class EvaluationResult {
-    public Bid bid;
-    Integer campaignId;
+    private Bid bid;
+    private Integer campaignId;
 
     public EvaluationResult() {
     }
