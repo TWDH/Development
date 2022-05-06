@@ -17,7 +17,7 @@ public class BatchThread {
     public static List<Campaign> generateCampaign(int size) {
         List<Campaign> campaignList = new ArrayList<>();
 
-        String[] countryArr = new String[]{"CA", "CN", "USA", "IT", "UK"};
+        String[] countryArr = new String[]{"CA", "CN", "USA", "IT", "UK","AD","AE", "AG","AI", "AL", "AM", "AO", "AR", "AT", "AU"};
         String[] urlArr = new String[]{"apple.com", "youtube.com", "youtube.com", "tencent.com", "google.com", "meta.com"};
         List<String> dimensionList = new ArrayList<String>() {{
             add("300x250");
@@ -32,9 +32,9 @@ public class BatchThread {
             String url = urlArr[randUrl];
 
             Campaign campaign = new Campaign(i, country, url, dimensionList);
-            if (campaignList.contains(campaign)) {
-                continue;
-            }
+            // if (campaignList.contains(campaign)) {
+            //     continue;
+            // }
             campaignList.add(campaign);
         }
 
@@ -45,20 +45,17 @@ public class BatchThread {
     }
 
     public static void main(String[] args) {
-
-
-
         // init data
-        List<Campaign> campaignList = generateCampaign(6);
-        for (Campaign campaign : campaignList) {
-            System.out.println(campaign.toString());
-        }
+        List<Campaign> campaignList = generateCampaign(100000);
+        // for (Campaign campaign : campaignList) {
+        //     System.out.println(campaign.toString());
+        // }
 
         Bid bid = new Bid(1, "http://apple.com/ca/store?item=1290", "CA", "300x250");
 
         // multi-threading
         System.out.println(" ===== Evaluating =====");
-        int threadNum = 2;
+        int threadNum = 200;
         List<List<Campaign>> pageList = SplitUtil.splitList(campaignList, threadNum);
 
         // open multi-thread
