@@ -56,6 +56,19 @@ public class Campaign {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Campaign campaign = (Campaign) o;
+        return  Objects.equals(targetCountry, campaign.targetCountry) && Objects.equals(targetDomain, campaign.targetDomain) && Objects.equals(dimensions, campaign.dimensions);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(campaignId, targetCountry, targetDomain, dimensions);
+    }
+
+    @Override
     public String toString() {
         return "Campaign{" +
                 "campaignId=" + campaignId +

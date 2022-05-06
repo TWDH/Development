@@ -57,6 +57,7 @@ public class EvaluateThread implements Runnable{
                 // All passed
                 EvaluationResult evaluationResult = new EvaluationResult(biddingRequest, campaignId);
                 evaluationResultList.add(evaluationResult);
+                System.out.println(evaluationResult);
             }
         }
     }
