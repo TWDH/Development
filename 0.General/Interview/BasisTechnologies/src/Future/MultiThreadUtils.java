@@ -3,6 +3,7 @@ package Future;
 import model.Bid;
 import model.Campaign;
 import model.Result;
+import service.SplitUtil;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -42,6 +43,9 @@ public class MultiThreadUtils {
         ExecutorService threadPool = Executors.newFixedThreadPool(threadCount);
 
         //
+
+        // split
+        List<List<Campaign>> pageList = SplitUtil.splitList(campaignList, threadCount);
     }
 
 }
