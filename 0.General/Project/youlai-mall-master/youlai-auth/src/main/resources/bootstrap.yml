@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: youlai-auth
-  profiles:
-    active: dev
