@@ -48,7 +48,7 @@ public class EvaluateFutureThread<E> implements Callable<List<EvaluationResult>>
         // Result Collection
         List<EvaluationResult> evaluationResultList = new ArrayList<>();
 
-        System.out.println("Thread Name: [" + this.threadName + "] BEGIN processing [" + campaignList.size() + "] campaigns");
+        System.out.println("Thread Name: [" + this.threadName + "] BEGIN processing number of [" + campaignList.size() + "] campaigns");
 
         synchronized (evaluationResultList) {
             for (Campaign campaign : campaignList) {
@@ -79,7 +79,7 @@ public class EvaluateFutureThread<E> implements Callable<List<EvaluationResult>>
                 // All passed
                 EvaluationResult evaluationResult = new EvaluationResult(biddingRequest, campaignId);
                 evaluationResultList.add(evaluationResult);
-                System.out.println(evaluationResult);
+                // System.out.println(evaluationResult);
             }
         }
 

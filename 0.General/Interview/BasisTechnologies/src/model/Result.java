@@ -49,4 +49,14 @@ public class Result {
     public void setEvaluationTime(Long evaluationTime) {
         this.evaluationTime = evaluationTime;
     }
+
+    @Override
+    public String toString() {
+        return "Result{" +
+                "campaignList=" + campaignList +
+                ", evaluationResultList=" + evaluationResultList +
+                ", bidProcessed=" + bidProcessed +
+                ", evaluationTime=" + evaluationTime +
+                '}';
+    }
 }

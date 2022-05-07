@@ -1,8 +1,8 @@
 package Future;
 
-import model.Bid;
-import model.Campaign;
-import model.EvaluationResult;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import model.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,9 +27,11 @@ public class TestCase {
             String url = urlArr[randUrl];
 
             Campaign campaign = new Campaign(i, country, url, dimensionList);
-            // if (campaignList.contains(campaign)) {
-            //     continue;
-            // }
+
+            // remove duplicated Campaign
+            if (campaignList.contains(campaign)) {
+                continue;
+            }
             campaignList.add(campaign);
         }
 
@@ -39,19 +41,55 @@ public class TestCase {
         return campaignList;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws JsonProcessingException {
         // init data
+        // create campaigns
         List<Campaign> campaignList = generateCampaign(100000);
+
+        // create bidding request
         Bid bid = new Bid(1, "http://apple.com/ca/store?item=1290", "CA", "300x250");
+        List<Bid> biddingRequestList = new ArrayList<>();
 
-        // setup thread count
-        MultiThreadUtils multiThreadUtils = MultiThreadUtils.newInstance(200);
-        List<EvaluationResult> executeResult = multiThreadUtils.execute(bid, campaignList);
-
-        System.out.println("========= Evaluation Result ===========");
-        for (EvaluationResult evaluationResult : executeResult) {
-            System.out.println(evaluationResult);
+        for (int i = 0; i < 10; i++) {
+            biddingRequestList.add(bid);
         }
+
+        Long totalProcessingTime = 0L;
+        List<EvaluationResult> finalEvaluationResult = new ArrayList<>();
+
+        for (int i = 0; i < biddingRequestList.size(); i++) {
+            // get current bidding request
+            Bid curBiddingRequest = biddingRequestList.get(i);
+
+            // setup thread count
+            MultiThreadUtils multiThreadUtils = MultiThreadUtils.newInstance(200);
+            ResultAndTime resultAndTime = multiThreadUtils.execute(curBiddingRequest, campaignList);
+
+            List<EvaluationResult> evaluationResultList = resultAndTime.getEvaluationResultList();
+            finalEvaluationResult.addAll(evaluationResultList);
+
+            System.out.println("========= Evaluation Result ===========");
+            for (EvaluationResult evaluationResult : evaluationResultList) {
+                System.out.println(evaluationResult);
+            }
+
+            Long processingTime = resultAndTime.getProcessingTime();
+            System.out.println("========= Processing Time ===========");
+            System.out.println(processingTime + "ms for each bidding request");
+
+            totalProcessingTime += processingTime;
+        }
+
+        // Result Set
+        Result result = new Result();
+        result.setCampaignList(campaignList);
+        result.setEvaluationResultList(finalEvaluationResult);
+        result.setBidProcessed(biddingRequestList.size());
+        result.setEvaluationTime(totalProcessingTime);
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        String s = objectMapper.writeValueAsString(result);
+        System.out.println(s);
 
     }
 }

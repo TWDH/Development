@@ -1,9 +1,6 @@
 package Future;
 
-import model.Bid;
-import model.Campaign;
-import model.EvaluationResult;
-import model.Result;
+import model.*;
 import service.SplitUtil;
 
 import java.util.ArrayList;
@@ -41,7 +38,7 @@ public class MultiThreadUtils {
         return instance;
     }
 
-    public List<EvaluationResult> execute(Bid biddingRequest, List<Campaign> campaignList) {
+    public ResultAndTime execute(Bid biddingRequest, List<Campaign> campaignList) {
 
         // Create Thread Pool
         ExecutorService threadPool = Executors.newFixedThreadPool(threadCount);
@@ -91,7 +88,12 @@ public class MultiThreadUtils {
         long endTime = System.currentTimeMillis();
         System.out.println("Total processing time is: " + (endTime - startTime));
 
-        return evaluationResultFromAllThread;
+        ResultAndTime resultAndTime = new ResultAndTime(evaluationResultFromAllThread, (endTime - startTime));
+
+        // return evaluationResultFromAllThread;
+        return resultAndTime;
     }
 
 }
+
+
