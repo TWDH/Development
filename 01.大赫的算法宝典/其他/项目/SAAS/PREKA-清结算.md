@@ -12,12 +12,14 @@
 # Clearing 表 (流水)
 
 - Discount：$10
-- Commission (DR, out)：-$5
+- Commission (DR, out)： -$5
 - Fee (CR, in)：+$5
 - Settle1：$40
 - Settle2：$40
 
-Merchant Clearing
+
+
+# Merchant Clearing
 
 | No.               |      MerchantID      | Card Account ID | Direction | chart of account (FEE / Settlement1 / Settlement2 / Discount) |        Amount         | reverse transcation id | reference id | TIme |      |
 | ----------------- | :------------------: | --------------- | :-------: | :----------------------------------------------------------: | :-------------------: | :--------------------: | ------------ | :--: | :--: |
