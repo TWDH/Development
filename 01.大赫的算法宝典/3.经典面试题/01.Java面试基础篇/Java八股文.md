@@ -1,3 +1,5 @@
+- [Java八股文-详细版](https://juejin.cn/post/6995726543745974279)
+
 # JAVA EE
 
 ## **Access Modifiers** (访问修饰符)
@@ -140,7 +142,7 @@
     }
     ```
 
-- 隐式调用
+- 实现 callable 接口
 
 # Spring
 

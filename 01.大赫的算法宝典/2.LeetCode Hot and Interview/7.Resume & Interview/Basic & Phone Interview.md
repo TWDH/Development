@@ -5,14 +5,14 @@
    - ```
      My name is He Zhu, I graduated from University of Ottawa majoring in electrical and computer engineering. I have work with OTT Financial Group for 1 year as a software developer. 
      
-     I mainly dedicated myself in back-end java development, I have developed bunch of new features in one of our mobile project "OTT Pocket" which is a online shopping plateform. What's more, back into few month before, I was assigned to be the tech lead, leading a small team to develop a new SaaS platform for issuing business giftcard for our partner merchants, which could be redeemed in OTT pocket. One of the impressive accomplishment is that first beta version was released in one month.
+     I mainly dedicated myself in back-end java development, I have developed bunch of new features in one of our mobile project "OTT Pocket" which is a online shopping plateform that sells giftcard, voucher and coupon. What's more, back into few month before, I was assigned to be the tech lead, leading a small team to develop a new SaaS platform called PREKA, it stands for present card and prepaid card. The PREKA is designed for issuing business giftcard / voucher / coupon for our partner merchants, which could be bought and redeemed in OTT pocket which make it a full cycle of business. I mainly responsible for developing the backend server-side application, our tech stack includes SpringBoot, SpringCloud that uses the methodology of micro-services and distribute system. My daily works are creating APIs and test it with front-end developers, I also help the team to set up the cloud server AWS EC2 for deployment. 
      ```
 
    - ```
      I am passionate, hard-working, and extremely responsible. I am also looking forward to putting to practice all the things I learned during my time at university.
      ```
 
-2. What are your biggest strengths?
+2. **What are your biggest strengths?**
 
    - ![top strengths for different fields](https://cdn-blog.novoresume.com/articles/interview-questions-and-best-answers-guide/top-strengths-for-different-fields.png)
 
@@ -29,9 +29,9 @@
      ```
 
 
-   
 
-3. What are your salary expectations? 
+
+3. **What are your salary expectations?** 
 
    - what are the components of the salary (base, stock, bonus, sign fee ...)
 
@@ -65,7 +65,7 @@
 
    - 
 
-4. Why are you looking to leave your current position? 
+4. **Why are you looking to leave your current position?** 
 
    - I don't feel like my current role is challenging me anymore
    - I feel like I'm ready to take on more responsibility
@@ -91,4 +91,34 @@
 - What is the next step in your hiring process?
 - Who would I be working closest with, or reporting to, on a daily basis?
 - Beyond some of the hard skills we’ve discussed, which soft skills would be most helpful in this position?
+
+
+
+**Facing a Problem and how to solve it**
+
+- ```java
+  There was a problem that happened internally in "OTT Pocket" that our clearing and settlement were calculated mannually by the operation team and it is very time-consuming especially when the transaction amount it high. One time, they made a mistake and cause severe problem, So I proposed to automate the whole process and discussed with my product team. I led the team to design the clearing procedure and backend data structure, the sprint last about about two weeks including testing time. Finally, the new function goes online successfully and the operation team can export the settlement report by just clicking a button.
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
