@@ -2,20 +2,27 @@
 
 ```java
 public class VendingMachine {
+    // item & money
     private String currentSelectedItem;
     private int currentInsertedMoney;
+    
+    // state
     private AbstractState state;
     private NoSelectionState noSelectionState;
     private HasSelectionState hasSelectionState;
     private InsertedMoneyState insertedMoneyState;
+    
+    // Map<itemS>
     private Map<String, Integer> itemPrice;
 
     public VendingMachine() {
         currentInsertedMoney = 0;
         currentSelectedItem = null;
+        
         noSelectionState = new NoSelectionState(this);
         hasSelectionState = new HasSelectionState(this);
         insertedMoneyState = new InsertedMoneyState(this);
+        
         state = noSelectionState;
 
         itemPrice = new HashMap<>();
@@ -52,7 +59,7 @@ public class VendingMachine {
             return itemPrice.get(currentSelectedItem);
         }
     }
-
+	
     public void changeToNoSelectionState() {
         state = noSelectionState;
     }
@@ -111,31 +118,26 @@ class NoSelectionState extends AbstractState{
 
     public NoSelectionState(VendingMachine vendingMachine) {
         super(vendingMachine);
-        // TODO Auto-generated constructor stub
     }
 
     @Override
     public void selectItem(String selection) {
-        // TODO Auto-generated method stub
         vendingMachine.setSelectedItem(selection);
         vendingMachine.changeToHasSelectionState();
     }
 
     @Override
     public void insertMoney(int value) {
-        // TODO Auto-generated method stub
         System.out.println("Please make a selection first");
     }
 
     @Override
     public void executeTransaction() {
-        // TODO Auto-generated method stub
         System.out.println("Please make a selection first");
     }
 
     @Override
     public int cancelTransaction() {
-        // TODO Auto-generated method stub
         System.out.println("Please make a selection first");
         return 0;
     }
