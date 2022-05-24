@@ -1,5 +1,28 @@
 ![image-20220518224832595](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220518224832595.png)
 
+## 解：
+
+![img](https://lh5.googleusercontent.com/GO0OSO2J7P_2d49Rgh-NQ2KeyLjCxqQefdx9e-JiBK0vKpW3NpDOJ4q1XvYYo4FYJaXRD-oyIZCzG3bfUy03M6JMZNPvJNELCD8LRoKXvPidJs6ga-5gOy0b-ODjssbtz_31-sppE8cM4dai5A)
+
+- **Clarify**
+  - *What (关键字 )*
+    - Elevator
+      - 重量限制 / 当前重量
+      - 客梯 / 货梯（抵达的楼层）
+    - Building
+      - 多处电梯（一个request，多少个电梯响应） -> 本题：每层一处能搭乘，所有电梯均可响应
+  - *How (题目主体的规则 )*
+    - 判断电梯是否超重？
+      - Passenger Class 包含重量
+      - 电梯自动感应当前重量（√）
+    - 按下按钮，那一台电梯会响应？
+      - 同方向 > 静止 > 反向 （Scheduler）（√）
+      - 一般负责奇数楼层，一半负责偶数楼层
+    - 电梯运行时，那些键可以响应？
+      - 是否能按下反方向的楼层
+- **Core Object**（以一个 Object 为基础，线性思考；确定 Objects 之间的映射关系）
+  - input（request） -> ELEVATORSYSTEM -> output（elevator 某个电梯）
+
 ```java
 enum Direction {
 	UP, DOWN
@@ -14,7 +37,7 @@ class Request {
 	
 	public Request(int l)
 	{
-		level = l;
+		level = l; 
 	}
 	
 	public int getLevel()
@@ -46,7 +69,6 @@ class ExternalRequest extends Request{
 	
 	public ExternalRequest(int l, Direction d) {
 		super(l);
-		// TODO Auto-generated constructor stub
 		this.direction = d;
 	}
 	
@@ -60,7 +82,6 @@ class InternalRequest extends Request{
 
 	public InternalRequest(int l) {
 		super(l);
-		// TODO Auto-generated constructor stub
 	}
 }
 
