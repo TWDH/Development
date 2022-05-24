@@ -26,7 +26,7 @@
 | 1                 |        naicha        |                 |    CR     |                             FEE                              | 5 FEE (+5 Commission) |                        |              |      |      |
 | 2                 |        naicha        |                 |    DR     |                         Settlement1                          |          40           |           5            |              |      |      |
 | 3                 |        naicha        |                 |    DR     |                         Settlement2                          |          40           |                        |              |      |      |
-| 4                 |        naicha        |                 |    CR     |                           Discount                           |          10           |                        |              |      |      |
+| 4                 |        naicha        |                 |    CR     |                            Bonus                             |          10           |                        |              |      |      |
 |                   |                      |                 |           |                                                              |                       |                        |              |      |      |
 | condition1  5     |        naicha        |                 |    CR     |                       anti-settlement1                       |          40           |           2            |              |      |      |
 | 6                 |        naicha        |                 |    DR     |                            redeem                            |          40           |                        |              |      |      |
