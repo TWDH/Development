@@ -18,7 +18,7 @@ public class TraverseMarkdown {
             file.createNewFile();
         }
         String currentPath = ".";
-        printFiles(new File("D:\\2.Projects\\OTTPocket\\pocket-doc"), 1, fop, currentPath);
+        printFiles(new File("D:\\2.Projects\\Development"), 1, fop, currentPath);
     }
 
     public static void printFiles(File dir, int tab, FileOutputStream fop, String currentPath) throws Exception {
