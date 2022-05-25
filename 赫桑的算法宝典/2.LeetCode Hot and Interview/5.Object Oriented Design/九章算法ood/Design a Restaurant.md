@@ -29,7 +29,17 @@
 
 
 
-
+- Reservation
+  - Search Criteria
+    - FindTableForReservation(Timeslot t)
+  - 方法一：
+    - 返回最近可用的几个时间段
+    - `List<Timeslot (Result)> findTableForReservation(Timeslot t)`
+  - 方法二：
+    - 可以预定：直接进入 confirm
+      - `Pair<Table, Timeslot> findTableForReservation(Time slot)`
+      - `void confirmReservation(Pair<Table, Timeslot> reservation)`
+    - 不能预订：Throw Exception
 
 ```java
 class NoTableException extends Exception{
