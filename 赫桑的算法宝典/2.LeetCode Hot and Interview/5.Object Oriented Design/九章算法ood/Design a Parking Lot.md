@@ -1,4 +1,64 @@
+# 管理类 (mid)
+
+- Gym
+- Parking lot
+- Restaurant
+- Library
+- Super market
+- Hotel
+
 ![image-20220518225021187](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220518225021187.png)
+
+![image-20220524205659180](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524205659180.png)
+
+1. `parkVehicle(Vehicle v)`
+   1. `- List<Spot> findSpotsForVehicle(Vehicle v)` 
+   2. `Spot.takeSpot()`
+
+- **Clarify**
+  - *What* (Vehicle ---> ParkingLot ---> ParkingSpot)
+    - Vehicle (type of vehicles)
+      - [Bus, sedan, motorCycle]
+    - Parking lot  (multiple layers) 
+      - [parking lot ---> parking level ---> parking spaces]
+    - ParkingSpots (multiple types)
+      - no disable / no electrical spot
+  - *How*
+    - 停车场有哪些规则、功能？
+      - 规则一：停车规则（根据车大小，横向停车）
+      - 规则二：停车场能够显示空闲位置的个数
+      - 规则三：收费 / 免费？ （根据时间收费）
+- **Core Object**
+  - input (vehicles) ---> PARKINGLOT ---> output (parking spot)
+  - <img src="https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524210909548.png" alt="image-20220524210909548" style="zoom:50%;" />
+    - 问题一：ParkingLot 不需要知道任何 Car 类型的信息
+    - 问题二：给 ParkingLot 引入多余的依赖 Car 类型
+    - 问题三：ParkingLot静态，Car动态；动态类会不断修改静态类
+    - ParkingLot 和 Car 也是一种动态关系（图书馆 User <---> Book）, *采用 Receipt 思想，Ticket类*
+  - <img src="https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524211355527.png" alt="image-20220524211355527" style="zoom:50%;" />
+    - ParkingLot 和 ParkingSpot 都是静态的类， ParkingLot一定依赖 ParkingSpot
+- **Use Case** (管理类)
+  - 思考
+    - Reserve (提前预定) (×)
+    - Serve (过程, 提供的服务) (Park Vehicle + Get available count)
+    - Checkout (离开) (Clear spot + Calculate price)
+  - ParkingLot
+    - Get available count
+    - Park Vehicle
+      - Parking lot checks the size of vehicle
+      - Parking lot find an available spot for this vehicle
+      - Vehicle takes the spot
+    - Clear spot
+    - Calculate price
+- **Class**
+  - 小技巧：*收据*
+    - 图书馆 (User <---> Book)
+    - ticket ( `-User` ;  `-List<Book>`)
+- **Correctness**
+  - validate use case
+  - follow good practice (modifier, exception)
+  - SOLID
+  - Design Pattern
 
 ```java
 // enum type for Vehicle
@@ -10,7 +70,7 @@ enum VehicleSize {
 
 //abstract Vehicle class
 abstract class Vehicle {
-    // Write your code here
+    
 	protected int spotsNeeded;
 	protected VehicleSize size;
 	protected String licensePlate;  // id for a vehicle
@@ -309,3 +369,6 @@ public class ParkingLot {
 }
 ```
 
+![image-20220524220835144](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524220835144.png)
+
+![image-20220524221233835](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524221233835.png)

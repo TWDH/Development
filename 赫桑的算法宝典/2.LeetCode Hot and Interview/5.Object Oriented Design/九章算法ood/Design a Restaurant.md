@@ -1,4 +1,35 @@
+# 预定类
+
 ![image-20220518224938468](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220518224938468.png)
+
+![image-20220524222833096](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524222833096.png)
+
+- **Clarify**
+  - *What* (Party ---> Restaurant ---> Table) (大堂，所有桌子都一样, 暂不考虑人数限制)
+    - Restaurant
+    - 桌子的规格不一样，能坐的人数区别
+    - 吧台里，party的区分
+    - 收费？
+  - *How* (功能) 
+    - 是否能够预约？(没有Reservation)
+    - 是否能够送外卖？
+    - 每个Order需要区分是Dine-in还是Dine-out
+- **Core Object**
+  - ![image-20220524224254879](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524224254879.png)
+  - Order 为 Receipt 类，存储 Meals、Tables、Party
+- **Use Case**
+  - 思考
+    - Reserve：/
+    - Serve：Find table、Take order
+    - Checkout：checkout
+  - Restaurant
+    - Find table
+    - Take Order
+    - Checkout
+
+
+
+
 
 ```java
 class NoTableException extends Exception{

@@ -5,6 +5,7 @@
 ![img](https://lh5.googleusercontent.com/GO0OSO2J7P_2d49Rgh-NQ2KeyLjCxqQefdx9e-JiBK0vKpW3NpDOJ4q1XvYYo4FYJaXRD-oyIZCzG3bfUy03M6JMZNPvJNELCD8LRoKXvPidJs6ga-5gOy0b-ODjssbtz_31-sppE8cM4dai5A)
 
 - **Clarify**
+
   - *What (关键字 )*
     - Elevator
       - 重量限制 / 当前重量
@@ -20,8 +21,97 @@
       - 一般负责奇数楼层，一半负责偶数楼层
     - 电梯运行时，那些键可以响应？
       - 是否能按下反方向的楼层
+
 - **Core Object**（以一个 Object 为基础，线性思考；确定 Objects 之间的映射关系）
+
   - input（request） -> ELEVATORSYSTEM -> output（elevator 某个电梯）
+
+- **Use Case**
+
+  - 利用定义的 Core Object, 列举出 **每个 Object 对应产生的 use case**
+
+  - 每个 use case 只需要先用一句话简单描述
+
+  - > - ElevatorSystem
+    >   - handleRequest
+    > - Elevator
+    >   - Take external request
+    >   - Take internal request
+    >   - Open gate
+    >   - Close gate
+    >   - Check weight
+    > - ElevatorButton
+    >   - PressButton
+
+- **Class** 类图
+
+  - ![image-20220524190158540](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524190158540.png)
+
+- **Correctness**
+
+- Different ways to handle external requests ? (Strategy Pattern)
+
+  - ![image-20220524193429564](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524193429564.png)
+
+  - ```java
+    // Main
+    class MainApplication {
+        ElevatorSystem system = new ElevatorSystem();
+        // set pattern
+        system.setStrategy(new RandomHandleRequestStrategy());
+        
+        // Request
+        ExternalRequest request = new ExternalRequest(Direction.UP, 3);
+        
+        // handle external request
+        system.handleRequest(request)
+    }
+    
+    
+    // Context
+    class ElevatorSystem {
+        // Strategies
+        private HandleRequestStrategy strategy = new HandleRequestStrategy();
+        
+        // Elevators
+        private List<Elevator> elevators = new ArrayList<>();
+        
+        // Set strategy
+        public void setStrategy(HandleRequestStrategy strategy){
+            this.strategy = strategy;
+        }
+        
+        public void handleRequest(ExternalRequest request){
+            strategy.handleRequest(request, elevator);
+        }
+    }
+    
+    // Interface
+    interface HandleRequestStrategy {
+        public void handleRequest(ExternalRequest request, List<Elevator> elevators);
+    }
+    
+    // Concrete Strategy
+    class RandomHandleRequestStrategy implements HandleRequestStrategy{
+        public void handleRequest(ExternalRequest request, List<Elevator> elevators){
+            Random rand = new Random();
+            int n = rand.nextInt(elevators.size());
+            
+            // choose random elevator handle external request 
+            elevators.get(n).handleExternalRequest(request);
+        }
+    }
+    
+    // Concrete Strategy
+    class AlwaysOneElevatorHandleRequestStrategy implements HandleRequestStrategy{
+        public void handleRequest(ExternalRequest request, List<Elevator> elevators){
+            // choose one elevator handle external request 
+            elevator.get(0).handleExternalRequest(request);
+        }
+    }
+    ```
+
+
 
 ```java
 enum Direction {
