@@ -9,7 +9,7 @@ import DesignParkingLot.enums.VehicleSize;
  */
 public class Bus extends Vehicle{
     public Bus() {
-        this.spotNeeded = 5;
-        this.vehicleSize = VehicleSize.Large;
+        this.vehicleSize = 5;
+
     }
 }

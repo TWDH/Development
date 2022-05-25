@@ -35,6 +35,15 @@ public class Ticket {
         return spots;
     }
 
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "vehicle=" + vehicle +
+                ", spots=" + spots +
+                ", startTime=" + startTime +
+                '}';
+    }
+
     public void setSpots(List<Spot> spots) {
         this.spots = spots;
     }

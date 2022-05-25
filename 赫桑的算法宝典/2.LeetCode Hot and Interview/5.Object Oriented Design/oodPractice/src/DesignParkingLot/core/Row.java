@@ -11,10 +11,10 @@ import java.util.List;
 public class Row {
     List<Spot> spots;
 
-    public Row(int numSpots) {
+    public Row(int numSpots, int curLevel) {
         spots = new ArrayList<>();
         for(int i = 0; i < numSpots; i++){
-            Spot spot = new Spot();
+            Spot spot = new Spot(true, curLevel);
             spots.add(spot);
         }
     }

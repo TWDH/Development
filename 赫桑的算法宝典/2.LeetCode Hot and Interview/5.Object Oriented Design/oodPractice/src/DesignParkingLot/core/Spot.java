@@ -8,17 +8,22 @@ package DesignParkingLot.core;
 public class Spot {
 
     private boolean isAvailable;
-    private Level level;
+    private int level;
+
+    public Spot(boolean isAvailable, int level) {
+        this.isAvailable = isAvailable;
+        this.level = level;
+    }
 
     public void setAvailable(boolean available) {
         isAvailable = available;
     }
 
-    public Level getLevel() {
+    public int getLevel() {
         return level;
     }
 
-    public void setLevel(Level level) {
+    public void setLevel(int level) {
         this.level = level;
     }
 

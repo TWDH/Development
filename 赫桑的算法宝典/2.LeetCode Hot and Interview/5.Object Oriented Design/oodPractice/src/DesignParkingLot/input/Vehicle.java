@@ -8,11 +8,13 @@ import DesignParkingLot.enums.VehicleSize;
  * @Version 0.1
  */
 public abstract class Vehicle {
-    protected int spotNeeded;
-    protected VehicleSize vehicleSize;
-    protected String licencePlate;
+    protected int vehicleSize;
 
-    public VehicleSize getVehicleSize() {
-        return this.vehicleSize;
+    public int getVehicleSize() {
+        return vehicleSize;
+    }
+
+    public void setVehicleSize(int vehicleSize) {
+        this.vehicleSize = vehicleSize;
     }
 }

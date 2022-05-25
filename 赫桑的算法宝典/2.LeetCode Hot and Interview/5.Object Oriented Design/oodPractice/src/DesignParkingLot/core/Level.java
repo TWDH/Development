@@ -13,10 +13,10 @@ public class Level {
     private int availableCount;
 
     // constructor
-    public Level (int numRow, int numSpots){
+    public Level (int numRow, int numSpots, int curLevel){
         rows = new ArrayList<>();
         for (int i = 0; i < numRow; i++) {
-            Row row = new Row(numSpots);
+            Row row = new Row(numSpots, curLevel);
             rows.add(row);
         }
     }

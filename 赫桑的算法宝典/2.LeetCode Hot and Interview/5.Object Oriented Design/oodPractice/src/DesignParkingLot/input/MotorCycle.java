@@ -9,7 +9,7 @@ import DesignParkingLot.enums.VehicleSize;
  */
 public class MotorCycle extends Vehicle {
     public MotorCycle() {
-        this.spotNeeded = 1;
-        this.vehicleSize = VehicleSize.MotorCycle;
+        this.vehicleSize = 1;
+
     }
 }
