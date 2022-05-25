@@ -9,7 +9,7 @@ import DesignParkingLot.input.Car;
  * @Date 2022-05-25
  * @Version 0.1
  */
-public class main {
+public class mainParkingLot {
     public static void main(String[] args) {
         ParkingLot parkingLot = new ParkingLot(5, 10, 10);
         Car car = new Car();

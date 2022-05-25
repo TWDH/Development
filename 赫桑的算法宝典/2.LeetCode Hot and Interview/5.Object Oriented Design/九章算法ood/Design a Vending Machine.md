@@ -1,20 +1,28 @@
 ![image-20220518224800442](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220518224800442.png)
 
+![image-20220525120858426](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220525120858426.png)
+
+
+
+
+
 ```java
 public class VendingMachine {
     // item & money
     private String currentSelectedItem;
     private int currentInsertedMoney;
     
+    // Map<itemS>
+    private Map<String, Integer> itemPrice;
+    
     // state
     private AbstractState state;
+    
     private NoSelectionState noSelectionState;
     private HasSelectionState hasSelectionState;
     private InsertedMoneyState insertedMoneyState;
-    
-    // Map<itemS>
-    private Map<String, Integer> itemPrice;
 
+    // Constructor
     public VendingMachine() {
         currentInsertedMoney = 0;
         currentSelectedItem = null;
@@ -31,6 +39,7 @@ public class VendingMachine {
         itemPrice.put("MountainDew", 399);
     }
 
+    // concrete action
     public void setSelectedItem(String item) {
         this.currentSelectedItem = item;
     }
@@ -42,7 +51,7 @@ public class VendingMachine {
     public void insertMoney(int amount) {
         this.currentInsertedMoney += amount;
     }
-
+	
     public void emptyInsertedMoney() {
         this.currentInsertedMoney = 0;
     }
@@ -59,7 +68,8 @@ public class VendingMachine {
             return itemPrice.get(currentSelectedItem);
         }
     }
-	
+    
+	// change state
     public void changeToNoSelectionState() {
         state = noSelectionState;
     }
@@ -71,7 +81,8 @@ public class VendingMachine {
     public void changeToInsertedMoneyState() {
         state = insertedMoneyState;
     }
-
+    
+	// take action in this state ---> Go to concrete action eventully
     public void selectItem(String selection) {
         state.selectItem(selection);
     }
@@ -79,21 +90,21 @@ public class VendingMachine {
     public void addMoney(int value) {
         state.insertMoney(value);
     }
-
+	
     public void executeTransaction() {
         state.executeTransaction();
     }
-
+	
     public int cancelTransaction() {
         return state.cancelTransaction();
     }
-
+	
     public String printState() {
         String res = "";
-
+		
         res = "Current selection is: " + currentSelectedItem + ", current inserted money: " + currentInsertedMoney
             + ", current state is : " + state;
-
+		
         return res;
     }
 }
@@ -152,31 +163,26 @@ class HasSelectionState extends AbstractState{
 
     public HasSelectionState(VendingMachine vendingMachine) {
         super(vendingMachine);
-        // TODO Auto-generated constructor stub
     }
 
     @Override
     public void selectItem(String selection) {
-        // TODO Auto-generated method stub
         vendingMachine.setSelectedItem(selection);
     }
 
     @Override
     public void insertMoney(int value) {
-        // TODO Auto-generated method stub
         vendingMachine.insertMoney(value);
         vendingMachine.changeToInsertedMoneyState();
     }
 
     @Override
     public void executeTransaction() {
-        // TODO Auto-generated method stub
         System.out.println("You need to insert money first");
     }
 
     @Override
     public int cancelTransaction() {
-        // TODO Auto-generated method stub
         System.out.println("Transaction canceled");
         vendingMachine.setSelectedItem(null);
         vendingMachine.changeToNoSelectionState();
@@ -197,13 +203,11 @@ class InsertedMoneyState extends AbstractState{
 
     @Override
     public void selectItem(String selection) {
-        // TODO Auto-generated method stub
         System.out.println("Already has a selection, please cancel transaction to make a new selection");
     }
 
     @Override
     public void insertMoney(int value) {
-        // TODO Auto-generated method stub
         vendingMachine.insertMoney(value);
     }
 
