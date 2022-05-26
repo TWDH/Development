@@ -9,9 +9,144 @@
      1. Brew（煮咖啡）
 3. **Core Object**
    - ![image-20220519153743415](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220519153743415.png)
-4. 
+
+
 
 ```java
+// K.Z
+//Input
+public class CoffeePack {
+    private int milkCount;
+    private int sugarCount;
+
+    public CoffeePack(int milkCount, int sugarCount) {
+        this.milkCount = milkCount;
+        this.sugarCount = sugarCount;
+    }
+
+    public int getMilkCount() {
+        return milkCount;
+    }
+
+    public void setMilkCount(int milkCount) {
+        this.milkCount = milkCount;
+    }
+
+    public int getSugarCount() {
+        return sugarCount;
+    }
+
+    public void setSugarCount(int sugarCount) {
+        this.sugarCount = sugarCount;
+    }
+
+    @Override
+    public String toString() {
+        return "CoffeePack{" +
+                "milkCount=" + milkCount +
+                ", sugarCount=" + sugarCount +
+                '}';
+    }
+}
+
+// Interface
+public interface ICoffee {
+    public double getCost();
+    public String getIngredients();
+}
+
+// Concrete Class (Simple)  ---> interface
+public class SimpleCoffee implements ICoffee{
+    @Override
+    public double getCost() {
+        return 1.99;
+    }
+
+    @Override
+    public String getIngredients() {
+        return "Plain Coffee";
+    }
+}
+
+// Decorator ---> Interface
+public abstract class CoffeeDecorator implements ICoffee{
+}
+
+// Concrete Decorator
+public class CoffeeWithMilk extends CoffeeDecorator{
+
+    ICoffee coffee;
+
+    public CoffeeWithMilk(ICoffee coffee) {
+        this.coffee = coffee;
+    }
+
+    @Override
+    public double getCost() {
+        return coffee.getCost() + 1.5;
+    }
+
+    @Override
+    public String getIngredients() {
+        return coffee.getIngredients() + " + Milk";
+    }
+}
+
+public class CoffeeWithSugar extends CoffeeDecorator{
+
+    ICoffee coffee;
+
+    public CoffeeWithSugar(ICoffee coffee) {
+        this.coffee = coffee;
+    }
+
+    @Override
+    public double getCost() {
+        return coffee.getCost() + 0.5;
+    }
+
+    @Override
+    public String getIngredients() {
+        return coffee.getIngredients() + " + Sugar";
+    }
+}
+
+// Coffee Maker ()
+public class CoffeeMaker {
+    public ICoffee makeCoffee(CoffeePack pack) {
+        ICoffee coffee = new SimpleCoffee();
+
+        // add coffee
+        for (int i = 0; i < pack.getMilkCount(); i++) {
+            coffee = new CoffeeWithMilk(coffee);
+        }
+
+        // add milk
+        for (int i = 0; i < pack.getSugarCount(); i++) {
+            coffee = new CoffeeWithSugar(coffee);
+        }
+
+        return coffee;
+    }
+}
+
+//Main
+public class MainCoffeeMaker {
+    public static void main(String[] args) {
+        CoffeePack coffeePack = new CoffeePack(1, 2);
+        CoffeeMaker coffeeMaker = new CoffeeMaker();
+
+        ICoffee myCoffee = coffeeMaker.makeCoffee(coffeePack);
+        System.out.println("Cost: " + myCoffee.getCost());
+        System.out.println("Ingredients: " + myCoffee.getIngredients());
+    }
+}
+```
+
+
+
+```java
+// 九章算法
 public class CoffeeMaker {
 
 	public Coffee makeCoffee(CoffeePack pack) {
