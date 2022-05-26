@@ -16,7 +16,7 @@
    - **E2E** is when all the different components are tested at once. Done usually at the **end of the SDLC （ Software Development Life Cycle）**
 4. What to consider when scaling up system?
 5. How to manage distributed database?
-6. Technical questions related to integration/microservices/API/software engineering.
+6. Technical questions related to integration / microservices / API / software engineering.
 7. What are the core differences between REST APIs and GraphQL?
 8. Describe different micro-frontends implementation approaches and their advantages/disadvantages
    - The idea behind Micro Frontends is to think about a website or web app as **a composition of features** which are owned by **independent teams**. Each team has a **distinct area of business** or **mission** it cares about and specialises in. A team is **cross functional** and develops its features **end-to-end**, from database to user interface.
