@@ -1,6 +1,41 @@
 # 
 
-- 
+1. What is your approach to debugging? . Eg - The payment is being credited to the wrong merchant account. How do you debug this problem in production?
+   - Take the reported steps (logs) to **reproduce the bug in dev**
+   - Write **unit test** to reproduce the bug
+     - My go to approach is the second one. Let's assume there is a payment endpoint, unit test will reveal bugs and likely causes. A cause might be a wrong environment variable or even hardcoded value. Unit test is the best way to reproduce bugs IMO because you are testing outcomes against expectations and tests fails when they dont match.
+     - Let's assume the cause of the bug is a wrong environment variable, next thing to do is to confirm the variable in prod to ascertain the correctness. That's an easy fix that does not require any coding.
+     - If the cause of the bug is something else like hard coded value, a hotfix or bugfix should be pushed and deployed first to the test environment, then to prod afterwards if all is well in the test environment.
+2. How do you handle website slowness without rewriting in a different language or going for different architecture?
+   - **Vertical and horizontal scaling.** 
+     - **Vertical** scaling involves increasing the machine resources by **increasing the RAM size or CPU**. 
+     - **Horizontal** scaling on the other hand involves **increasing in the number of machines.** 
+     - Think of VS as making a man stronger (adding more muscles) and HS as increasing the number of average men. There's only how far you get increase resources but the number of machines with the same compute capabilities you can add is infinite. Both approaches improves performance of a system without refactoring, rewriting/building or changing architecture.
+3. When do you do unit and end-to-end testing?
+   - **Unit test** is done **by developers in dev**. Involves testing individual components in isolation. This often leads to code thats decoupled, easy to scale and maintain
+   - **E2E** is when all the different components are tested at once. Done usually at the **end of the SDLC （ Software Development Life Cycle）**
+4. What to consider when scaling up system?
+5. How to manage distributed database?
+6. Technical questions related to integration/microservices/API/software engineering.
+7. What are the core differences between REST APIs and GraphQL?
+8. Describe different micro-frontends implementation approaches and their advantages/disadvantages
+   - The idea behind Micro Frontends is to think about a website or web app as **a composition of features** which are owned by **independent teams**. Each team has a **distinct area of business** or **mission** it cares about and specialises in. A team is **cross functional** and develops its features **end-to-end**, from database to user interface.
+   - Advantages
+     - Micro-frontend architectures may be simpler, and thus easier to reason about and manage.
+     - Independent development teams can collaborate on a front-end app more easily.
+     - They can provide a means for migrating from an “old” app by having a “new” app running side by side with it.
+     - **Be Technology Agnostic**
+     - **Isolate Team Code**
+     - **Establish Team Prefixes**
+     - **Favor Native Browser Features over Custom APIs** 优先使用本地浏览器功能，而不是自定义api
+     - **Build a Resilient Site** 建立一个有弹性的网站
+   - [Micro Frontends](https://micro-frontends.org/)
+
+
+
+
+
+
 
 - ```
   1. What are the popular technical opinions you don’t agree with and why?
