@@ -1,4 +1,53 @@
+# 棋牌类
+
+- Clarify : 玩家，规则，胜负，积分
+- Core object: Hand, Board, Deck/Table, Suit, …
+- Use cases: Initialization / Play / Checkout
+
 ![image-20220518225144382](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220518225144382.png)
+
+![image-20220525200640314](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220525200640314.png)
+
+- Player.joinGame()：加入一个牌桌
+- BlackJack.addPlayer()：牌桌加入玩家 `List<Player> players`
+- Player.placeBets()：下注
+- BlackJack.dealInitialCard()：给玩家和庄家发牌
+- Player/Dealer.insertCard() ---> Hand.insertCard()：添加刚刚发过的牌
+- BlackJack.dealNextCard()：从牌堆 `List<Card> cards` 中拿出一个，加入到玩家的手牌
+- Player.dealNextCard()：获取下一张牌
+  1. 调用 Deck.dealNextCard()
+  2. Deck 从牌堆中拿牌
+- Player.StopDealing()：停止拿牌
+  - Boolean stopDealing 属性：是否停止拿牌
+- BlackJack.compareResults()：对比玩家和庄家手牌
+- Hand.getValue()：获得手牌大小（如何计算大小算法）
+
+
+
+- **Clarify**
+  - 玩家
+    - Is there a fixed dealer or players take turn to become dealer?
+  - 规则
+    - What if we run out of cards?
+    - Can dealer run out of bets? (输光)
+  - 胜负
+  - 积分
+- **Core Object**
+  - ![image-20220525202133880](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220525202133880.png)
+- **Use Case**
+  - Initialize
+    - Join Table
+    - Place bet
+    - Get initial cards
+  - Play
+    - Deal
+    - Stop dealing
+    - Increase bet
+  - Win/Lose/Tie
+    - Compare score
+    - Take/Lose bets
+
+
 
 ```java
 public class BlackJack {
