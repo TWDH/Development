@@ -17,7 +17,7 @@
   - ![image-20220524112444418](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524112444418.png)
 - 后端返回的数据**过少**，前端需要发送多个请求
   - ![image-20220524112430906](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524112430906.png)
-- 后端 API 分数，不方便统一管理
+- 后端 API 分散，不方便统一管理
   - ![image-20220524112516991](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220524112516991.png)
 
 ### 方案

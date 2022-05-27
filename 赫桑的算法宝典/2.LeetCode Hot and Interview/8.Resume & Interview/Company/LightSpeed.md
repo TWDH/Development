@@ -1,24 +1,74 @@
-# 
+# LightSpeed
 
-1. What is your approach to debugging? . Eg - The payment is being credited to the wrong merchant account. How do you debug this problem in production?
-   - Take the reported steps (logs) to **reproduce the bug in dev**
-   - Write **unit test** to reproduce the bug
+1. **What is your approach to debugging?** . Eg - The payment is being credited to the wrong merchant account. How do you debug this problem in production?*
+   
+   1. Take the reported steps (logs) to **reproduce the bug in dev**
+   2. Write **unit test** to reproduce the bug
      - My go to approach is the second one. Let's assume there is a payment endpoint, unit test will reveal bugs and likely causes. A cause might be a wrong environment variable or even hardcoded value. Unit test is the best way to reproduce bugs IMO because you are testing outcomes against expectations and tests fails when they dont match.
      - Let's assume the cause of the bug is a wrong environment variable, next thing to do is to confirm the variable in prod to ascertain the correctness. That's an easy fix that does not require any coding.
      - If the cause of the bug is something else like hard coded value, a hotfix or bugfix should be pushed and deployed first to the test environment, then to prod afterwards if all is well in the test environment.
-2. How do you handle website slowness without rewriting in a different language or going for different architecture?
+   
+2. ***How do you handle website slowness without rewriting in a different language or going for different architecture?***
+   
    - **Vertical and horizontal scaling.** 
      - **Vertical** scaling involves increasing the machine resources by **increasing the RAM size or CPU**. 
      - **Horizontal** scaling on the other hand involves **increasing in the number of machines.** 
      - Think of VS as making a man stronger (adding more muscles) and HS as increasing the number of average men. There's only how far you get increase resources but the number of machines with the same compute capabilities you can add is infinite. Both approaches improves performance of a system without refactoring, rewriting/building or changing architecture.
-3. When do you do unit and end-to-end testing?
+   
+3. *When do you do unit and end-to-end testing?*
+   
    - **Unit test** is done **by developers in dev**. Involves testing individual components in isolation. This often leads to code thats decoupled, easy to scale and maintain
    - **E2E** is when all the different components are tested at once. Done usually at the **end of the SDLC （ Software Development Life Cycle）**
-4. What to consider when scaling up system?
-5. How to manage distributed database?
-6. Technical questions related to integration / microservices / API / software engineering.
-7. What are the core differences between REST APIs and GraphQL?
-8. Describe different micro-frontends implementation approaches and their advantages/disadvantages
+   
+4. ***[What to consider when scaling up system? ](https://taazaa.com/key-factors-to-consider-when-scaling-your-software-application/)***
+   
+   1. Scalability Can Cost You
+   2. Scaling Shared Resources Is Critical (Database, MQ, Micro-services ...)
+      1. server 多了，但是 database没有变
+      2. protect against cascade failures by including resilient patterns (circuit breakers, bulkheads, fallbacks, retries, and timeouts)
+   3.  Scaling The Data Tier Is Painful
+      1. increases the load on your shared transactional databases
+      2. a no-SQL, schema less database, a distributed database, or a managed cloud-based database
+      3. using caching as a way to reduce the load on your database
+   4. Monitoring Is Essential.
+      1. setting up alerts for when memory or disk space runs low, remote calls fail, or other infrastructure problems arise.
+   
+5. **[*How to manage distributed database?*](https://fauna.com/blog/the-why-and-how-of-distributed-databases)**
+   
+   1. Types of distributed databases
+      1. homogeneous: consistency, system attributes such as physical resources, operating system, and DBMS are uniform across all the sites.
+      2. heterogeneous: allow different sites to have different attributes. The sites might not be aware of each other, and each site might use a different communication protocol, requiring additional translation of data between sites.
+   2. Data storage methods for distributed databases
+      1. Fragmentation 分割
+         1. vertical 竖着切（只关心某列）
+         2. horizontal 横着切
+      2. replication 复制
+         1. one of the sites as the “primary site”, and periodically syncing the other sites with the primary site. 
+         2. *synchronous* and *asynchronous*
+         3. [分布式系统数据一致性解决方案](https://blog.csdn.net/WXF_Sir/article/details/123264049)
+   3. prons / cons
+      1. Improved performance
+      2. Enabling massive scalability
+      3. Delivering round-the-clock reliability
+   
+6. ***Technical questions related to integration / microservices / API / software engineering.***
+
+7. ***What are the core differences between REST APIs and GraphQL?***
+
+   1. GraphQL
+      1. 优点：
+         1. 前端自己决定需要那些数据
+         2. 一次请求，获得多个 API 的数据
+         3. 访问集中提供的 API
+         4. 后端改变不影响前端的数据请求
+   2. Rest API
+      1. 问题：
+         1. 后端返回数据**过多**，前端只用到其中一部分
+         2. 后端返回的数据**过少**，前端需要发送多个请求
+         3. 后端 API 分散，不方便统一管理
+
+8. ***Describe different micro-frontends implementation approaches and their advantages/disadvantages***
+
    - The idea behind Micro Frontends is to think about a website or web app as **a composition of features** which are owned by **independent teams**. Each team has a **distinct area of business** or **mission** it cares about and specialises in. A team is **cross functional** and develops its features **end-to-end**, from database to user interface.
    - Advantages
      - Micro-frontend architectures may be simpler, and thus easier to reason about and manage.
