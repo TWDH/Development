@@ -1,5 +1,7 @@
 ![image-20220518225227911](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220518225227911.png)
 
+![image-20220526205331746](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220526205331746.png)
+
 ```java
 public class TicTacToe {
 	private char[][] board;

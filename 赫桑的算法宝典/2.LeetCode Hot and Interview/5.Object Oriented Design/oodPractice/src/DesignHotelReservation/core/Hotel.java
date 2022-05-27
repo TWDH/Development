@@ -82,6 +82,8 @@ public class Hotel {
                     // update roomReserved(TODO use calendar)
                     List<Date> reservedDate = new ArrayList<>();
                     roomReserved.put(room, reservedDate);
+                    // add to reservation list
+                    reservations.add(reservation);
                 }
             }
         }

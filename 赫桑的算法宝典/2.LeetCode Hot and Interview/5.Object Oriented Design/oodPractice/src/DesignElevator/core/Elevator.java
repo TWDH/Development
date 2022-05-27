@@ -13,6 +13,8 @@ import java.util.List;
  * @Date 2022-05-24
  * @Version 0.1
  */
+
+// 有External下降的请求，一旦决定电梯的大方向是向下的，就不会再接收任何上升的请求。一定会上到顶层再下来
 public class Elevator {
     List<ElevatorButton> buttons;
     List<Boolean> upStops;
@@ -27,9 +29,9 @@ public class Elevator {
     // constructor
     public Elevator(int n) {
         buttons = new ArrayList<>();
-        // 上升状态中，在某层停
+        // 上升状态中，需要停的层数
         upStops = new ArrayList<>();
-        // 下降状态中，在某层停
+        // 下降状态中，需要停的层数
         downStops = new ArrayList<>();
 
         curLevel = 0;
@@ -50,6 +52,9 @@ public class Elevator {
         if (externalRequest.getDirection() == Direction.UP) {
             // set(index, element)
             upStops.set(externalRequest.getLevel() - 1, true);
+            // Status = UP, 一直是 UP
+            // Status = DOWN, 有下降中停靠的站 downStops, 还是会一直下降 DOWN，没有下降的站点，downStop为空时才会变为 UP (不改变方向)
+            // 下降过程中才会执行此判断（上升途中不能按反向楼层 downStops）
             if (noRequests(downStops)) {
                 status = Status.UP;
             }
@@ -64,7 +69,7 @@ public class Elevator {
     }
 
     public void handleInternalRequest(InternalRequest internalRequest) {
-        // check valid
+        // check valid （当电梯往一个方向移动的时候，电梯内无法按反向的楼层）
         if (status == Status.UP) {
             if (internalRequest.getLevel() >= curLevel + 1) {
                 upStops.set(internalRequest.getLevel() - 1, true);
@@ -77,6 +82,8 @@ public class Elevator {
         }
     }
 
+    // UP: 就从底向上停
+    // DOWN：就从上向底停
     public void openGate() {
         if (status == Status.UP) {
             for (int i = 0; i < upStops.size(); i++) {
@@ -91,6 +98,7 @@ public class Elevator {
         }
         else if (status == Status.DOWN) {
             for (int i = 0; i < downStops.size(); i++) {
+                // 从最顶层开始向下
                 int checkLevel = (curLevel - i + downStops.size()) % downStops.size();
                 // elevator stop at this level
                 if (downStops.get(checkLevel)) {

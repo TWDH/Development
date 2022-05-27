@@ -111,6 +111,329 @@
     }
     ```
 
+```java
+// K.Z
+// * 上升途中不能按反向楼层
+// enums
+public enum Direction {
+    UP,
+    DOWN
+}
+
+public enum Status {
+    UP,
+    DOWN,
+    IDLE
+}
+
+// input
+public class Request {
+    private int level;
+
+    public Request(int level) {
+        this.level = level;
+    }
+
+    public int getLevel() {
+        return this.level;
+    }
+}
+
+public class ExternalRequest extends Request{
+
+    private Direction direction;
+
+    public ExternalRequest(int level, Direction direction) {
+        super(level);
+        this.direction = direction;
+    }
+
+    public Direction getDirection() {
+        return this.direction;
+    }
+}
+
+public class InternalRequest extends Request{
+    public InternalRequest(int level) {
+        super(level);
+    }
+}
+
+// Core
+public class ElevatorButton {
+    private int level;
+    private Elevator elevator;
+
+    public ElevatorButton(int level, Elevator elevator) {
+        this.level = level;
+        this.elevator = elevator;
+    }
+
+    public void pressButton() {
+        InternalRequest internalRequest = new InternalRequest(level);
+        elevator.handleInternalRequest(internalRequest);
+    }
+}
+
+// 有External下降的请求，一旦决定电梯的大方向是向下的，就不会再接收任何上升的请求。一定会上到顶层再下来
+public class Elevator {
+    List<ElevatorButton> buttons;
+    List<Boolean> upStops;
+    List<Boolean> downStops;
+
+    int curLevel;
+    Status status;
+
+    boolean gateOpen;
+    float weightLimit;
+
+    // constructor
+    public Elevator(int n) {
+        buttons = new ArrayList<>();
+        // 上升状态中，需要停的层数
+        upStops = new ArrayList<>();
+        // 下降状态中，需要停的层数
+        downStops = new ArrayList<>();
+
+        curLevel = 0;
+        status = Status.IDLE;
+
+        for (int i = 0; i < n; i++) {
+            upStops.add(false);
+            downStops.add(false);
+        }
+    }
+
+    public void insertButton(ElevatorButton elevatorButton) {
+        buttons.add(elevatorButton);
+    }
+
+    public void handleExternalRequest(ExternalRequest externalRequest) {
+        // UP request
+        if (externalRequest.getDirection() == Direction.UP) {
+            // set(index, element)
+            upStops.set(externalRequest.getLevel() - 1, true);
+            // Status = UP, 一直是 UP
+            // Status = DOWN, 有下降中停靠的站 downStops, 还是会一直下降 DOWN，没有下降的站点，downStop为空时才会变为 UP (不改变方向)
+            // 下降过程中才会执行此判断（上升途中不能按反向楼层 downStops）
+            if (noRequests(downStops)) {
+                status = Status.UP;
+            }
+        }
+        // DOWN request
+        else{
+            downStops.set(externalRequest.getLevel() - 1, true);
+            if (noRequests(upStops)) {
+                status = Status.DOWN;
+            }
+        }
+    }
+
+    public void handleInternalRequest(InternalRequest internalRequest) {
+        // check valid （当电梯往一个方向移动的时候，电梯内无法按反向的楼层）
+        if (status == Status.UP) {
+            if (internalRequest.getLevel() >= curLevel + 1) {
+                upStops.set(internalRequest.getLevel() - 1, true);
+            }
+        }
+        else if (status == Status.DOWN) {
+            if (internalRequest.getLevel() <= curLevel + 1) {
+                downStops.set(internalRequest.getLevel() - 1, true);
+            }
+        }
+    }
+
+    public void openGate() {
+        if (status == Status.UP) {
+            for (int i = 0; i < upStops.size(); i++) {
+                int checkLevel = (curLevel + i) % upStops.size();
+                // elevator stop at this level
+                if (upStops.get(checkLevel)) {
+                    curLevel = checkLevel;
+                    upStops.set(checkLevel, false);
+                    break;
+                }
+            }
+        }
+        else if (status == Status.DOWN) {
+            for (int i = 0; i < downStops.size(); i++) {
+                // 从最顶层开始向下
+                int checkLevel = (curLevel - i + downStops.size()) % downStops.size();
+                // elevator stop at this level
+                if (downStops.get(checkLevel)) {
+                    curLevel = checkLevel;
+                    downStops.set(checkLevel, false);
+                    break;
+                }
+            }
+        }
+    }
+
+    public void closeGate() {
+        if (status == Status.IDLE) {
+            if (noRequests(downStops)) {
+                status = Status.UP;
+                return;
+            }
+            if (noRequests(upStops)) {
+                status = Status.DOWN;
+                return;
+            }
+        }
+        else if (status == Status.UP) {
+            if (noRequests(upStops)) {
+                if (noRequests(downStops)) {
+                    status = Status.IDLE;
+                }
+                else {
+                    status = Status.DOWN;
+                }
+            }
+        }
+        else if (status == Status.DOWN) {
+            if (noRequests(downStops)) {
+                if (noRequests(upStops)) {
+                    status = Status.IDLE;
+                }
+                else{
+                    status = Status.UP;
+                }
+            }
+        }
+    }
+
+    public boolean noRequests(List<Boolean> stops) {
+        for (int i = 0; i < stops.size(); i++) {
+            if (stops.get(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public String elevatorStatusDescription()
+    {
+        String description = "Currently elevator status is : " + status
+                + ".\nCurrent level is at: " + (curLevel + 1)
+                + ".\nup stop list looks like: " + upStops
+                + ".\ndown stop list looks like:  " + downStops
+                + ".\n*****************************************\n";
+        return description;
+    }
+}
+```
+
+```
+输入:
+5
+ExternalRequest(3, "Down")
+ExternalRequest(1, "Up")
+openGate()
+closeGate()
+openGate()
+closeGate()
+
+输出:
+Currently elevator status is : DOWN.
+Current level is at: 1.
+up stop list looks like: [false, false, false, false, false].
+down stop list looks like:  [false, false, true, false, false].
+*****************************************
+Currently elevator status is : DOWN.
+Current level is at: 1.
+up stop list looks like: [true, false, false, false, false].
+down stop list looks like:  [false, false, true, false, false].
+*****************************************
+Currently elevator status is : DOWN.
+Current level is at: 3.
+up stop list looks like: [true, false, false, false, false].
+down stop list looks like:  [false, false, false, false, false].
+*****************************************
+Currently elevator status is : UP.
+Current level is at: 3.
+up stop list looks like: [true, false, false, false, false].
+down stop list looks like:  [false, false, false, false, false].
+*****************************************
+Currently elevator status is : UP.
+Current level is at: 1.
+up stop list looks like: [false, false, false, false, false].
+down stop list looks like:  [false, false, false, false, false].
+*****************************************
+Currently elevator status is : IDLE.
+Current level is at: 1.
+up stop list looks like: [false, false, false, false, false].
+down stop list looks like:  [false, false, false, false, false].
+***********************************************************************
+样例2
+
+输入:
+5         
+ExternalRequest(3, "Down")
+ExternalRequest(2, "Up")
+openGate()
+InternalRequest(1)
+closeGate()
+openGate()
+closeGate()
+openGate()
+closeGate()
+
+输出:
+Currently elevator status is : DOWN.
+Current level is at: 1.
+up stop list looks like: [false, false, false, false, false].
+down stop list looks like:  [false, false, true, false, false].
+*****************************************
+
+Currently elevator status is : DOWN.
+Current level is at: 1.
+up stop list looks like: [false, true, false, false, false].
+down stop list looks like:  [false, false, true, false, false].
+*****************************************
+
+Currently elevator status is : DOWN.
+Current level is at: 3.
+up stop list looks like: [false, true, false, false, false].
+down stop list looks like:  [false, false, false, false, false].
+*****************************************
+
+Currently elevator status is : DOWN.
+Current level is at: 3.
+up stop list looks like: [false, true, false, false, false].
+down stop list looks like:  [true, false, false, false, false].
+*****************************************
+
+Currently elevator status is : DOWN.
+Current level is at: 3.
+up stop list looks like: [false, true, false, false, false].
+down stop list looks like:  [true, false, false, false, false].
+*****************************************
+
+Currently elevator status is : DOWN.
+Current level is at: 1.
+up stop list looks like: [false, true, false, false, false].
+down stop list looks like:  [false, false, false, false, false].
+*****************************************
+
+Currently elevator status is : UP.
+Current level is at: 1.
+up stop list looks like: [false, true, false, false, false].
+down stop list looks like:  [false, false, false, false, false].
+*****************************************
+
+Currently elevator status is : UP.
+Current level is at: 2.
+up stop list looks like: [false, false, false, false, false].
+down stop list looks like:  [false, false, false, false, false].
+*****************************************
+
+Currently elevator status is : IDLE.
+Current level is at: 2.
+up stop list looks like: [false, false, false, false, false].
+down stop list looks like:  [false, false, false, false, false].
+*****************************************
+```
+
 
 
 ```java

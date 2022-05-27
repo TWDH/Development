@@ -61,6 +61,347 @@ Hotel:
     - Select：Make Reservation
     - Cancel：Cancel Reservation
 
+```java
+// K.Z
+// enums
+public enum RoomType {
+    SINGLE,
+    DOUBLE,
+}
+
+// input
+// Search Request
+public class SearchRequest {
+    private Date startDate;
+    private Date endDate;
+
+    public SearchRequest(Date startDate, Date endDate) {
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+    @Override
+    public String toString() {
+        return "SearchRequest{" +
+                "startDate=" + startDate +
+                ", endDate=" + endDate +
+                '}';
+    }
+}
+
+// Reservation Request
+public class ReservationRequest {
+    Map<RoomType, Integer> roomsNeeded;
+    Date startDate;
+    Date endDate;
+
+    public ReservationRequest(Map<RoomType, Integer> roomsNeeded, Date startDate, Date endDate) {
+        this.roomsNeeded = roomsNeeded;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
+    public Map<RoomType, Integer> getRoomsNeeded() {
+        return roomsNeeded;
+    }
+
+    public void setRoomsNeeded(Map<RoomType, Integer> roomsNeeded) {
+        this.roomsNeeded = roomsNeeded;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+    @Override
+    public String toString() {
+        return "ReservationRequest{" +
+                "roomsNeeded=" + roomsNeeded +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                '}';
+    }
+}
+
+// Core Objects
+// Hotel
+public class Hotel {
+    // all rooms
+    private List<Room> rooms;
+
+    // all reservations
+    private List<Reservation> reservations;
+
+    // room that has been reserved
+    Map<Room, List<Date>> roomReserved;
+
+
+    // Handle Search request
+    public Map<RoomType, Integer> handleSearchRequest(SearchRequest searchRequest) {
+        Map<RoomType, Integer> searchResult = new HashMap<>();
+
+        Date startDate = searchRequest.getStartDate();
+        Date endDate = searchRequest.getEndDate();
+
+        // 1. go through available rooms
+        for (Room room : rooms) {
+            // rooms already reserved
+            List<Date> schedule = roomReserved.get(room);
+
+            // current room is available (not reserved)
+            if (isRequestAvailable(startDate, endDate, schedule)) {
+                RoomType roomType = room.getRoomType();
+                searchResult.put(roomType, searchResult.getOrDefault(roomType, 0) + 1);
+            }
+        }
+
+        return searchResult;
+    }
+
+    // Auxiliary Function
+    private boolean isRequestAvailable(Date startDate, Date endDate, List<Date> schedule) {
+        if (startDate.getTime() >= schedule.get(0).getTime()){
+            return false;
+        }
+
+        if (endDate.getTime() <= schedule.get(schedule.size() - 1).getTime()) {
+            return false;
+        }
+
+        return true;
+    }
+
+    // Make Reservation
+    public Reservation makeReservation(ReservationRequest reservationRequest) {
+        // 1. reserve criteria
+        Map<RoomType, Integer> roomsNeeded = reservationRequest.getRoomsNeeded();
+        Date startDate = reservationRequest.getStartDate();
+        Date endDate = reservationRequest.getEndDate();
+
+        // 2. new reservation
+        Reservation reservation = new Reservation(startDate, endDate);
+
+        // 3. traverse available rooms
+        for (Room room : rooms) {
+            RoomType curRoomType = room.getRoomType();
+            // how many we need for this roomType
+            Integer count = roomsNeeded.get(curRoomType);
+            // is this room fit
+            if (roomsNeeded.containsKey(curRoomType) && count > 0) {
+                // check room availability
+                // rooms already reserved
+                List<Date> schedule = roomReserved.get(room);
+                // current room is available (not reserved)
+                if (isRequestAvailable(startDate, endDate, schedule)) {
+                    // reserve room
+                    reservation.addRoom(room);
+                    // minus count in roomsNeeded
+                    count--;
+                    roomsNeeded.put(curRoomType, count);
+                    // update roomReserved(TODO use calendar)
+                    List<Date> reservedDate = new ArrayList<>();
+                    roomReserved.put(room, reservedDate);
+                    // add to reservation list
+                    reservations.add(reservation);
+                }
+            }
+        }
+
+        for (Map.Entry<RoomType, Integer> entry : roomsNeeded.entrySet()) {
+            Integer needRoomCount = entry.getValue();
+            if (needRoomCount > 0) {
+                System.out.println("Sorry, We don't have enough Rooms");
+            }
+        }
+
+        return reservation;
+    }
+
+    public void cancelReservation(Reservation reservation) {
+        // check valid
+        if (isValidReservation(reservation)) {
+            System.out.println("The reservation is invalid!");
+        }
+
+        Date startDate = reservation.getStartDate();
+        Date endDate = reservation.getEndDate();
+
+        // cancel room reservation
+        for (Room room : reservation.getRooms()) {
+            // remove roomReserved
+            List<Date> schedule = roomReserved.get(room);
+            // loop remove from startDate to endDate
+            schedule.remove(startDate);
+            schedule.remove(endDate);
+
+            roomReserved.put(room, schedule);
+        }
+    }
+
+    private boolean isValidReservation(Reservation reservation) {
+        Date startDate = reservation.getStartDate();
+        Date endDate = reservation.getEndDate();
+        Date now = new Date();
+
+        if (startDate.getTime() > now.getTime() || endDate.getTime() < now.getTime()) {
+            return false;
+        }
+
+        return true;
+    }
+
+    // constructor
+    public Hotel(List<Room> rooms, List<Reservation> reservations, Map<Room, List<Date>> roomReserved) {
+        this.rooms = rooms;
+        this.reservations = reservations;
+        this.roomReserved = roomReserved;
+    }
+
+    public List<Room> getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(List<Room> rooms) {
+        this.rooms = rooms;
+    }
+
+    public List<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(List<Reservation> reservations) {
+        this.reservations = reservations;
+    }
+
+    public Map<Room, List<Date>> getRoomReserved() {
+        return roomReserved;
+    }
+
+    public void setRoomReserved(Map<Room, List<Date>> roomReserved) {
+        this.roomReserved = roomReserved;
+    }
+}
+
+// Room
+public class Room {
+    RoomType roomType;
+    Boolean available;
+
+    public Room(RoomType roomType, Boolean available) {
+        this.roomType = roomType;
+        this.available = available;
+    }
+
+    public RoomType getRoomType() {
+        return roomType;
+    }
+
+    public void setRoomType(RoomType roomType) {
+        this.roomType = roomType;
+    }
+
+    public Boolean getAvailable() {
+        return available;
+    }
+
+    public void setAvailable(Boolean available) {
+        this.available = available;
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "roomType=" + roomType +
+                ", available=" + available +
+                '}';
+    }
+}
+
+// Reservation
+public class Reservation {
+    private List<Room> rooms;
+    private Date startDate;
+    private Date endDate;
+
+    public Reservation(Date startDate, Date endDate) {
+        this.startDate = startDate;
+        this.endDate = endDate;
+        rooms = new ArrayList<>();
+    }
+
+    public Reservation(List<Room> rooms, Date startDate, Date endDate) {
+        this.rooms = rooms;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
+    public void addRoom(Room room) {
+        this.rooms.add(room);
+    }
+
+    public List<Room> getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(List<Room> rooms) {
+        this.rooms = rooms;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "rooms=" + rooms +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                '}';
+    }
+}
+```
+
 
 
 

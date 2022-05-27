@@ -47,9 +47,374 @@
     - Compare score
     - Take/Lose bets
 
+```java
+// K.Z
+// Black Jack
+public class BlackJack {
+    // current players
+    private List<Player> players;
+    // dealer
+    private Dealer dealer;
+    // card library
+    private List<Card> cards;
+
+    // constructor
+    public BlackJack() {
+        players = new ArrayList<>();
+        cards = new ArrayList<>();
+    }
+
+    // use cases
+    public void addPlayer(Player player) {
+        players.add(player);
+    }
+
+    public void initCards(List<Card> cards) {
+        this.cards = cards;
+    }
+
+    // deal initial cards (2 times)
+    public void dealInitialCards() {
+        for (int i = 0; i < 2; i++) {
+            // to player
+            for (Player player : players) {
+                player.insertCard(dealNextCard());
+            }
+
+            // to dealer
+            dealer.insertCard(dealNextCard());
+        }
+    }
+
+    // deal next card
+    public Card dealNextCard() {
+        Card card = cards.remove(0);
+        return card;
+    }
+
+    // compare result between dealer and player
+    public void compareResult() {
+        for (Player player : players) {
+            if (dealer.largerThan(player)) {
+                dealer.updateBets(player.getBets());
+                player.lose();
+            }
+            else{
+                dealer.updateBets(-player.getBets());
+                player.win();
+            }
+        }
+    }
+    
+    // Getter & Setter
+    public List<Player> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
+    }
+
+    public Dealer getDealer() {
+        return dealer;
+    }
+
+    public void setDealer(Dealer dealer) {
+        this.dealer = dealer;
+    }
+
+    public List<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(List<Card> cards) {
+        this.cards = cards;
+    }
+}
+
+// Player
+package DesignBlackJack.core;
+
+public class Player {
+
+    private int id;
+
+    private BlackJack game;
+
+    private Hand hand;
+
+    private int totalBets;
+
+    private int bets;
+
+    private boolean stopDealing;
+
+    public Player(int id, int bets) {
+        this.id = id;
+        this.hand = new Hand();
+        this.totalBets = 1000;
+        this.stopDealing = false;
+
+        // bet
+        try {
+            placeBets(bets);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Use Case
+    // join game
+    public void joinGame(BlackJack game) {
+        this.game = game;
+        game.addPlayer(this);
+    }
+
+    // place bets
+    public void placeBets(int amount) throws Exception {
+        if (totalBets < amount) {
+            throw new Exception("No enough money");
+        }
+
+        bets = amount;
+        totalBets -= bets;
+    }
+
+    // deal next card
+    public void dealNextCard() {
+        // get card from game
+        insertCard(game.dealNextCard());
+    }
+
+    // insert card int hand
+    public void insertCard(Card card) {
+        hand.insertCard(card);
+    }
+
+    // get best value
+    public int getBestValue() {
+        return hand.getBestValue();
+    }
+
+    // stop dealing
+    public void stopDealing() {
+        stopDealing = true;
+    }
+
+    // win/lose
+    public void win() {
+        totalBets += (bets * 2);
+        bets = 0;
+    }
+
+    public void lose() {
+        bets = 0;
+    }
+
+    // Getter & Setter
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public BlackJack getGame() {
+        return game;
+    }
+
+    public void setGame(BlackJack game) {
+        this.game = game;
+    }
+
+    public Hand getHand() {
+        return hand;
+    }
+
+    public void setHand(Hand hand) {
+        this.hand = hand;
+    }
+
+    public int getTotalBets() {
+        return totalBets;
+    }
+
+    public void setTotalBets(int totalBets) {
+        this.totalBets = totalBets;
+    }
+
+    public int getBets() {
+        return bets;
+    }
+
+    public void setBets(int bets) {
+        this.bets = bets;
+    }
+
+    public boolean isStopDealing() {
+        return stopDealing;
+    }
+
+    public void setStopDealing(boolean stopDealing) {
+        this.stopDealing = stopDealing;
+    }
+}
+
+// Hand
+package DesignBlackJack.core;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Hand {
+    private List<Card> cards;
+
+    public Hand() {
+        cards = new ArrayList<>();
+    }
+
+    // Use Case
+    // insert card into hand
+    public void insertCard(Card card) {
+        cards.add(card);
+    }
+
+
+    // Get a list of possible results from hand
+    private List<Integer> getPossibleValues() {
+        List<Integer> results = new ArrayList<>();
+
+        int aceCount = 0;
+        int resultWithoutAce = 0;
+        for (Card card : cards) {
+            if (card.getCardValue() == 1) {
+                aceCount++;
+            }
+            else if (card.getCardValue() == 11 || card.getCardValue() == 12 || card.getCardValue() == 13) {
+                resultWithoutAce += 10;
+            }
+            else
+                resultWithoutAce += card.getCardValue();
+        }
+
+        for (int i = 0; i <= aceCount; i++) {
+            int ones = i;
+            int elevens = aceCount - i;
+
+            results.add(resultWithoutAce + ones + elevens * 11);
+        }
+
+        return results;
+    }
+
+    // -1 means went over 21, otherwise means the best value of this hand
+    public int getBestValue() {
+        List<Integer> results = getPossibleValues();
+
+        int maxUnder = -1;
+        for (int result : results) {
+            if (result <= 21 && result > maxUnder) {
+                maxUnder = result;
+            }
+        }
+        return maxUnder;
+    }
+
+    public String printHand() {
+        String res = "Cards: ";
+        for (int i = 0; i < cards.size(); i++){
+            res += (cards.get(i).getCardValue());
+            if(i != cards.size() - 1){
+                res+=" , ";
+            }
+            else res+=';';
+        }
+
+        res += " Current best value is: " + getBestValue();
+        return res;
+    }
+}
+
+// Dealer
+package DesignBlackJack.core;
+
+public class Dealer {
+    private BlackJack game;
+    private Hand hand;
+    private int bets;
+
+    public Dealer() {
+        hand = new Hand();
+        bets = 10000;
+    }
+
+    // use case
+    public void dealNextCard() {
+        insertCard(game.dealNextCard());
+    }
+    public void insertCard(Card card) {
+        hand.insertCard(card);
+    }
+
+    public boolean largerThan(Player player) {
+        return hand.getBestValue() >= player.getHand().getBestValue();
+    }
+
+    public void updateBets(int amount) {
+        bets += amount;
+    }
+
+    public BlackJack getGame() {
+        return game;
+    }
+
+    public void setGame(BlackJack game) {
+        this.game = game;
+    }
+
+    public Hand getHand() {
+        return hand;
+    }
+
+    public void setHand(Hand hand) {
+        this.hand = hand;
+    }
+
+    public int getBets() {
+        return bets;
+    }
+
+    public void setBets(int bets) {
+        this.bets = bets;
+    }
+}
+
+// Card
+package DesignBlackJack.core;
+
+public class Card {
+    private int cardValue;
+
+    public Card(int cardValue) {
+        this.cardValue = cardValue;
+    }
+
+    public int getCardValue() {
+        return cardValue;
+    }
+
+    public void setCardValue(int cardValue) {
+        this.cardValue = cardValue;
+    }
+}
+
+```
+
 
 
 ```java
+// 九章算法
 public class BlackJack {
 	private List<NormalPlayer> players;
 	private Dealer dealer;
@@ -203,9 +568,11 @@ class Hand {
 		for (Card card : cards) {
 			if (card.getValue() == 1) {
 				aceCount++;
-			} else if (card.getValue() == 11 || card.getValue() == 12 || card.getValue() == 13) {
+			} 
+            else if (card.getValue() == 11 || card.getValue() == 12 || card.getValue() == 13) {
 				resultWithoutAce += 10;
-			} else
+			} 
+            else
 				resultWithoutAce += card.getValue();
 		}
 
