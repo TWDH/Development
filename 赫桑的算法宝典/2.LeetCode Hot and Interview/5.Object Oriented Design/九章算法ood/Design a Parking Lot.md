@@ -61,6 +61,305 @@
   - Design Pattern
 
 ```java
+// K.Z
+// enum
+public enum VehicleSize {
+    MotorCycle,
+    Compact,
+    Large
+}
+
+// input
+// abstract
+public abstract class Vehicle {
+    protected int vehicleSize;
+
+    public int getVehicleSize() {
+        return vehicleSize;
+    }
+
+    public void setVehicleSize(int vehicleSize) {
+        this.vehicleSize = vehicleSize;
+    }
+}
+
+// concrete class
+public class Car extends Vehicle{
+    public Car(){
+        this.vehicleSize = 1;
+    }
+}
+
+public class Bus extends Vehicle{
+    public Bus() {
+        this.vehicleSize = 5;
+    }
+}
+
+public class MotorCycle extends Vehicle {
+    public MotorCycle() {
+        this.vehicleSize = 1;
+    }
+}
+
+// Core
+// Ticket (receipt)
+public class Ticket {
+    private Vehicle vehicle;
+
+    private List<Spot> spots;
+
+    private Date startTime;
+
+    public Ticket(Vehicle vehicle, List<Spot> spots, Date startTime) {
+        this.vehicle = vehicle;
+        this.spots = spots;
+        this.startTime = startTime;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    public List<Spot> getSpots() {
+        return spots;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "vehicle=" + vehicle +
+                ", spots=" + spots +
+                ", startTime=" + startTime +
+                '}';
+    }
+
+    public void setSpots(List<Spot> spots) {
+        this.spots = spots;
+    }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+}
+
+// Parking lot
+public class ParkingLot {
+    List<Level> levels;
+    float hourlyRate;
+
+    // constructor
+    public ParkingLot(int numLevels, int numRows, int numSpots) {
+        levels = new ArrayList<>();
+        for (int i = 0; i < numLevels; i++) {
+            // i: current level
+            Level level = new Level(numRows, numSpots, i);
+            levels.add(level);
+        }
+    }
+
+    public ParkingLot(List<Level> levels, float hourlyRate) {
+        this.levels = levels;
+        this.hourlyRate = hourlyRate;
+    }
+
+    public int getAvailableCount() {
+        int totalCount = 0;
+
+        // traverse Level
+        for (Level level : levels) {
+            List<Row> rows = level.getRows();
+            // traverse Row
+            for (Row row : rows) {
+                List<Spot> spots = row.getSpots();
+                for (Spot spot : spots) {
+                    if (spot.isAvailable()) {
+                        totalCount += 1;
+                    }
+                }
+            }
+        }
+
+        System.out.println("The total available spots: " + totalCount);
+
+        return totalCount;
+    }
+
+    public Ticket parkVehicle(Vehicle vehicle) {
+        List<Spot> spotForVehicle = findSpotForVehicle(vehicle);
+        Date now = new Date();
+
+        Ticket ticket = new Ticket(vehicle, spotForVehicle, now);
+
+        System.out.println("Park Vehicle Successfully!" );
+        System.out.println(ticket.toString());
+
+        return ticket;
+    }
+
+    private List<Spot> findSpotForVehicle(Vehicle vehicle) {
+        List<Spot> resultSpots = new ArrayList<>();
+        for (Level level : levels) {
+            List<Row> rows = level.getRows();
+            for (Row row : rows) {
+                List<Spot> spots = row.getSpots();
+                // find spots in each Level and each Row
+                Pair<Integer, List<Spot>> findAvailableSpots = findAvailableSpots(spots);
+                Integer availableSpotsCount = findAvailableSpots.getKey();
+                List<Spot> availableSpots = findAvailableSpots.getValue();
+
+                // make sure enough parking spot
+                if (availableSpotsCount >= vehicle.getVehicleSize()) {
+                    // set spot to unavailable
+                    int vehicleSize = vehicle.getVehicleSize();
+                    for (int i = 0; i < vehicleSize; i++) {
+                        Spot spot = availableSpots.get(i);
+                        spot.setAvailable(false);
+                        resultSpots.add(spot);
+                    }
+                    return resultSpots;
+                }
+            }
+        }
+        return resultSpots;
+    }
+
+    private Pair<Integer, List<Spot>> findAvailableSpots(List<Spot> spots) {
+        int availableSpotsCount = 0;
+        List<Spot> availableSpots = new ArrayList<>();
+        for (Spot spot : spots) {
+            if (spot.isAvailable()) {
+                availableSpotsCount++;
+                availableSpots.add(spot);
+            }
+        }
+
+        return new Pair<Integer, List<Spot>>(availableSpotsCount, availableSpots);
+    }
+
+    public void clearSpot(Ticket ticket) {
+        List<Spot> spots = ticket.getSpots();
+        for (Spot spot : spots) {
+            spot.setAvailable(true);
+        }
+    }
+
+    public float calculatePrice(Ticket ticket) {
+        long nd = 1000 * 24 * 60 * 60;
+        long nh = 1000 * 60 * 60;
+        long nm = 1000 * 60;
+
+        Date startTime = ticket.getStartTime();
+        Date now = new Date();
+
+        long parkTime = now.getTime() - startTime.getTime();
+
+        long hour = parkTime % nd / nh;
+
+        float fee = hour * hourlyRate;
+
+        return fee;
+    }
+}
+
+// level
+public class Level {
+    private List<Row> rows;
+    private int availableCount;
+
+    // constructor
+    public Level (int numRow, int numSpots, int curLevel){
+        rows = new ArrayList<>();
+        for (int i = 0; i < numRow; i++) {
+            Row row = new Row(numSpots, curLevel);
+            rows.add(row);
+        }
+    }
+
+    public List<Row> getRows() {
+        return rows;
+    }
+
+    public void setRows(List<Row> rows) {
+        this.rows = rows;
+    }
+
+    public void setAvailableCount(int availableCount) {
+        this.availableCount = availableCount;
+    }
+
+    public int getAvailableCount() {
+        return this.availableCount;
+    }
+
+    public void updateAvailableCount(int diff) {
+
+    }
+}
+
+// Row
+public class Row {
+    List<Spot> spots;
+
+    public Row(int numSpots, int curLevel) {
+        spots = new ArrayList<>();
+        for(int i = 0; i < numSpots; i++){
+            Spot spot = new Spot(true, curLevel);
+            spots.add(spot);
+        }
+    }
+
+    public List<Spot> getSpots() {
+        return spots;
+    }
+
+    public void setSpots(List<Spot> spots) {
+        this.spots = spots;
+    }
+}
+
+// spot
+public class Spot {
+
+    private boolean isAvailable;
+    private int level;
+
+    public Spot(boolean isAvailable, int level) {
+        this.isAvailable = isAvailable;
+        this.level = level;
+    }
+
+    public void setAvailable(boolean available) {
+        isAvailable = available;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+}
+```
+
+
+
+
+
+```java
 // enum type for Vehicle
 enum VehicleSize {
 	Motorcycle,

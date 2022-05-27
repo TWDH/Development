@@ -128,6 +128,4 @@ public class ParkingLot {
 
         return fee;
     }
-
-
 }

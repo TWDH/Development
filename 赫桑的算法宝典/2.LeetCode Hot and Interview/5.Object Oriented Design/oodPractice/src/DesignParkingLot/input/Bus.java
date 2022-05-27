@@ -10,6 +10,5 @@ import DesignParkingLot.enums.VehicleSize;
 public class Bus extends Vehicle{
     public Bus() {
         this.vehicleSize = 5;
-
     }
 }
