@@ -2,6 +2,12 @@
 
 1. Self introduction
    
+   - ```
+      My name is He Zhu, I graduated from University of Ottawa majoring in electrical and computer engineering. I have work with OTT Financial Group for 1 year as a software developer. 
+      
+      I mainly dedicated myself in back-end java development, I have developed bunch of new features in one of our mobile project "OTT Pocket" which is a online shopping plateform that sells giftcard, voucher and coupon. What's more, back into few month before, I was assigned to be the tech lead, leading a small team to develop a new SaaS platform called PREKA, it stands for present card and prepaid card. The PREKA is designed for issuing business giftcard / voucher / coupon for our partner merchants, which could be bought and redeemed in OTT pocket which make it a full cycle of business. I mainly responsible for developing the backend server-side application, our tech stack includes SpringBoot, SpringCloud that uses the methodology of micro-services and distribute system. My daily works are creating APIs and test it with front-end developers, I also help the team to set up the cloud server AWS EC2 for deployment. 
+      ```
+   
 2. **What is your approach to debugging?** . Eg - The payment is being credited to the wrong merchant account. How do you debug this problem in production?*
 
    1. Take the reported steps (logs) to **reproduce the bug in dev**
@@ -25,14 +31,14 @@
 5. ***[What to consider when scaling up system? ](https://taazaa.com/key-factors-to-consider-when-scaling-your-software-application/)***
 
    1. Scalability Can Cost You
-   2. Scaling Shared Resources Is Critical (Database, MQ, Micro-services ...)
+   2. Scaling **Shared Resources** Is Critical (Database, MQ, Micro-services ...)
       1. server 多了，但是 database没有变
       2. protect against cascade failures by including resilient patterns (circuit breakers, bulkheads, fallbacks, retries, and timeouts)
-   3.  Scaling The Data Tier Is Painful
+   3.  Scaling The **Data Tier** Is Painful
       1. increases the load on your shared transactional databases
       2. a no-SQL, schema less database, a distributed database, or a managed cloud-based database
       3. using caching as a way to reduce the load on your database
-   4. Monitoring Is Essential.
+   4. **Monitoring** Is Essential.
       1. setting up alerts for when memory or disk space runs low, remote calls fail, or other infrastructure problems arise.
 
 6. **[*How to manage distributed database?*](https://fauna.com/blog/the-why-and-how-of-distributed-databases)**
@@ -47,7 +53,7 @@
       2. replication 复制
          1. one of the sites as the “primary site”, and periodically syncing the other sites with the primary site. 
          2. *synchronous* and *asynchronous*
-         3. [分布式系统数据一致性解决方案](https://blog.csdn.net/WXF_Sir/article/details/123264049)
+         3. [分布式系统数据一致性解决方案](https://blog.csdn.net/WXF_Sir/article/details/123264049) (CAP, 两阶段提交协议:准备阶段（投票反馈阶段）和 提交阶段（执行阶段） )
    3. prons / cons
       1. Improved performance
       2. Enabling massive scalability
@@ -89,6 +95,9 @@
     - focus on business, reconciling the technical and non-technical forces that collide in a software project
     - Breaking down the model into **Bounded Contexts (business domain, teams, and code)** that interact with each other 
     - ![image-20220527084333629](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220527084333629.png)
+    - Nacos: dynamic service discovery, service configuration, service metadata and traffic management.
+    - sentinel: circuit break, system adaptive protection, Real-time monitoring
+    - sleuth: monitor
 
 
 
