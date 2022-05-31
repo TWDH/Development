@@ -26,6 +26,9 @@
 - 1004
 - 1235
 - 1846
+- 2222
+  - https://gongybable.medium.com/amazon-oa-question-different-types-of-pages-y-tech-442d5ffb9a56
+  - https://leetcode.cn/problems/number-of-ways-to-select-buildings/
 - radix sort
 - 让实现了一个infinite stack，可以O(1)实现push, pop, getmin等
 - 设计德州扑克
