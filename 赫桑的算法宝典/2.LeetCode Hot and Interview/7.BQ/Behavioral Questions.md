@@ -100,7 +100,7 @@
 
 **Action:** Teaching him everything from scratch would take too much time. So, instead, I briefly explained the development process (waterfall model) we were using for that specific project, and taught him how to write tests for our code-base. Writing tests is the number 1 way to learn what code does. After all, that’s how I got started with development.
 
-**Results:** I also sat down and helped him go through the material at times, but in the end, he surprised me by how much of a fast-learner he was. He just needed a bit of encouragement and guidance. Through this approach, he learned our whole routine in less than a week, while most of our new hires needed at least up to 2 weeks. In return, I learned a lot about multitasking and time-management from him. The whole thing was a win-win situation, and it was all smooth sailing the next time we worked together (which was quite often).
+**Results:** I also sat down and helped him go through the material at times, but in the end, **he surprised me by how much of a fast-learner he was**. He just needed a bit of **encouragement and guidance**. Through this approach, he learned our whole routine in less than a week, while most of our new hires needed at least up to 2 weeks. In return, I learned a lot about multitasking and time-management from him. The whole thing was a win-win situation, and it was all smooth sailing the next time we worked together (which was quite often).
 
 ### **Question #2 - What do you do when your team member refuses to, or just can’t complete their part of the work? Give me an example.**
 
@@ -130,9 +130,9 @@
 
 **Situation:** Working in customer support, you really get to talk with many different kinds of people. I remember I had one angry customer that called the helpdesk once to complain. He kept repeating the product he bought was faulty and demanded me to resolve the situation then and there. 
 
-**Task:** Customers calling for refunds happen all the time, but this one was different as he just kept shouting over the phone the whole time. I had to get him to calm down if I wanted the call to go anywhere.
+**Task:** Customers calling for refunds happen all the time, but this one was different as he just kept **shouting over the phone** the whole time. I had to get him to calm down if I wanted the call to go anywhere.
 
-**Action:** Fortunately, I had experience dealing with loud customers, and knew the first thing I had to do was listen to his story. Halfway through telling his story, he calmed down once he realized I was trying to help. He explained that the product was supposed to be a gift, and that’s why he was so frustrated. Then, I offered 2 solutions: a refund or a replacement for his product with express delivery.
+**Action:** Fortunately, I had experience dealing with loud customers, and knew the first thing I had to do was listen to his story. Halfway through telling his story, he calmed down once he realized I was trying to help. He explained that the product was supposed to be a gift, and that’s why he was so frustrated. Then, I offered 2 solutions: a refund or a replacement for his product with express delivery.embar
 
 **Results:** The customer opted for the replacement option. I called him back once they received the order just to check-in if he was happy with the product. He turned out to be happy both with the product and our service, and thanked me for the help.
 

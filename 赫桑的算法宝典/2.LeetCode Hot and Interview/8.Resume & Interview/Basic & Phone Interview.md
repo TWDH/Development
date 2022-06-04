@@ -31,7 +31,43 @@
 
 
 
-3. **What are your salary expectations?** 
+3. What’s your weakness
+
+
+   1. 不要跟 job description 有关系，需要有后续解决方案
+   2.  I focus too much on detail during projects or tasks
+
+      - detail-oriented person, tight deadline not helpful, trying to mindful to this situation, focus on the end goal of project
+   3. I find it difficult to ask other people for help
+
+      - I take great pride in my work, when problem, try to figure things myself, learning from others might be more efficient
+   4. I struggle to let go of projects
+
+      - although not 
+   5. I'm not very good at giving people feedback
+
+      - avoid so not hurting others feeling, important of self-development
+   6. I find it hard saying no to people
+
+      - always say yes even have no capacity to do so. sometimes become overwhelmed, taking to many responsibilities; now take time to assess work load
+   7. I lack experience in ...
+
+      - lack taking the lead on projects
+   8. I am too sensitive at times
+
+      - take critisim personally, view others’ comment, constructively and productively, more mindful in this situation
+   9. I can be too judgemental of others (主观评判别人)
+   10. I don’t yet have any leadership experience
+
+      - something I really want to improve, would’t feel confident to doing so; I will seek to observe how team leader tackle problem and tasks so I can learn how to do it myself when opportunity presents 
+   11. I get stressed if a project runs over the deadline
+
+       - I take pride in my work, don’t want my manager down; Learning to remain calm, focus on what I can do 
+   12. I am not very good at presenting to large group of people
+
+       - fear of public speaking, love to have the confident standup in front of a group of people and talk; I buy book, practice...
+
+4. **What are your salary expectations?**  
 
    - what are the components of the salary (base, stock, bonus, sign fee ...)
 
@@ -46,6 +82,10 @@
    - If this is the right job for me, I'm sure we can come to an agreement on salary.
 
    - I don’t feel comfortable sharing that.
+
+   - compensation commensurate with experience
+
+   - I don't have a specific number in mind. I am open to discussing any competitive offer
 
    - ```
      To me, salary is important. But I care more about team, the company culture and how much I can contribute. Do you have a range for this role that you can share?
@@ -63,9 +103,15 @@
      I'm open to discussing what you believe to be a fair salary for the position. However, based on my previous salary, my knowledge of the industry, and my understanding of this geographic area, I'd expect a salary in the general range of $X to $Y. Again, I'm open to discussing these numbers with you.
      ```
 
-   - 
+   - 不马上接受offer，不能马上做决定
 
-4. **Why are you looking to leave your current position?** 
+     - **There's no way that I can make such an important life decision in such a short period of time.** I need more time to think it through before I give you my commitment.
+
+   - 其他公司的offer，透露 or not
+
+     - **I believe my compensation should be a true reflection of the value that I would bring to YYY company**. I look forward to receiving an unbiased, independent evaluation from you.
+
+5. **Why are you looking to leave your current position?** 
 
    - I don't feel like my current role is challenging me anymore
    - I feel like I'm ready to take on more responsibility
@@ -76,13 +122,13 @@
    - Seeking a role that’s more closely aligned with [your long term career goals](https://careersidekick.com/what-are-your-career-goals/)
    - Wanting an opportunity to take on more leadership work
 
-5. What are you looking for in your next position? 
+6. What are you looking for in your next position? 
 
-6. Describe what you are looking for regarding company culture.
+7. Describe what you are looking for regarding company culture.
 
-7. What type of benefits are you looking for? 
+8. What type of benefits are you looking for? 
 
-8. What is your availability for an in-person interview in the next few days?
+9. What is your availability for an in-person interview in the next few days?
 
 **Questions to Ask the Interviewer in a Phone Interview**
 
