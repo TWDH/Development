@@ -149,12 +149,11 @@
   >
   > **DELETE 请求用来删除资源**，DELETE请求用途和它字面意思一致，用来删除资源。和数据库中delete相对应。
 
+
+
 - **form-data**： 就是form表单中的multipart/form-data，会将表单数据处理为一条信息，用特定标签符将一条条信息分割开，而这个文件类型通常用来上传二进制文件。
-
 - **x-www-form-urlencoded**：就是application/x-www-form-urlencoded，是form表单默认的encType，form表单会将表单内的数据转换为键值对，这种格式不能上传文件。
-
   - 因为GET请求查询参数在URL上，其他类型请求使用x-www-form-urlencoded方式向后端传值。
-
 - **raw**：可以上传任意格式的文本，可以上传Text，JSON，XML等，但目前大部分还是上传JSON格式数据。当后端需要接收JSON格式数据处理的时候，可以采用这种格式来测试。
 
 
