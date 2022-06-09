@@ -19,6 +19,8 @@
 
 ## [4. System Design - Grokking the System Design](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/6.System%20Design)
 
+- [Grokking the System Design](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/6.System%20Design)
+
 ## [5. Behavioral Questions](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/7.BQ)
 
 - [Basic Questions & Phone Interview](https://github.com/TWDH/Development/blob/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/8.Resume%20%26%20Interview/Basic%20%26%20Phone%20Interview.md)
