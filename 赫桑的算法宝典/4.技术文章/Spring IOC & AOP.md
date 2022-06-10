@@ -1,10 +1,12 @@
-# 01.Spring IOC & AOP
+# [Spring IOC & AOP](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans)
 
 ## 1. IOC (Inverse of Control) 控制反转
 
 * **将原本在程序中手动创建对象的控制权，交由Spring框架来管理, 完全不用考虑对象是如何被创建出来的**
 * 把**实例化的对象** 注入 到开发人员**自定义的类**中
 * 容器概念、控制反转、依赖注入 
+
+
 
 ### 1. IOC容器
 
@@ -15,12 +17,16 @@
 * 项目启动的时候会读取 `xml` 节点 `ref` 属性**根据 id 主入**，也会扫描这 Jth.=1主解，根据**类型或id主入**；id就是对象名。 
 * ![Spring IoC的初始化过程](https://images.xiaozhuanlan.com/photo/2019/57da0deca924d0e73dbb56501d2ec4be.png)
 
+
+
 ### 2. 控制反转（Inverse of Control）
 
 *  没有引入 `IOC` 容器之前，对象 `A` 依赖于对象 `B`，那么对象 `A` 在初始化或者运行到某一点的时候，自己必须主动去创建 对象 `B` 或者使用已经创建的对象 `B`。无论是创建还是使用对象 `B`，控制权都在自己手上。
 *  引入 `IOC` 容器之后，对象 `A` 与对象 `B` 之间失去了直接联系，当对象 `A` 运行到需要对象 `B` 的时候，**IOC容器会主动创建 一个对象B注入到对象A需要的地方**。 
 * 通过前后的对比，不难看出来：对象 `A` 获得依赖对象 `B` 的过程，由**主动行为变为了被动行为 （B主动注入到A中）**，控制权颠倒过来了，这 就是“控制反转，这个名称的由来。 
 * 全部对象的 **控制权全部上缴给“第三方"IOC容器**，所以，`IOC` 容器成了整个系统的关键核心，它起到了一种类似 “粘合剂” 的作用，把系统中的所有对象粘合在一起发挥作用，如果没有这个 “粘合剂”，对象与对象之间会彼此失去联系，这就是有人把`IOC`容器比喻成“粘合剂”的由来。 
+
+
 
 ### 3. 依赖注入 （Dependency Injection）
 
@@ -30,6 +36,42 @@
    *  依赖注入是 Spring 的思想,在使用 Spring 进行开发时，可以将对象交给 spring 进行管理，在初始化时spring 创建一批对象，当你需要用的时候只要从 spring 的容器中获取对象，而不用自己去new，当然在对象创建的时候可以注入另一个对象。比如 A, B 两个对象都由 spring 管理，A 中持有对 B 的引用，那么spring 在生成 A 对象的时候就已经吧B对象的一个实例给到 A 了，当你在A中用到B的时候直接使用就可以了。
 
 *  https://www.vogella.com/tutorials/DependencyInjection/article.html
+
+- ```java
+  // Constructor-based Dependency Injection
+  public class SimpleMovieLister {
+  
+      // the SimpleMovieLister has a dependency on a MovieFinder
+      private final MovieFinder movieFinder;
+  
+      // a constructor so that the Spring container can inject a MovieFinder
+      public SimpleMovieLister(MovieFinder movieFinder) {
+          this.movieFinder = movieFinder;
+      }
+  
+      // business logic that actually uses the injected MovieFinder is omitted...
+  }
+  ```
+
+
+
+
+### 4. Spring依赖注入有哪几种方式
+
+- [Spring依赖注入有哪几种方式](https://www.zhihu.com/question/452470872)
+- Constructor-based
+  - [Spring Boot简明教程--依赖注入的三种方式](https://cloud.tencent.com/developer/article/1777778)
+  - ![image-20220430124836919](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220430124836919.png)
+- Field
+  - **接口注入** 依赖类必须要 **实现指定的接口**，然后实现该接口中的一个函数，该函数就是用于依赖注入。该函数的参数就是要注入的对象。
+  - 优点 接口注入中，接口的名字、函数的名字都不重要，只要保证函数的参数是要注入的对象类型即可。
+  - 缺点： 侵入行太强，不建议使用。
+- ![image-20220429225558031](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220429225558031.png)
+- ![image-20220429230709603](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220429230709603.png)
+
+# 
+
+
 
 ### 4. Autowired byType 与 byName 策略
 
@@ -64,6 +106,10 @@
     - 通常情况下`@Autowired`是通过`byType`的方法注入的，可是在多个实现类的时候，`byType`的方式不再是唯一，而需要通过`byName`的方式来注入，而这个`name`默认就是根据变量名来的。
 
   - 通过`@Qualifier`注解来指明使用哪一个实现类，实际上也是通过`byName`的方式实现。
+
+## 5. Spring Test
+
+- ![image-20220610115604857](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/image-20220610115604857.png)
 
 
 
