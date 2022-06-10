@@ -14,8 +14,16 @@
 ## [3. Object Oriented Design](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design)
 
 - [Grokking the Object Oriented Design](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview/Grokking%20the%20OOD%20Interview%20PDF)
-- [九章算法 Object Oriented Design and Practical Code](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/%E4%B9%9D%E7%AB%A0%E7%AE%97%E6%B3%95ood)
-  - [Elevator / Parking Lot / Restaurant / Hotel Reservation / Vending Machine / Coffee Maker / Kindle - Source Code](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src)
+- [Object Oriented Design and Practical Code - 九章算法 ](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/%E4%B9%9D%E7%AB%A0%E7%AE%97%E6%B3%95ood)
+  - [Elevator](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src/DesignElevator)
+  - [Parking Lot](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src/DesignParkingLot)
+  - [Restaurant](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src/DesignRestaurant)
+  - [Hotel Reservation](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src/DesignHotelReservation)
+  - [Vending Machine](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src/DesignVendingMachine)
+  - [Coffee Maker](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src/DesignCoffeeMaker)
+  - [Kindle](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src)
+  - [TicTacToe](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src/DesignTicTacToe)
+  - [BlackJack](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/5.Object%20Oriented%20Design/oodPractice/src/DesignBlackJack/core)
 
 ## [4. System Design - Grokking the System Design](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/2.LeetCode%20Hot%20and%20Interview/6.System%20Design)
 
