@@ -43,7 +43,7 @@
 - [Network](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/3.%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98/05.%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C)
 - [Tech Articles](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/4.%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0)
 
-## 7. [Tech Articles](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/4.%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0)
+## [7. Tech Articles](https://github.com/TWDH/Development/tree/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/4.%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0)
 
 - [OOP 多态、接口、抽象类](https://github.com/TWDH/Development/blob/main/%E8%B5%AB%E6%A1%91%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9D%E5%85%B8/4.%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/OOP%20%E5%A4%9A%E6%80%81%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%8A%BD%E8%B1%A1%E7%B1%BB.md)
 - [接口和抽象类详解](https://github.com/TWDH/Development/blob/main/赫桑的算法宝典/4.技术文章/接口和抽象类详解.md)
