@@ -14,7 +14,7 @@
 
 2. **What are your biggest strengths?**
 
-   - ![top strengths for different fields](https://cdn-blog.novoresume.com/articles/interview-questions-and-best-answers-guide/top-strengths-for-different-fields.png)
+   - ![top-strengths-for-different-fields](https://raw.githubusercontent.com/TWDH/Leetcode-From-Zero/pictures/img/top-strengths-for-different-fields.png)
 
    - ```
      My biggest strength is that I’m good at picking up new skills. As the technologies are changing so fast, you should always stay hungry to learn new things. For myself, apart from the basic knowledge of programming learned in university, all the tech stacks I am using right now was learned just 1 years ago. 
