@@ -191,7 +191,7 @@ Object-Oriented Programming or OOPs is a programming style that is associated wi
 
 ### 多态的实现方式
 
-#### 方式一：重写：
+#### 方式一：重写
 
 这个内容已经在上一章节详细讲过，就不再阐述，详细可访问：[Java 重写(Override)与重载(Overload)](https://www.runoob.com/java/java-override-overload.html)。
 
@@ -202,7 +202,7 @@ Object-Oriented Programming or OOPs is a programming style that is associated wi
 
 #### 方式三：抽象类和抽象方法
 
-详情请看 [Java抽象类](https://www.runoob.com/java/java-abstraction.html) 章节。
+- 详情请看 [Java抽象类](https://www.runoob.com/java/java-abstraction.html) 章节。
 
 
 
@@ -211,8 +211,7 @@ Object-Oriented Programming or OOPs is a programming style that is associated wi
 In Java, a **local variable** is typically used inside a method, constructor, or a **block** and has only local scope. Thus, this variable can be used only within the scope of a block. The best benefit of having a local variable is that other methods in the class won’t be even aware of that variable.
 
 ```java
-if(x > 100)
-{
+if(x > 100) {
 	String test = "Edureka";
 }
 ```

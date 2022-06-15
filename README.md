@@ -61,4 +61,4 @@
 
 ## 8. General Questions
 
-- [[salary negotiation] 求职如何跟公司讨价还价](https://www.1point3acres.com/bbs/thread-286214-1-1.html)
+- [[salary negotiation] 求职如何跟公司讨价还价](https://www.1point3acres.com/bbs/thread-286214-1-1.html) 
