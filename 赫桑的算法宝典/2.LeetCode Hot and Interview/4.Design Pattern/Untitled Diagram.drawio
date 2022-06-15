@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-06-15T14:32:46.754Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="QiBPOhmZZCmpn3rc7yhf" version="17.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-15T14:49:34.182Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="60DFsZBT4xGMOKb47sUI" version="17.4.5" type="github">
   <diagram id="Wm4UiVOaAzaUhb4Xn29v" name="Page-1">
-    <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="FrBY-cNA6xfNyGLWGybC-1" value="PhoneFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="145" y="60" width="160" height="60" as="geometry" />
+          <mxGeometry x="158" y="120" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FrBY-cNA6xfNyGLWGybC-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="FrBY-cNA6xfNyGLWGybC-1" vertex="1">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
@@ -13,14 +13,20 @@
         <mxCell id="FrBY-cNA6xfNyGLWGybC-4" value="+ produce() : IphoneProduct&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="FrBY-cNA6xfNyGLWGybC-1" vertex="1">
           <mxGeometry y="34" width="160" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="FrBY-cNA6xfNyGLWGybC-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="60" as="sourcePoint" />
+            <mxPoint x="80.31343283582078" y="101.99999999999989" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="FrBY-cNA6xfNyGLWGybC-9" value="«interface»&lt;br&gt;&lt;b&gt;IPhoneProduct&lt;br&gt;&lt;/b&gt;" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="170" y="190" width="115" height="50" as="geometry" />
+          <mxGeometry x="180" y="222" width="115" height="50" as="geometry" />
         </mxCell>
         <mxCell id="dRfDCK3N5SpxxT6TibAj-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.348;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dRfDCK3N5SpxxT6TibAj-5" target="FrBY-cNA6xfNyGLWGybC-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dRfDCK3N5SpxxT6TibAj-5" value="ApplePhone" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="280" width="160" height="100" as="geometry" />
+          <mxGeometry x="50" y="312" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="dRfDCK3N5SpxxT6TibAj-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-5">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
@@ -31,14 +37,89 @@
         <mxCell id="dRfDCK3N5SpxxT6TibAj-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.63;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dRfDCK3N5SpxxT6TibAj-9" target="FrBY-cNA6xfNyGLWGybC-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dRfDCK3N5SpxxT6TibAj-9" value="ApplePhone" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="280" y="280" width="160" height="100" as="geometry" />
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-9" value="SamsungPhone" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="312" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="dRfDCK3N5SpxxT6TibAj-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-9">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="dRfDCK3N5SpxxT6TibAj-11" value="+ start() : void&#xa;+ shutDown() : void&#xa;+ callUp() : void&#xa;+ sendSMS() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-9">
           <mxGeometry y="34" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-19" value="Main" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="159" y="27" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-24" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dRfDCK3N5SpxxT6TibAj-19" target="FrBY-cNA6xfNyGLWGybC-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="79" y="52" as="sourcePoint" />
+            <mxPoint x="129" y="2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-29" value="Main" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="791" y="20" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-30" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dRfDCK3N5SpxxT6TibAj-29" target="dRfDCK3N5SpxxT6TibAj-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="79" y="52" as="sourcePoint" />
+            <mxPoint x="79" y="93" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-31" value="«interface»&lt;br&gt;&lt;b&gt;AbstractFactory&lt;br&gt;&lt;/b&gt;" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="816" y="120" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="dRfDCK3N5SpxxT6TibAj-34" target="dRfDCK3N5SpxxT6TibAj-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-34" value="AppleFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="202" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-36" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-34">
+          <mxGeometry y="26" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-37" value="+ produce(): IPhoneProduce" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-34">
+          <mxGeometry y="34" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="dRfDCK3N5SpxxT6TibAj-38" target="dRfDCK3N5SpxxT6TibAj-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-38" value="SamsungFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="202" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-38">
+          <mxGeometry y="26" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-40" value="+ produce(): IPhoneProduce" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-38">
+          <mxGeometry y="34" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-44" value="ApplePhone" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="322" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-45" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-44">
+          <mxGeometry y="26" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-46" value="+ start() : void&#xa;+ shutDown() : void&#xa;+ callUp() : void&#xa;+ sendSMS() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-44">
+          <mxGeometry y="34" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-47" value="SamsungPhone" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="910" y="322" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-48" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-47">
+          <mxGeometry y="26" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-49" value="+ start() : void&#xa;+ shutDown() : void&#xa;+ callUp() : void&#xa;+ sendSMS() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="dRfDCK3N5SpxxT6TibAj-47">
+          <mxGeometry y="34" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-53" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="dRfDCK3N5SpxxT6TibAj-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="320" as="sourcePoint" />
+            <mxPoint x="790" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dRfDCK3N5SpxxT6TibAj-54" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.552;entryY=1.083;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="dRfDCK3N5SpxxT6TibAj-47" target="dRfDCK3N5SpxxT6TibAj-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="999" y="320" as="sourcePoint" />
+            <mxPoint x="999" y="262.0000000000001" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
