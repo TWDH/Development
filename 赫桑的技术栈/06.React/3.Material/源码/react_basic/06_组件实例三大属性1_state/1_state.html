@@ -27,6 +27,7 @@
           super(props);
           //初始化状态
           this.state = { isHot: false, wind: "微风" };
+          
           //解决changeWeather中this指向问题
           this.changeWeather = this.changeWeather.bind(this);
         }
