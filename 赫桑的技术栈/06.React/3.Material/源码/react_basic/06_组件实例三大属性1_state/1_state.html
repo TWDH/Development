@@ -34,7 +34,7 @@
 
         //render调用几次？ ———— 1+n次 1是初始化的那次 n是状态更新的次数
         render() {
-          console.log("render");
+          console.log(this);
           //读取状态
           const { isHot, wind } = this.state;
           return (
@@ -50,7 +50,7 @@
           //由于changeWeather是作为onClick的回调，所以不是通过实例调用的，是直接调用
           //类中的方法默认开启了局部的严格模式，所以changeWeather中的this为undefined
 
-          console.log("changeWeather");
+          console.log(this);
           //获取原来的isHot值
           const isHot = this.state.isHot;
           //严重注意：状态必须通过setState进行更新,且更新是一种合并，不是替换。
