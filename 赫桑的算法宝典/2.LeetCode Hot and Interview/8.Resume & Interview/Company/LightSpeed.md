@@ -21,7 +21,7 @@
    - **Vertical and horizontal scaling.** 
      - **Vertical** scaling involves increasing the machine resources by **increasing the RAM size or CPU**. 
      - **Horizontal** scaling on the other hand involves **increasing in the number of machines.** 
-     - Think of VS as making a man stronger (adding more muscles) and HS as increasing the number of average men. There's only how far you get increase resources but the number of machines with the same compute capabilities you can add is infinite. Both approaches improves performance of a system without refactoring, rewriting/building or changing architecture.
+     - Think of VS as making a man stronger (adding more muscles) and HS as increasing the number of average men. There's only how far you get increase resources but the number of machines with the same compute capabilities you can add is infinite. Both approaches improves performance of a system without refactoring, rewriting/building or changing architecture. 
 
 4. *When do you do unit and end-to-end testing?*
 
@@ -31,14 +31,14 @@
 5. ***[What to consider when scaling up system? ](https://taazaa.com/key-factors-to-consider-when-scaling-your-software-application/)***
 
    1. Scalability Can Cost You
-   2. Scaling **Shared Resources** Is Critical (Database, MQ, Micro-services ...)
+   2. Scaling **Shared Resources** Is Critical (Database, MQ, Micro-services ...) 
       1. server 多了，但是 database没有变
       2. protect against cascade failures by including resilient patterns (circuit breakers, bulkheads, fallbacks, retries, and timeouts)
-   3.  Scaling The **Data Tier** Is Painful
+   3.  Scaling The **Data Tier** Is Painful 
       1. increases the load on your shared transactional databases
       2. a no-SQL, schema less database, a distributed database, or a managed cloud-based database
       3. using caching as a way to reduce the load on your database
-   4. **Monitoring** Is Essential.
+   4. **Monitoring** Is Essential. 
       1. setting up alerts for when memory or disk space runs low, remote calls fail, or other infrastructure problems arise.
 
 6. **[*How to manage distributed database?*](https://fauna.com/blog/the-why-and-how-of-distributed-databases)**
